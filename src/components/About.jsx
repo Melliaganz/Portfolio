@@ -1,5 +1,5 @@
 import React from 'react'
-import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import resume from '../img/CV_Lucas.pdf'
 import JavascriptIcon from '@mui/icons-material/Javascript';
 import CssIcon from '@mui/icons-material/Css';
 import HtmlIcon from '@mui/icons-material/Html';
@@ -8,19 +8,21 @@ import ApiIcon from '@mui/icons-material/Api';
 import { Image } from 'react-bootstrap'
 
 import Portrait from '../img/Portrait.webp'
+import ButtonHomeDownload from './ButtonHomeDownload';
 
 export default function About() {
   return (
-    <section className='container-fluid preface__background--color preface__section'>
+    <div className='anchor'>
+      <a href="/#home" id='home'>&nbsp;</a>
+    <section className='container-fluid preface__background--color preface__section mb-5'>
         <div class="row justify-content-center align-items-center preface">
             <div className='col-12 col-sm-6 text-center'>
-                <div class="text-center my-auto">
+                <div class="text-center my-5">
                     <Image type='image/webp'class='roundedCircle' src={Portrait} width={170}/>
                 </div>
             </div>
         </div>
         <div class="col-12 col-md-6 text-center text-md-start home__title">
-        <a href='#portrait'>
               <div>
                 <h2 className='preface__title h1 preface__surname display-3'>
                   Lucas
@@ -31,9 +33,8 @@ export default function About() {
                   Lengrand
                 </h1>
               </div>
-            </a>
             <p class="col-12 col-md-10 preface--color text-justify mb-5 preface_logoBot font-monospace text-center text-md-start">Développeur web</p>
-            <p class="col-10 offset-1 offset-md-0 col-md10 my-4 preface--color text-justify preface__logoBot">
+            <p class="col-10 offset-1 offset-md-0 col-md-10 my-4 preface--color text-justify preface__logoBot ">
                 Depuis toujours passionné par les systèmes informatiques et notammenet le <b>Développement Informatique</b>, je vous accompagnerai dans vos différents projets <b>digitales</b> ou la création de vos <b>applications web</b>.
             </p>
             <p class="col-12 col-md-12 preface--color text-justify mb-5 preface__logoBot font-monospace text-center text-md-start">
@@ -46,10 +47,12 @@ export default function About() {
             <img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" height={25} alt={<ApiIcon />} /> <a href="https://nodejs.org/en/"> Node.js</a> | 
             <img src="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png" height={25} alt="ORM" /> <a href="https://sequelize.org/" > Sequelize</a> |
             <img src="https://sass-lang.com/assets/img/styleguide/seal-color-reversed-c50d9b78.png" height={25} alt="" /> <a href="https://sass-lang.com/"> Sass</a> </p>
-            <a class="btn btn-light btn-base rounded-4 border-warning shadow col-auto preface__logoBot" href="#home"><span class="h5">
-                CV <CloudDownloadIcon />
-                </span>
-                </a>
+            <ButtonHomeDownload
+            className='preface__logoBot'
+            text='CV'
+            href={resume}
+            download='Lengrand-Lucas'
+            />
         </div>
         <div class="row justify-content-center mb-5 preface__logoBot">
             <hr class="col my-auto hr__left">
@@ -57,5 +60,6 @@ export default function About() {
             </hr>
         </div>
     </section>
+    </div>
   )
 }

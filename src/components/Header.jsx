@@ -1,6 +1,7 @@
 import React from "react"
 import { Image } from "react-bootstrap"
-// import navLogo from "../images/navLogo.svg"
+import Lucas from "../img/Portrait.webp"
+
 const Header = () => {
   return (
     <header>
@@ -8,7 +9,7 @@ const Header = () => {
         <div className='container-fluid'>
           <a className='navbar-brand' href='#home'>
             <Image
-              src="../img/OC.webp"
+              src={Lucas}
               height={60}
               weight={60}
               placeholder="blurred"
@@ -28,15 +29,15 @@ const Header = () => {
             className='collapse navbar-collapse justify-content-center'
             id='navbarNavAltMarkup'>
             <div className='navbar-nav col justify-content-around text-center'>
-              <a
-                className='nav-link underline__headerLinks nav__text--color'
-                href='#competences'>
+            <a
+                className='nav-link underline__headerLinks nav__text--color '
+                href='#Resume'>
                 <span
                   data-bs-toggle='collapse'
                   data-bs-target='#navbarNavAltMarkup'
                   aria-expanded='false'
                   role='link'>
-                  Compétences
+                  Résumé
                 </span>
               </a>
               <a
@@ -48,17 +49,6 @@ const Header = () => {
                   aria-expanded='false'
                   role='link'>
                   Formations
-                </span>
-              </a>
-              <a
-                className='nav-link underline__headerLinks nav__text--color '
-                href='#expPro'>
-                <span
-                  data-bs-toggle='collapse'
-                  data-bs-target='#navbarNavAltMarkup'
-                  aria-expanded='false'
-                  role='link'>
-                  Experience pro
                 </span>
               </a>
               <a

@@ -1,4 +1,5 @@
 import React from 'react'
+import CompetencecardWrapper from "./Competencecardwrapper"
 
 export default function Portfolio() {
   return (
@@ -11,7 +12,7 @@ export default function Portfolio() {
               <span className="underline__title">portfolio</span>
             </h3>
             <div className="row g-0 mb-5">
-              {/* <PortfolioContent /> */}
+              <CompetencecardWrapper />
             </div>
           </div>
         </section>
