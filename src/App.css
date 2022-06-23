@@ -45,3 +45,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.imageSRC {
+  object-fit: cover;
+}
