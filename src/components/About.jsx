@@ -15,7 +15,7 @@ export default function About() {
     <div className='anchor'>
       <a href="/#home" id='home'>&nbsp;</a>
     <section className='container-fluid preface__background--color preface__section mb-5'>
-        <div class="row justify-content-center align-items-center preface">
+        <div class="row justify-content-end align-items-center preface">
             <div className='col-12 col-sm-6 text-center'>
                 <div class="text-center my-5">
                     <Image type='image/webp'class='roundedCircle' src={Portrait} width={170}/>

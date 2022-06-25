@@ -28,7 +28,7 @@ export default function Formation() {
                             <a href="https://openclassNamerooms.com/fr/">
                             Open
                             <wbr />
-                            ClassNamerooms
+                            Classrooms
                             </a>
                         </h3>
                         <h4 className="h6 formation__title">Developpeur Web</h4>

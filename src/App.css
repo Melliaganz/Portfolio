@@ -48,3 +48,6 @@ a {
 .imageSRC {
   object-fit: cover;
 }
+svg {
+  fill: currentColor;
+}
