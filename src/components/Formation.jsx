@@ -45,13 +45,23 @@ export default function Formation() {
                             <li>Sécurisation d'application avec les techniques de l'OWASP</li>
                             <li>Conception d'API REST</li>
                         </ul>
+                        <figure className='mx-3 my-5'>
+                        <blockquote class="blockquote">
+                            "Bravo pour votre excellent travail tout au long du parcours. Votre ténacité a porté ses fruits et vous avez obtenu ce diplôme haut la main ! Nous vous souhaitons une très bonne continuation dans votre nouvelle carrière."
+                        </blockquote>
+                    </figure>
+                    <figcaption className="blockquote-footer">
+                        <cite title="Source Title">Commentaires du jury </cite>
+                    </figcaption>
                     </div>
+
+                    
                     <div className="accordion">
                         <Accordion>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
                             id="panel1a-header">
-                                <Typography>
+                                <Typography component= {'span'} variant={'body2'}>
                                     <Image 
                                     src="https://www.csrsaguenay.qc.ca/wp-content/uploads/2020/02/Logo_CFP-Grand-Fjord-150x150.png"
                                     alt="logo-CFP"
@@ -60,6 +70,7 @@ export default function Formation() {
                                 </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
+                                <Typography component= {'span'} variant={'body2'}>
                                 <div className="row g-0">
                                     <section className="col-lg-3 text-center mx-auto me-lg-0 my_auto">
                                         <div className="gatsby-image-wrapper gatsby-image-wrapper-constrained img-fluid mb-2">
@@ -112,22 +123,23 @@ export default function Formation() {
                                       </ul>  
                                     </div>
                                 </div>
+                                </Typography>
                             </AccordionDetails>
                         </Accordion>
                         <Accordion>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel2a-content"
                             id="panel2a-header">
-                                <Typography>
+                                <Typography component= {'span'} variant={'body2'}>
                                     <Image 
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Paris_VIII.svg/langfr-1920px-Paris_VIII.svg.png" 
                                     alt="logo-ParisVIII" 
-                                    width={80} />
+                                    width={50} />
                                     Université Paris 8
                                 </Typography>
                             </AccordionSummary>
                             <AccordionDetails>
-                                <Typography>
+                                <Typography component= {'span'} variant={'body2'}>
                                     <div className="row g-0">
                                         <section className="col-lg-3 text-center mx-auto me-lg-0 my_auto">
                                             <div className="gatsby-image-wrapper gatsby-image-wrapper-constrained img-fluid mb-2">
@@ -168,7 +180,7 @@ export default function Formation() {
                             expandIcon={<ExpandMoreIcon/>}
                             aria-controls="panel3a-content"
                             id="panel3a-header">
-                                <Typography>
+                                <Typography component= {'span'} variant={'body2'}>
                                     <Image 
                                     src="https://upload.wikimedia.org/wikipedia/commons/0/07/SAE_Institute_Logo.png" 
                                     alt="logo-SAE"
@@ -177,7 +189,7 @@ export default function Formation() {
                                     </Typography>
                                     </AccordionSummary>
                                     <AccordionDetails >
-                                        <Typography>
+                                        <Typography component= {'span'} variant={'body2'}>
                                             <div className="row g-0">
                                                 <section className="col-lg-3 text-center mx-auto me-lg-0 my_auto">
                                                     <div className="gatsby-image-wrapper gatsby-image-wrapper-constrained img-fluid mb-2">
@@ -209,15 +221,17 @@ export default function Formation() {
                                         </Typography>
                                     </AccordionDetails>
                             </Accordion>
-                            <Accordion >
+                            <Accordion TransitionProps={{ unmountOnExit:true}} >
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel4a-content"
                             id="panel4a-header"
                             >
-                                <Typography><Image src="https://static.wixstatic.com/media/7903c0_543cb7973543494a837043b5eb302721~mv2.png/v1/fill/w_296,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7903c0_543cb7973543494a837043b5eb302721~mv2.png" alt="logo-BTMM" width={50} /> Brevet de Technicien des métiers de la musique</Typography>
+                                <Typography component= {'span'} variant={'body2'}>
+                                    <Image src="https://static.wixstatic.com/media/7903c0_543cb7973543494a837043b5eb302721~mv2.png/v1/fill/w_296,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7903c0_543cb7973543494a837043b5eb302721~mv2.png" alt="logo-BTMM" width={50} /> 
+                                    Brevet de Technicien des métiers de la musique</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
-                                <Typography>
+                                <Typography component= {'span'} variant={'body2'}>
                                     <div className="row g-0 ">
                                     <section className="col-lg-3 text-center mx-auto me-lg-0 my_auto">
                                         <div className="gatsby-image-wrapper gatsby-image-wrapper-constrained img-fluid mb-2">

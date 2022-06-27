@@ -9,6 +9,7 @@ const Header = () => {
         <div className='container-fluid'>
           <a className='navbar-brand' href='#home'>
             <Image
+              id="photoHeader"
               src={Lucas}
               height={60}
               weight={60}

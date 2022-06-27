@@ -51,3 +51,28 @@ a {
 svg {
   fill: currentColor;
 }
+.btn-light:hover{
+  background-color: #ffc107;
+  color: #282c34;
+}
+#photoHeader{
+  border-radius: 80px;
+}
+#blocTextAbout{
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 800px) {
+  #blocTextAbout{
+    margin-top: -300px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+  }
+  #blocAbout{
+    margin-top: 15px;
+  }
+  #photoAbout{
+    border-radius: 80px;
+    margin-top: 100px;
+    margin-right:150px ;
+  }
+}

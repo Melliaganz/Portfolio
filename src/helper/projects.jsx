@@ -42,7 +42,7 @@ const iconHTML5 = {
   }
   const iconBootstrap = {
     icon: logoBoostrap,
-    alt: "Bootstrap 4",
+    alt: "Bootstrap",
     width: "48",
     height: "48",
   }
@@ -91,7 +91,7 @@ const iconHTML5 = {
 
   const projects = {
     groupomania: {
-      title: "Créez un réseau social d’entreprise",
+      title: `Créez un réseau social d’entreprise`,
       details: (
         <div className='col formation__title my-auto me-lg-2 mx-auto'>
           <h4 className='text-uppercase'>scenario</h4>
@@ -113,7 +113,7 @@ const iconHTML5 = {
       ),
       stackIcons: [iconNodeJs, iconExpress, iconReact, iconMySql, iconSequelize, iconBootstrap],
       linkGithub: "https://github.com/Melliaganz/Groupomania",
-      linkDemo: "https://github.com/Melliaganz/Groupomania",
+      linkDemo: "https://groupomania-eta.vercel.app/login",
       imageSRC: imageGroupomania,
     },
     piquante: {
@@ -138,7 +138,7 @@ const iconHTML5 = {
         ),
         stackIcons: [iconNodeJs, iconExpress, iconMongoDb, iconMongoose],
         linkGithub: "https://github.com/Melliaganz/Piquante",
-        linkDemo: "https://github.com/Melliaganz/Piquante",
+        linkDemo: "https://piquante-c0opxjtej-melliaganz.vercel.app/login",
         imageSRC: imagePiquante,
     },
     kanap: {
