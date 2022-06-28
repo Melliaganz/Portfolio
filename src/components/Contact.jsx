@@ -23,7 +23,7 @@ export default function Contact() {
                 <div className="contact__icon col-12 text-center contact--color">
                   <PersonPinIcon />
                 </div>
-                <span className="p-0 col-9 contact--color"> 24 rue de verville, 91680 Bruyères-le-Châtel</span>
+                <span className="p-0 col-9 contact--color"> 24 rue de Verville, 91680 Bruyères-le-Châtel</span>
               </div>
               </div>
               <div className="row p-3 align-items-center">

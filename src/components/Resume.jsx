@@ -12,7 +12,11 @@ export default function Resume() {
                 </span>
             </h3>
             <p className="text-justify portrait__text--color mb-5 col-md-8 offset-md-2 text-center">
-                Après des études d'ingenieur du son et des stages en régie orchestrale. mais suite au COVID j'ai décidé de m'interesser au monde du développement en suivant la formation d'OpenclassNamerooms.
+            Après plusieurs années d'études dans le domaine du son, j'ai fait une
+            reconversion dans le développement web suite a un accident de la route.
+            Ayant toujours été intéressé par l'informatique, j'ai pu intégrer la formation
+            d'Openclassrooms et comprendre le métier de Développeur web assez vite.
+            Mon but a terme serai de me lancer en free-lance.
             </p>
         </div>
     </section>
