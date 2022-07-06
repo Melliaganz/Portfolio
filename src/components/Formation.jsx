@@ -25,7 +25,7 @@ export default function Formation() {
                             <Image type="image/webp"alt='PhotoOpenClassNameroom' src={OC} width={50} />
                         </div>
                         <h3 className="h4 formation__title">
-                            <a href="https://openclassNamerooms.com/fr/">
+                            <a href="https://openclassrooms.com/fr/paths/556-developpeur-web">
                             Open
                             <wbr />
                             Classrooms
@@ -46,7 +46,7 @@ export default function Formation() {
                             <li>Conception d'API REST</li>
                         </ul>
                         <figure className='mx-3 my-5'>
-                        <blockquote class="blockquote">
+                        <blockquote className="blockquote">
                             "Bravo pour votre excellent travail tout au long du parcours. Votre ténacité a porté ses fruits et vous avez obtenu ce diplôme haut la main ! Nous vous souhaitons une très bonne continuation dans votre nouvelle carrière."
                         </blockquote>
                     </figure>

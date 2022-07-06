@@ -35,7 +35,7 @@ export default function About() {
               </div>
             <p className="col-12 col-md-12 preface--color text-justify mb-5 preface_logoBot font-monospace text-center text-md-center">Développeur web</p>
             <p className="col-10 offset-1 offset-md-0 col-md-12 my-4 preface--color text-justify preface__logoBot ">
-                Depuis toujours passionné par les systèmes informatiques et notammenet le <b>Développement Informatique</b>, je vous accompagnerai dans vos différents projets <b>digitales</b> ou la création de vos <b>applications web</b>.
+                Depuis toujours passionné par les systèmes informatiques et notamment le <b>Développement Informatique</b>, je vous accompagnerai dans vos différents projets <b>digitales</b> ou la création de vos <b>applications web</b>.
             </p>
             <p className="col-12 col-md-12 preface--color text-justify mb-5 preface__logoBot font-monospace text-center text-md-start">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" height={25} alt={<HtmlIcon />} /> <a href="https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/HTML_basics" >HTML</a> | 

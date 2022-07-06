@@ -4,8 +4,8 @@ import projects from '../helper/projects'
 
 const CompetenceCardWrapper = () => {
   return (
-    <section class='container px-4' id='CompetenceCardWrapper'>
-        <div class='row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5'>
+    <section className='container px-4' id='CompetenceCardWrapper'>
+        <div className='row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5'>
         <CompetenceCard 
        title={projects.groupomania.title}
        details={projects.groupomania.details} 

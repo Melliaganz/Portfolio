@@ -36,7 +36,7 @@ const Header = () => {
                 <span
                   data-bs-toggle='collapse'
                   data-bs-target='#navbarNavAltMarkup'
-                  aria-expanded='false'
+                  aria-expanded='true'
                   role='link'>
                   Résumé
                 </span>
