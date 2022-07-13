@@ -12,7 +12,7 @@ export default function Formation() {
   return (
     <div className="g-0 anchor">
         <a href="/#formations" id="formations">&nbsp;</a>
-        <section className="formations__background--color border-start row g-0">
+        <section className="formations__background--color border-start row g-0 bg-info">
             <div className="p-0 m-0">
                 <h3 className="text-center formations__title--color my-5 text-uppercase">
                     <span className="underline__title">
@@ -56,7 +56,7 @@ export default function Formation() {
                     </div>
 
                     
-                    <div className="accordion">
+                    <div className="accordion ">
                         <Accordion>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"

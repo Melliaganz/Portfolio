@@ -14,7 +14,7 @@ export default function About() {
   return (
     <div className='anchor'>
       <a href="/#home" id='home'>&nbsp;</a>
-    <section id="about"className='container-fluid preface__background--color preface__section mb-5'>
+    <section id="about"className='container-fluid preface__background--color preface__section mb-5 bg-warning'>
         <div className="row justify-content-end align-items-center preface">
             <div className='col-sm-5 text-center'>
                 <div className="text-center  py-5" id="blocAbout">
