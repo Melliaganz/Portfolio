@@ -3,7 +3,7 @@ import React from 'react'
 export default function Resume() {
   return (
       <div className="g-0 anchor">
-          <a href="/#Resume" id="Resume">&nbsp;</a>
+          <a href="/#Resume" id="resume">&nbsp;</a>
     <section className="col mx-2 px-5">
         <div className="col mx-2 px-5">
             <h3 className="  h2 portrait__title--color text-uppercase my-5 mx-lg-0 text-center">

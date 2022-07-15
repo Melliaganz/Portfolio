@@ -54,6 +54,9 @@ svg {
   border-radius: 80px;
   border-color: #ffc107 !important;
 }
+#photoAbout{
+  border-radius: 80px;
+}
 #blocTextAbout{
   margin-bottom: 15px;
 }
@@ -67,11 +70,37 @@ svg {
     margin-top: 15px;
   }
   #photoAbout{
-    border-radius: 80px;;
     margin-top: 100px;
     margin-right:150px ;
   }
   #Contact{
     flex-wrap: wrap-reverse;
+  }
+}
+
+#blocTextAbout,#photoAbout{
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    padding-top: 100%;
+  }
+  to{
+    padding-top: 0%;
+  }
+}
+
+#header {
+  animation-duration: 5s;
+  animation-name: slideleft
+}
+
+@keyframes slideleft {
+  from {
+    margin-left: 90%
+  }
+  to {
+    margin-left: 0%;
   }
 }
