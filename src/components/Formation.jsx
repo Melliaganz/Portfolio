@@ -60,7 +60,8 @@ export default function Formation() {
                         <Accordion>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
-                            id="panel1a-header">
+                            id="panel1a-header"
+                            className='bg-danger'>
                                 <Typography component= {'span'} variant={'body2'}>
                                     <Image 
                                     src="https://www.csrsaguenay.qc.ca/wp-content/uploads/2020/02/Logo_CFP-Grand-Fjord-150x150.png"
@@ -69,7 +70,8 @@ export default function Formation() {
                                     Centre de formation professionnelle du Grand-Fjord
                                 </Typography>
                             </AccordionSummary>
-                            <AccordionDetails>
+                            <AccordionDetails
+                            className='bg-warning'>
                                 <Typography component= {'span'} variant={'body2'}>
                                 <div className="row g-0">
                                     <section className="col-lg-3 text-center mx-auto me-lg-0 my_auto">
@@ -129,7 +131,8 @@ export default function Formation() {
                         <Accordion>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel2a-content"
-                            id="panel2a-header">
+                            id="panel2a-header"
+                            className='bg-danger'>
                                 <Typography component= {'span'} variant={'body2'}>
                                     <Image 
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Paris_VIII.svg/langfr-1920px-Paris_VIII.svg.png" 
@@ -138,7 +141,8 @@ export default function Formation() {
                                     Université Paris 8
                                 </Typography>
                             </AccordionSummary>
-                            <AccordionDetails>
+                            <AccordionDetails
+                            className='bg-warning'>
                                 <Typography component= {'span'} variant={'body2'}>
                                     <div className="row g-0">
                                         <section className="col-lg-3 text-center mx-auto me-lg-0 my_auto">
@@ -179,7 +183,8 @@ export default function Formation() {
                             <AccordionSummary 
                             expandIcon={<ExpandMoreIcon/>}
                             aria-controls="panel3a-content"
-                            id="panel3a-header">
+                            id="panel3a-header"
+                            className='bg-danger'>
                                 <Typography component= {'span'} variant={'body2'}>
                                     <Image 
                                     src="https://upload.wikimedia.org/wikipedia/commons/0/07/SAE_Institute_Logo.png" 
@@ -188,7 +193,8 @@ export default function Formation() {
                                     SAE Institute
                                     </Typography>
                                     </AccordionSummary>
-                                    <AccordionDetails >
+                                    <AccordionDetails 
+                                    className='bg-warning'>
                                         <Typography component= {'span'} variant={'body2'}>
                                             <div className="row g-0">
                                                 <section className="col-lg-3 text-center mx-auto me-lg-0 my_auto">
@@ -225,12 +231,13 @@ export default function Formation() {
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel4a-content"
                             id="panel4a-header"
-                            >
+                            className='bg-danger'>
                                 <Typography component= {'span'} variant={'body2'}>
                                     <Image src="https://static.wixstatic.com/media/7903c0_543cb7973543494a837043b5eb302721~mv2.png/v1/fill/w_296,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7903c0_543cb7973543494a837043b5eb302721~mv2.png" alt="logo-BTMM" width={50} /> 
                                     Brevet de Technicien des métiers de la musique</Typography>
                             </AccordionSummary>
-                            <AccordionDetails>
+                            <AccordionDetails
+                            className='bg-warning'>
                                 <Typography component= {'span'} variant={'body2'}>
                                     <div className="row g-0 ">
                                     <section className="col-lg-3 text-center mx-auto me-lg-0 my_auto">

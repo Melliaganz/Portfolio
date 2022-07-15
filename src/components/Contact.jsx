@@ -20,12 +20,12 @@ export default function Contact() {
     <div className="g-0 anchor">
       <a href="/#contact" id="contact">&nbsp;</a>
       <section className="contact__image">
-        <div className="contact__content">
+        <div className="contact__content bg-dark bg-gradient">
           <h3 className="contact__title--color text-center text-uppercase p-5">
-            <span className="underline__title"> Contact</span>
+            <span className="underline__title text-light"> Contact</span>
           </h3>
           <div className='d-flex flex-wrap-reverse justify-content-evenly'>
-          <div className=" row g-0 mb-5 ">
+          <div className=" row g-0 mb-5 card border-warning bg-dark bg-gradient text-light" id='lienContact'>
             <div className="m-0 g-0 p-0">
               <div className="row p-3 align-items-center">
               <div className="text-center contact--color">
@@ -39,7 +39,7 @@ export default function Contact() {
                 <div className="text-center contact--color">
                   <EmailIcon />
                 <a 
-                className="nav-link underline__headerLinks nav__text--color contact--color contact__content__text p-0" 
+                className="nav-link underline__headerLinks nav__text--color text-light  contact--color contact__content__text p-0" 
                 href="mailto:lucaslengranddev@gmail.com">
                   lucaslengranddev@gmail.com
                 </a>
@@ -48,7 +48,7 @@ export default function Contact() {
               <div className="row p-3 align-items-center">
                 <div className="contact__icon text-center contact--color">
                   <PhoneIcon />
-                <a className="nav-link underline__headerLinks nav__text--color contact--color p-0 contact__content__text" href="tel:+33667007416">
+                <a className="nav-link underline__headerLinks nav__text--color text-light contact--color p-0 contact__content__text" href="tel:+33667007416">
                   +336 67 00 74 16
                 </a> 
               </div>
@@ -56,7 +56,7 @@ export default function Contact() {
               <div className="row p-3 align-items-center">
                 <div className="contact__icon text-center contact--color">
                   <EventAvailableIcon />
-                <span className="nav-link underline__headerLinks nav__text--color contact--color p-0 contact__content__text">
+                <span className="nav-link underline__headerLinks nav__text--color text-light contact--color p-0 contact__content__text">
                   <time dateTime="1996-08-24">24/08/1996</time>
                 </span>
               </div>
@@ -64,37 +64,38 @@ export default function Contact() {
               <div className="row p-3 align-items-center">
               <div className="contact__icon text-center contact--color">
                 <GitHubIcon />
-              <a className="nav-link underline__headerLinks nav__text--color contact--color contact__content__text p-0" href="https://github.com/Melliaganz" target="_blank" rel="noreferrer"> Melliaganz </a>.
+              <a className="nav-link underline__headerLinks nav__text--color text-light contact--color contact__content__text p-0" href="https://github.com/Melliaganz" target="_blank" rel="noreferrer"> Melliaganz </a>
               </div>
               </div>
               <div className="row p-3 align-items-center">
                 <div className="contact__icon text-center contact--color">
                   <LinkedInIcon />
-                <a className="nav-link underline__headerLinks nav__text--color contact--color contact__content__text p-0" href="http://www.linkedin.com/in/LucasLengrand">Lucas Lengrand</a>
+                <a className="nav-link underline__headerLinks nav__text--color contact--color text-light contact__content__text p-0" href="http://www.linkedin.com/in/LucasLengrand">Lucas Lengrand</a>
               </div>
               </div>
             </div>
           </div>
-          <div className='card bg-light' id="cardFormulaire">
+          <div className='card text-light
+           bg-dark bg-gradient border-warning mb-5' id="cardFormulaire">
       <div className=" card-header">Contactez moi ! <SendIcon /></div>
         <div className='card-body'>
         <form action={formSparkUrl} onSubmit={submitForm} className='row justify-content-center align-items-start' id="formulaire">
           <div className='row'>
             <div className='col'>
-          <label htmlFor="name">Nom et Prénom : </label>
+          <label htmlFor="name" className='form-label'>Nom et Prénom : </label>
           <div className='col'>
-          <input type="text" id="name" name="name" placeholder="Example: Marc Dupont" required={true} />
+          <input type="text" id="name" name="name" placeholder="Example: Marc Dupont" className='form-control' required={true} />
           </div>
           </div>
           <div className='col'>
-          <label htmlFor="email" >Email</label>
+          <label htmlFor="email" className='form-label' >Email :</label>
           <div className='col'>
-          <input type="email" id="email" name="email" aria-describedby='emailHelp' placeholder="Exemple: MarcDupont@gmail.com" required={true} />
+          <input type="email" id="email" name="email" aria-describedby='emailHelp' placeholder="Exemple: MarcDupont@gmail.com" className='form-control' required={true} />
           </div>
           </div>
           </div>
-        <div className='col'>
-          <label htmlFor="message" className='form-label'>Message</label>
+        <div className='col p-2 mt-4'>
+          <label htmlFor="message" className='form-label ms-3'>Message :</label>
           <textarea
           id="message"
           name="message"
@@ -105,9 +106,9 @@ export default function Contact() {
           ></textarea>
         </div>
           <ReCAPTCHA
-          className='d-flex align-items-center flex-column mb-3 mt-2'
+          className='d-flex align-items-center flex-column mb-3 mt-5'
           sitekey={recaptchaKey} />
-          <button disabled={submitting} type="submit" className="btn btn-primary col-4 mt-3">
+          <button disabled={submitting} type="submit" className="btn btn-warning col-4 mt-2">
           {submitting ? "Envoi !" : "Envoyer !"}
           </button>          
         </form>

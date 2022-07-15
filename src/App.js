@@ -4,7 +4,6 @@ import Header from './components/Header'
 import Resume from './components/Resume'
 import Contact from './components/Contact';
 import Formation from './components/Formation';
-import Langues from './components/Langues';
 import Portfolio from './components/Portfolio';
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
       <About />
       <Resume />
       <Formation />
-      <Langues />
       <Portfolio />
       <Contact />
 
