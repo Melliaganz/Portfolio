@@ -107,6 +107,7 @@ export default function Contact() {
         </div>
           <ReCAPTCHA
           aria-hidden="true"
+          value=""
           className='d-flex align-items-center flex-column mb-3 mt-5'
           sitekey={recaptchaKey}/>
           <button disabled={submitting} type="submit" className="btn btn-warning col-4 mt-2">
