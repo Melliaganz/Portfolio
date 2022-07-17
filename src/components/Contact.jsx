@@ -79,7 +79,14 @@ export default function Contact() {
            bg-dark bg-gradient border-warning mb-5' id="cardFormulaire">
       <div className=" card-header">Contactez moi ! <SendIcon /></div>
         <div className='card-body'>
-        <form action={formSparkUrl} onSubmit={submitForm} className='row justify-content-center align-items-start' id="formulaire">
+        <form 
+        action={formSparkUrl} 
+        onSubmit={submitForm} 
+        data-netlify-recaptcha="true" 
+        data-netlify="true" 
+        className='row justify-content-center align-items-start' 
+        id="formulaire"
+        >
           <div className='row'>
             <div className='col'>
           <label htmlFor="name" className='form-label'>Nom et Prénom : </label>
@@ -107,7 +114,6 @@ export default function Contact() {
         </div>
           <ReCAPTCHA
           aria-hidden="true"
-          value=""
           className='d-flex align-items-center flex-column mb-3 mt-5'
           sitekey={recaptchaKey}/>
           <button disabled={submitting} type="submit" className="btn btn-warning col-4 mt-2">
