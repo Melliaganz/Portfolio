@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Formation from './components/Formation';
 import Portfolio from './components/Portfolio';
 
+
 function App() {
   return (
     <main>

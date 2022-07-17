@@ -4,7 +4,7 @@ import CompetencecardWrapper from "./Competencecardwrapper"
 export default function Portfolio() {
   return (
     <div className="g-0 anchor">
-      <a href="/#portfolio" id="portfolio">&nbsp;</a>
+      <a href="/#portfolio" id="portfolio" aria-label='portfolio'>&nbsp;</a>
       
         <section className="formations__background--color border-start portfolio__image row g-0 ">
           <div className="p-0 m-0">

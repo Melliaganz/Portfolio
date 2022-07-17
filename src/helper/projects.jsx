@@ -3,21 +3,19 @@ import imageKanap from "../img/kanap.png"
 import imageGroupomania from "../img/Groupomania.png"
 import imagePiquante from "../img/piquante.png"
 import imageOhMyFood from "../img/ohmyfood.png"
-import logoHtml5 from "../img/HTML5 Logo.svg"
 import logoCss3 from "../img/css3.png"
 import logoSass from "../img/Sass_Logo_Color.svg"
 import logoJavascript from "../img/Unofficial_JavaScript_logo_2.svg"
 import logoBoostrap from "../img/Bootstrap_logo.svg"
 import logoNodejs from "../img/Node.js_logo.svg"
 import logoExpress from "../img/Expressjs.png"
-import logoMongoDB from "../img/2560px-MongoDB-Logo.svg.png"
-import logoMongoose from "../img/mongoose.png"
+import logoMongoose from "../img/mongoose.webp"
 import logoReact from "../img/React Logo.svg"
 import logoMySQL from "../img/MySQL.svg"
 import logoSequelize from "../img/sequelize-logo-9A5075DB9F-seeklogo.com.png"
 
 const iconHTML5 = {
-    icon: logoHtml5,
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png",
     alt: "HTML5",
     width: "48",
     height: "48",
@@ -55,20 +53,20 @@ const iconHTML5 = {
   const iconExpress = {
     icon: logoExpress,
     alt: "Express",
-    width: "120",
-    height: "48",
+    width: "155",
+    height: "47",
   }
   const iconMongoDb = {
-    icon: logoMongoDB,
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/320px-MongoDB_Logo.svg.png",
     alt: "MongoDB",
-    width: "120",
-    height: "48",
+    width: "160",
+    height: "43",
   }
   const iconMongoose = {
     icon: logoMongoose,
     alt: "Mongoose",
-    width: "48",
-    height: "48",
+    width: "82.625",
+    height: "40",
   }
   const iconReact = {
     icon: logoReact,
@@ -85,8 +83,8 @@ const iconHTML5 = {
   const iconSequelize = {
     icon: logoSequelize,
     alt: "Sequelize",
-    width: "48",
-    height: "48",
+    width: "65",
+    height: "75",
   }
 
   const projects = {
@@ -94,7 +92,7 @@ const iconHTML5 = {
       title: `Créez un réseau social d’entreprise`,
       details: (
         <div className='col formation__title my-auto me-lg-2 mx-auto'>
-          <h4 className='text-uppercase'>scenario</h4>
+          <h3 className='text-uppercase'>scenario</h3>
           <p>
           Vous êtes développeur depuis plus d'un an chez CONNECT-E, une petite agence web regroupant une douzaine d'employés.
           Votre directrice, Stéphanie, vient de signer un nouveau contrat avec Groupomania, 
@@ -120,7 +118,7 @@ const iconHTML5 = {
         title: "Construire une API sécurisée",
         details: (
             <div className='col formation__title my-auto me-lg-2 mx-auto'>
-                <h4 className='text-uppercase'>scénario</h4>
+                <h3 className='text-uppercase'>scénario</h3>
                 <p>
                 Vous avez passé la dernière année en tant que développeur back-end indépendant et vous avez travaillé sur plusieurs projets de tailles et de difficultés variées.
                 La semaine dernière, vous avez reçu un message sur votre plateforme de freelance vous demandant de l'aide pour un nouveau projet. Les sauces piquantes sont de plus en plus populaires, en grande partie grâce à la série YouTube « Hot Ones » . 
@@ -145,7 +143,7 @@ const iconHTML5 = {
       title: "Construisez un site e-commerce en JavaScript",
       details: (
         <div className="col formation__title my-auto me-lg-2 mx-auto">
-          <h4 className="text-uppercase">scénario</h4>
+          <h3 className="text-uppercase">scénario</h3>
           <p>
           Vous êtes en poste dans une agence de développement web depuis quelques semaines maintenant. 
           Après avoir réalisé avec succès l’intégration de quelques sites web (HTML/CSS), on vous confie une nouvelle mission.
@@ -171,7 +169,7 @@ const iconHTML5 = {
       title: "Dynamisez une page web avec des animations CSS",
       details: (
         <div className="col formation__title my-auto me-lg-2 mx-auto">
-          <h4 className="text-uppercase">scénario</h4>
+          <h3 className="text-uppercase">scénario</h3>
           <p>
           Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !
           Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. 

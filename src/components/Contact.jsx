@@ -18,7 +18,7 @@ export default function Contact() {
   }
   return (
     <div className="g-0 anchor">
-      <a href="/#contact" id="contact">&nbsp;</a>
+      <a href="/#contact" id="contact" aria-label='contact'>&nbsp;</a>
       <section className="contact__image">
         <div className="contact__content bg-dark bg-gradient">
           <h3 className="contact__title--color text-center text-uppercase p-5">
@@ -90,7 +90,7 @@ export default function Contact() {
           <div className='col'>
           <label htmlFor="email" className='form-label' >Email :</label>
           <div className='col'>
-          <input type="email" id="email" name="email" aria-describedby='emailHelp' placeholder="Exemple: MarcDupont@gmail.com" className='form-control' required={true} />
+          <input type="email" id="email" name="email" placeholder="Exemple: MarcDupont@gmail.com" className='form-control' required={true} />
           </div>
           </div>
           </div>

@@ -7,7 +7,7 @@ const Header = () => {
     <header>
       <nav className='navbar navbar-expand-lg navbar-light border-top border-bottom bg-light fixed-top p-0' id="header">
         <div className='container-fluid'>
-          <a className='navbar-brand' href='#home'>
+          <a className='navbar-brand' alt="Accueil" href='#home'>&nbsp;
             <Image
               id="photoHeader"
               src={Lucas}

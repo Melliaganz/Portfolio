@@ -11,7 +11,7 @@ import OC from '../img/OC.webp'
 export default function Formation() {
   return (
     <div className="g-0 anchor">
-        <a href="/#formations" id="formations">&nbsp;</a>
+        <a href="/#formations" id="formations" aria-label='formation'>&nbsp;</a>
         <section className="formations__background--color border-start row g-0 bg-info bg-gradient">
             <div className="p-0 m-0">
                 <h3 className="text-center formations__title--color my-5 text-uppercase">
@@ -22,7 +22,7 @@ export default function Formation() {
                 <div className="row g-0 mb-5">
                     <section className="col-lg-3 text-center mx-auto me-lg-0 my-auto">
                         <div className="gatsby-image-wrapper gatsby-image-wrapper-constrained img-fluid mb-2">
-                            <Image type="image/webp"alt='PhotoOpenClassNameroom' src={OC} width={50} />
+                            <Image type="image/webp"alt='PhotoOpenClassNameroom' src={OC} width={50} height={50} />
                         </div>
                         <h3 className="h4 formation__title">
                             <a href="https://openclassrooms.com/fr/paths/556-developpeur-web">
@@ -66,7 +66,9 @@ export default function Formation() {
                                     <Image 
                                     src="https://www.csrsaguenay.qc.ca/wp-content/uploads/2020/02/Logo_CFP-Grand-Fjord-150x150.png"
                                     alt="logo-CFP"
-                                    width={50} />
+                                    width={50}
+                                    height={50}
+                                     />
                                     Centre de formation professionnelle du Grand-Fjord
                                 </Typography>
                             </AccordionSummary>
@@ -79,6 +81,7 @@ export default function Formation() {
                                             src="https://www.csrsaguenay.qc.ca/wp-content/uploads/2020/02/Logo_CFP-Grand-Fjord-150x150.png"
                                             alt="logo-CFP"
                                             width={100}
+                                            height={100}
                                             />
                                             <h3 className="h4 formation__title">
                                                 <a href="http://www.cfpsaguenay.qc.ca/">
@@ -134,9 +137,11 @@ export default function Formation() {
                             className='bg-primary bg-gradient'>
                                 <Typography component= {'span'} variant={'body2'}>
                                     <Image 
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Paris_VIII.svg/langfr-1920px-Paris_VIII.svg.png" 
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Paris_VIII.svg/294px-Paris_VIII.svg.png" 
                                     alt="logo-ParisVIII" 
-                                    width={50} />
+                                    width={73.5} 
+                                    height={41}
+                                    />
                                     Université Paris 8
                                 </Typography>
                             </AccordionSummary>
@@ -146,9 +151,10 @@ export default function Formation() {
                                         <section className="col-lg-3 text-center mx-auto me-lg-0 my_auto">
                                             <div className="gatsby-image-wrapper gatsby-image-wrapper-constrained img-fluid mb-2">
                                                 <Image 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Paris_VIII.svg/langfr-1920px-Paris_VIII.svg.png"
+                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Paris_VIII.svg/294px-Paris_VIII.svg.png"
                                                 alt="logo-ParisVIII"
-                                                width={100}
+                                                width={147}
+                                                height={82}
                                                 />
                                                 <h3 className="h4 formation__title">
                                                    <a href="https://www.univ-paris8.fr/">
@@ -187,7 +193,8 @@ export default function Formation() {
                                     <Image 
                                     src="https://upload.wikimedia.org/wikipedia/commons/0/07/SAE_Institute_Logo.png" 
                                     alt="logo-SAE"
-                                    width={50} />
+                                    width={42.5}
+                                    height={32.5} />
                                     SAE Institute
                                     </Typography>
                                     </AccordionSummary>
@@ -199,7 +206,8 @@ export default function Formation() {
                                                         <Image 
                                                         src="https://upload.wikimedia.org/wikipedia/commons/0/07/SAE_Institute_Logo.png"
                                                         alt="logo-SAE"
-                                                        width={100}
+                                                        width={170}
+                                                        height={130}
                                                         />
                                                     </div>
                                                     <h3 className="h4 formation__title">
@@ -230,7 +238,11 @@ export default function Formation() {
                             id="panel4a-header"
                             className='bg-primary bg-gradient'>
                                 <Typography component= {'span'} variant={'body2'}>
-                                    <Image src="https://static.wixstatic.com/media/7903c0_543cb7973543494a837043b5eb302721~mv2.png/v1/fill/w_296,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7903c0_543cb7973543494a837043b5eb302721~mv2.png" alt="logo-BTMM" width={50} /> 
+                                    <Image src="https://static.wixstatic.com/media/7903c0_543cb7973543494a837043b5eb302721~mv2.png/v1/fill/w_296,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7903c0_543cb7973543494a837043b5eb302721~mv2.png" 
+                                    alt="logo-BTMM" 
+                                    width={50} 
+                                    height={50}
+                                    /> 
                                     Brevet de Technicien des métiers de la musique</Typography>
                             </AccordionSummary>
                             <AccordionDetails>
@@ -238,7 +250,11 @@ export default function Formation() {
                                     <div className="row g-0 ">
                                     <section className="col-lg-3 text-center mx-auto me-lg-0 my_auto">
                                         <div className="gatsby-image-wrapper gatsby-image-wrapper-constrained img-fluid mb-2">
-                                            <Image src="https://static.wixstatic.com/media/7903c0_543cb7973543494a837043b5eb302721~mv2.png/v1/fill/w_296,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7903c0_543cb7973543494a837043b5eb302721~mv2.png" alt="PhotoBTMM" width={70}/>
+                                            <Image src="https://static.wixstatic.com/media/7903c0_543cb7973543494a837043b5eb302721~mv2.png/v1/fill/w_296,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7903c0_543cb7973543494a837043b5eb302721~mv2.png" 
+                                            alt="PhotoBTMM" 
+                                            width={70}
+                                            height={70}
+                                            />
                                         </div>
                                         <h3 className="h4 formation__title">
                                             <a href="https://btmmsevres.wixsite.com/btmmsevres" >Brevet de Technicien des métiers de la musique</a>
