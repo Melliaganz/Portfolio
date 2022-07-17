@@ -24,20 +24,20 @@ export default function About() {
         </div>
         <div className="col-12 col-md-6 text-center text-md-center home__title" id="blocTextAbout">
               <div>
-                <h2 className='preface__title h1 preface__surname display-3'>
+                <h2 className='preface__title h1 preface__surname display-3' id="nomAbout">
                   Lucas
                 </h2>
               </div>
               <div>
-                <h1 className='preface__title h1 preface__surname display-3'>
+                <h1 className='preface__title h1 preface__surname display-3' id="nomAbout">
                   Lengrand
                 </h1>
               </div>
             <p className="col-12 col-md-12 preface--color text-justify mb-5 preface_logoBot font-monospace text-center text-md-center">Développeur web</p>
-            <p className="col-10 offset-1 offset-md-0 col-md-12 my-4 preface--color text-justify preface__logoBot ">
+            <p className="col-10 offset-1 offset-md-0 col-md-12 my-4 preface--color text-justify preface__logoBot" id="descriptionAbout">
                 Depuis toujours passionné par les systèmes informatiques et notamment le <b>Développement Informatique</b>, je vous accompagnerai dans vos différents projets <b>digitales</b> ou la création de vos <b>applications web</b>.
             </p>
-            <p className="col-12 col-md-12 preface--color text-justify mb-5 preface__logoBot font-monospace text-center text-md-start">
+            <p className="col-12 col-md-12 preface--color text-justify mb-5 preface__logoBot font-monospace text-center text-md-start" id="codeAbout">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" height={25} alt={<HtmlIcon />} /> <a href="https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/HTML_basics" >HTML</a> | 
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt={<CssIcon />} height={25} /> <a href="https://developer.mozilla.org/fr/docs/Web/CSS" >CSS</a> | 
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt={<JavascriptIcon />} height={25} /> <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" >JavaScript</a> | 

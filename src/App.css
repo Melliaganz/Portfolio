@@ -55,7 +55,7 @@ svg {
   border-color: #ffc107 !important;
 }
 #photoAbout{
-  border-radius: 80px;
+  border-radius: 100px 100px 100px 100px;
 }
 #blocTextAbout{
   margin-bottom: 15px;
@@ -78,29 +78,27 @@ svg {
   }
 }
 
-#blocTextAbout,#photoAbout{
-  animation-duration: 5s;
-  animation-name: slidein;
-}
-@keyframes slidein {
-  from {
-    padding-top: 100%;
-  }
-  to{
-    padding-top: 0%;
-  }
+#blocTextAbout{
+  animation-duration: 10s;
+  animation-name: opacity;
 }
 
 #header {
-  animation-duration: 5s;
-  animation-name: slideleft
+  animation-duration: 2s;
+  animation-name: opacity
 }
 
-@keyframes slideleft {
+#photoAbout {
+  animation-duration: 5s;
+  animation-name: opacity;
+}
+
+@keyframes opacity {
   from {
-    margin-left: 90%
+    opacity: 0%
   }
   to {
-    margin-left: 0%;
+    opacity: 100%;
   }
 }
+

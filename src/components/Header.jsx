@@ -32,7 +32,7 @@ const Header = () => {
             <div className='navbar-nav col justify-content-around text-center'>
             <a
                 className='nav-link underline__headerLinks nav__text--color '
-                href='#Resume'>
+                href='#resume'>
                 <span
                   data-bs-toggle='collapse'
                   data-bs-target='#navbarNavAltMarkup'
