@@ -84,18 +84,8 @@ svg {
   }
 }
 
-#blocTextAbout{
-  animation-duration: 10s;
-  animation-name: opacity;
-}
-
-#header {
-  animation-duration: 2s;
-  animation-name: opacity
-}
-
-#photoAbout {
-  animation-duration: 5s;
+#blocTextAbout, #photoAbout, #header{
+  animation-duration: 3s;
   animation-name: opacity;
 }
 
