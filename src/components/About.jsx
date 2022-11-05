@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from '../img/CV_Lucas.pdf'
+import resume from '../img/CV de Lucas Lengrand.pdf'
 import { Image } from 'react-bootstrap'
 
 import Portrait from '../img/Portrait.webp'

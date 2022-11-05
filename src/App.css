@@ -83,7 +83,17 @@ svg {
     flex-wrap: wrap-reverse;
   }
 }
+@media only screen and (min-width: 1080px) {
+  .menuDrop{
+    display: none;
+  }
+}
 
+@media only screen and (max-with: 1080px) {
+  .menuDrop{
+    display: flex;
+  }
+}
 #blocTextAbout, #photoAbout, #header{
   animation-duration: 3s;
   animation-name: opacity;
@@ -97,4 +107,3 @@ svg {
     opacity: 100%;
   }
 }
-

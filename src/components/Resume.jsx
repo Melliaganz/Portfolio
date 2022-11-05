@@ -13,10 +13,11 @@ export default function Resume() {
             </h2>
             <p className="text-justify portrait__text--color mb-5 col-md-8 offset-md-2 text-center">
             Après plusieurs années d'études dans le domaine du son, j'ai fait une
-            reconversion dans le développement web suite a un accident de la route.
-            Ayant toujours été intéressé par l'informatique, j'ai pu intégrer la formation
-            d'Openclassrooms et comprendre le métier de Développeur web assez vite.
-            Mon but a terme serai de me lancer en free-lance.
+            reconversion dans le développement web. 
+            Ayant depuis toujours été intéressé par l'informatique, j'ai pu intégrer
+            la formation d'OpenClassrooms et comprendre le métier de
+            Développeur web assez vite.
+            Mon but serait de vous offrir mes compétences et mon savoir-faire.
             </p>
         </div>
     </section>
