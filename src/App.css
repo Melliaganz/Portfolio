@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+body{
+  font-family: "Roboto", sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -44,6 +63,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:hover{
+  text-decoration: underline;
+  color: blue;
+}
 .imageSRC {
   object-fit: cover;
 }
@@ -64,7 +87,10 @@ svg {
   border-radius: 100px 100px 100px 100px;
 }
 #blocTextAbout{
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
   margin-bottom: 15px;
+  padding: 20px;
 }
 @media screen and (min-width: 800px) {
   #blocTextAbout{
@@ -83,6 +109,24 @@ svg {
     flex-wrap: wrap-reverse;
   }
 }
+.scroll-up{
+  z-index: 1000;
+  position: fixed;
+  right: 0.5%;
+  bottom:3%;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+.scroll-up:hover{
+  opacity: 1;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
 @media only screen and (min-width: 1080px) {
   .menuDrop{
     display: none;
@@ -99,11 +143,25 @@ svg {
   animation-name: opacity;
 }
 
+footer{
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
 @keyframes opacity {
   from {
     opacity: 0%
   }
   to {
     opacity: 100%;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0.5;
   }
 }

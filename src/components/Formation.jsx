@@ -12,7 +12,7 @@ export default function Formation() {
   return (
     <div className="g-0 anchor">
         <a href="/#formations" id="formations" aria-label='formation'>&nbsp;</a>
-        <section className="formations__background--color border-start row g-0 bg-info bg-gradient">
+        <section className="formations__background--color border-start row g-0 ">
             <div className="p-0 m-0">
                 <h3 className="text-center formations__title--color my-5 text-uppercase">
                     <span className="underline__title">
@@ -56,12 +56,11 @@ export default function Formation() {
                     </div>
 
                     
-                    <div className="accordion ">
+                    <div className="accordion shadow ">
                         <Accordion>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
-                            id="panel1a-header"
-                            className='bg-primary bg-gradient'>
+                            id="panel1a-header">
                                 <Typography component= {'span'} variant={'body2'}>
                                     <Image 
                                     src="https://www.csrsaguenay.qc.ca/wp-content/uploads/2020/02/Logo_CFP-Grand-Fjord-150x150.png"
@@ -133,8 +132,7 @@ export default function Formation() {
                         <Accordion>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel2a-content"
-                            id="panel2a-header"
-                            className='bg-primary bg-gradient'>
+                            id="panel2a-header">
                                 <Typography component= {'span'} variant={'body2'}>
                                     <Image 
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Paris_VIII.svg/294px-Paris_VIII.svg.png" 
@@ -187,8 +185,7 @@ export default function Formation() {
                             <AccordionSummary 
                             expandIcon={<ExpandMoreIcon/>}
                             aria-controls="panel3a-content"
-                            id="panel3a-header"
-                            className='bg-primary bg-gradient'>
+                            id="panel3a-header">
                                 <Typography component= {'span'} variant={'body2'}>
                                     <Image 
                                     src="https://upload.wikimedia.org/wikipedia/commons/0/07/SAE_Institute_Logo.png" 
@@ -235,8 +232,7 @@ export default function Formation() {
                             <Accordion TransitionProps={{ unmountOnExit:true}} >
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel4a-content"
-                            id="panel4a-header"
-                            className='bg-primary bg-gradient'>
+                            id="panel4a-header">
                                 <Typography component= {'span'} variant={'body2'}>
                                     <Image src="https://static.wixstatic.com/media/7903c0_543cb7973543494a837043b5eb302721~mv2.png/v1/fill/w_296,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7903c0_543cb7973543494a837043b5eb302721~mv2.png" 
                                     alt="logo-BTMM" 

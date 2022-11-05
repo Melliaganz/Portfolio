@@ -1,21 +1,22 @@
 import './App.css';
 import About from './components/About';
 import Header from './components/Header'
-import Resume from './components/Resume'
 import Contact from './components/Contact';
 import Formation from './components/Formation';
 import Portfolio from './components/Portfolio';
-
+import Footer from './components/Footer';
+import ScrollupButton from './components/ScrollupButton';
 
 function App() {
   return (
-    <main>
+    <main class="main">
       <Header />
+      <ScrollupButton />
       <About />
-      <Resume />
       <Formation />
       <Portfolio />
       <Contact />
+      <Footer />
     </main>
   );
 }

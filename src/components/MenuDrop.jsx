@@ -1,11 +1,9 @@
 import React from 'react'
 import { Dropdown } from 'react-bootstrap'
-import MenuIcon from '@mui/icons-material/Menu';
 function MenuDrop() {
   return (
     <Dropdown className='menuDrop'>
-            <Dropdown.Toggle variant="warning" id="dropdown-basic">
-            <MenuIcon />
+            <Dropdown.Toggle className='border-light bg-light text-dark'>
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item href='#resume'>Résumé</Dropdown.Item>

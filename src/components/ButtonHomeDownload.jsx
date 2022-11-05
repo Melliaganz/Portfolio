@@ -3,7 +3,7 @@ import React from "react"
 const ButtonHomeDownload = ({ text = null, href = null, target = null, ariaLabel = null, download = null, imageSRC = null, imageALT = null }) => {
   return (
     <a
-      className='btn btn-light btn-base rounded-4 border-warning shadow col-auto preface__logoBot'
+      className='btn btn-light btn-base rounded-3 border shadow col-auto preface__logoBot'
       href={href}
       target={target}
       download={download}

@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div className='anchor'>
       <a href="/#home" id='home' aria-label='home'>&nbsp;</a>
-    <section id="about"className='container-fluid preface__background--color preface__section mb-5 bg-warning'>
+    <section id="about"className='container-fluid preface__background--color preface__section mb-5 '>
         <div className="row justify-content-end align-items-center preface">
             <div className='col-sm-5 text-center'>
                 <div className="text-center  py-5" id="blocAbout">
@@ -47,13 +47,8 @@ export default function About() {
             id="bouttonCV"
             text='CV'
             href={resume}
-            download='Lengrand-Lucas'
+            download='CV de Lucas Lengrand'
             />
-        </div>
-        <div className="row justify-content-center mb-5 preface__logoBot">
-            <hr className="col my-auto hr__left">
-            
-            </hr>
         </div>
     </section>
     </div>

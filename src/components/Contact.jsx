@@ -20,12 +20,12 @@ export default function Contact() {
     <div className="g-0 anchor">
       <a href="/#contact" id="contact" aria-label='contact'>&nbsp;</a>
       <section className="contact__image">
-        <div className="contact__content bg-dark bg-gradient">
+        <div className="contact__content">
           <h3 className="contact__title--color text-center text-uppercase p-5">
-            <span className="underline__title text-light"> Contact</span>
+            <span className="underline__title"> Contact</span>
           </h3>
           <div className='d-flex flex-wrap-reverse justify-content-evenly'>
-          <div className=" row g-0 mb-5 card border-warning bg-dark bg-gradient text-light" id='lienContact'>
+          <div className=" row g-0 mb-5 card shadow" id='lienContact'>
             <div className="m-0 g-0 p-0">
               <div className="row p-3 align-items-center">
               <div className="text-center contact--color">
@@ -39,7 +39,7 @@ export default function Contact() {
                 <div className="text-center contact--color">
                   <EmailIcon />
                 <a 
-                className="nav-link underline__headerLinks nav__text--color text-light  contact--color contact__content__text p-0" 
+                className="nav-link underline__headerLinks nav__text--color   contact--color contact__content__text p-0  text-dark" 
                 href="mailto:lucaslengranddev@gmail.com">
                   lucaslengranddev@gmail.com
                 </a>
@@ -48,15 +48,15 @@ export default function Contact() {
               <div className="row p-3 align-items-center">
                 <div className="contact__icon text-center contact--color">
                   <PhoneIcon />
-                <a className="nav-link underline__headerLinks nav__text--color text-light contact--color p-0 contact__content__text" href="tel:+33667007416">
+                <a className="nav-link underline__headerLinks nav__text--color  contact--color p-0 contact__content__text  text-dark" href="tel:+33667007416">
                   +336 67 00 74 16
                 </a> 
               </div>
               </div>
               <div className="row p-3 align-items-center">
-                <div className="contact__icon text-center contact--color">
+                <div className="contact__icon text-center contact--color  text-dark">
                   <EventAvailableIcon />
-                <span className="nav-link underline__headerLinks nav__text--color text-light contact--color p-0 contact__content__text">
+                <span className="nav-link underline__headerLinks nav__text--color contact--color p-0 contact__content__text  text-dark">
                   <time dateTime="1996-08-24">24/08/1996</time>
                 </span>
               </div>
@@ -64,19 +64,19 @@ export default function Contact() {
               <div className="row p-3 align-items-center">
               <div className="contact__icon text-center contact--color">
                 <GitHubIcon />
-              <a className="nav-link underline__headerLinks nav__text--color text-light contact--color contact__content__text p-0" href="https://github.com/Melliaganz" target="_blank" rel="noreferrer"> Melliaganz </a>
+              <a className="nav-link underline__headerLinks nav__text--color contact--color contact__content__text p-0  text-dark" href="https://github.com/Melliaganz" target="_blank" rel="noreferrer"> Melliaganz </a>
               </div>
               </div>
               <div className="row p-3 align-items-center">
                 <div className="contact__icon text-center contact--color">
                   <LinkedInIcon />
-                <a className="nav-link underline__headerLinks nav__text--color contact--color text-light contact__content__text p-0" href="http://www.linkedin.com/in/LucasLengrand">Lucas Lengrand</a>
+                <a className="nav-link underline__headerLinks nav__text--color contact--color  contact__content__text  text-dark p-0" href="http://www.linkedin.com/in/LucasLengrand">Lucas Lengrand</a>
               </div>
               </div>
             </div>
           </div>
-          <div className='card text-light
-           bg-dark bg-gradient border-warning mb-5' id="cardFormulaire">
+          <div className='card shadow
+           mb-5' id="cardFormulaire">
       <div className=" card-header">Contactez moi ! <SendIcon /></div>
         <div className='card-body'>
         <form 
