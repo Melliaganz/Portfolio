@@ -32,7 +32,7 @@ export default function About() {
             <p className="col-10 offset-1 offset-md-0 col-md-12 my-4 preface--color text-justify preface__logoBot" id="descriptionAbout">
                 Depuis toujours passionné par les systèmes informatiques et notamment le <b>Développement Informatique</b>, je vous accompagnerai dans vos différents projets <b>digitales</b> ou la création de vos <b>applications web</b>.
             </p>
-            <p className="col-12 col-md-12 preface--color text-justify mb-5 preface__logoBot font-monospace text-center text-md-start" id="codeAbout">
+            <p className="col-12 col-md-12 preface--color text-justify mb-5 preface__logoBot text-center text-md-start" id="codeAbout">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" height={25} width={25} alt="HTMLIcon" /> <a href="https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/HTML_basics" >HTML</a> | 
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="Css Logo" height={25} width={25} /> <a href="https://developer.mozilla.org/fr/docs/Web/CSS" >CSS</a> | 
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="Javascript Logo" height={20.65625} width={18.75} /> <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" >JavaScript</a> | 

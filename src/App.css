@@ -20,7 +20,12 @@ body{
 .App {
   text-align: center;
 }
-
+#codeAbout{
+  font-family:'Courier New', Courier, monospace;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -63,10 +68,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-a:hover{
-  text-decoration: underline;
-  color: blue;
-}
 .imageSRC {
   object-fit: cover;
 }
@@ -74,7 +75,7 @@ svg {
   fill: currentColor;
 }
 .btn-light:hover{
-  background-color: #ffc107;
+  background-color: rgb(233, 233, 233);
   color: #282c34;
 }
 #photoHeader{
@@ -112,7 +113,7 @@ svg {
 .scroll-up{
   z-index: 1000;
   position: fixed;
-  right: 0.5%;
+  right: 2%;
   bottom:3%;
   cursor: pointer;
   animation: fadeIn 0.3s;
