@@ -13,19 +13,19 @@ export default function Formation() {
     <div className="g-0 anchor">
         <a href="/#formations" id="formations" aria-label='formation'>&nbsp;</a>
         <section className="formations__background--color border-start row g-0 ">
-            <div className="p-0 m-0">
+            <div className="p-5 m-0">
                 <h3 className="text-center formations__title--color my-5 text-uppercase">
                     <span className="underline__title">
                         Formations
                     </span>
                 </h3>
-                <div className="row g-0 mb-5">
-                    <section className="col-lg-3 text-center mx-auto me-lg-0 my-auto">
+                <div className="row g-0 mb-0">
+                    <section className="col-lg-2 text-center mx-auto me-lg-0 my-auto">
                         <div className="gatsby-image-wrapper gatsby-image-wrapper-constrained img-fluid mb-2">
                             <Image type="image/webp"alt='PhotoOpenClassNameroom' src={OC} width={50} height={50} />
                         </div>
                         <h3 className="h4 formation__title">
-                            <a href="https://openclassrooms.com/fr/paths/556-developpeur-web">
+                            <a href="https://openclassrooms.com/fr/paths/556-developpeur-web" alt="OpenClassroom" target="_blank" rel="noopener noreferrer">
                             Open
                             <wbr />
                             Classrooms

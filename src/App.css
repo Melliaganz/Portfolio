@@ -1,21 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
-:root {
-  --font-family: "Roboto", sans-serf;
-  --normal-font: 400;
-  --bold-font: 700;
-  --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
-  --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
-  --transition: 0.3s;
+
+b{
+  color: #2596be;
+}
+#formations{
+  width:50px
+}
+#nomAbout{
+  color: #2596be;
+}
+.navbar a {
+  color: #2596be;
 }
 body{
   font-family: "Roboto", sans-serif;
+}
+.bouttonCV{
+  border-color: #2596be;
+}
+.btn-light {
+  color: white;
+  border-color: #2596be;
+  background-color: #2596be;
 }
 .App {
   text-align: center;
@@ -26,30 +32,18 @@ body{
   flex-wrap: wrap;
   justify-content: center;
 }
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.hr {
-  border: #61dafb;
-  opacity: inherit;
-}
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.socials {
+  z-index:9999;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: fixed;
+  right: 1%;
+  bottom: 50%;
+  color:#2596be;
+}
+
+.contact--color{
+  color: #2596be;
 }
 
 .App-link {
@@ -69,18 +63,17 @@ a {
   color: inherit;
 }
 .imageSRC {
-  object-fit: cover;
+  object-fit: contain;
 }
 svg {
   fill: currentColor;
 }
 .btn-light:hover{
   background-color: rgb(233, 233, 233);
-  color: #282c34;
+  color: #2596be;
 }
 #photoHeader{
   border-radius: 80px;
-  border-color: #ffc107 !important;
 }
 #photoAbout{
   width: 170px;
@@ -123,7 +116,18 @@ svg {
 .scroll-up:hover{
   opacity: 1;
 }
-
+.btn-warning{
+  border-color: #2596be;
+  background-color: #2596be;
+  color: white;
+}
+.btn-warning:hover{
+  border-color: #2596be;
+  background-color: white;
+}
+.btn-warning:valid{
+  background-color: #2596be;
+}
 .up-arrow {
   width: 3rem;
   height: 3rem;

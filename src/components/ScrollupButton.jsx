@@ -21,13 +21,12 @@ function ScrollupButton() {
   window.addEventListener('scroll', checkScrollTop)
 
   return (
-    <i class="scroll-up" id="scroll-up"
+    <i className="scroll-up" id="scroll-up"
     ><ArrowUpwardIcon
-      src="assets/icons/icons8-upward-arrow.gif"
       className="up-arrow"
       onClick={scrollTop}
       alt="scroll-up"
-      style={{height: 40, display: showScroll ? 'flex' : 'none'}}
+      style={{display: showScroll ? 'flex' : 'none'}}
   /></i>
   )
 }
