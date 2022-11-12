@@ -11,29 +11,33 @@ function Socials() {
         alt="Twitter"
         loading="lazy"
         target="_blank"
-        rel="noopener noreferrer">
-            <TwitterIcon /> &nbsp;
+        rel="noopener noreferrer"
+        aria-label="Twitter">
+            <TwitterIcon /> 
         </a>
         <a href="http://www.linkedin.com/in/LucasLengrand"
         alt="linkedin"
         loading="lazy"
         target="_blank"
-        rel="noopener noreferrer">
-            <LinkedIn />&nbsp;
+        rel="noopener noreferrer"
+        aria-label='linkedin'>
+            <LinkedIn />
         </a>
         <a href="https://github.com/Melliaganz"
         alt="github"
         loading="lazy"
         target="_blank"
-        rel="noopener noreferrer">
-            <GitHub />&nbsp;
+        rel="noopener noreferrer"
+        aria-label="GitHub">
+            <GitHub />
         </a>
         <a href="mailto:lucaslengranddev@gmail.com" 
         alt="mail"
         loading="lazy"
         target="_blank"
-        rel="noopener noreferrer">
-            <Email />&nbsp;
+        rel="noopener noreferrer"
+        aria-label="Email">
+            <Email />
         </a>
     </div>
   )

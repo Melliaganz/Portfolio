@@ -2,10 +2,7 @@
 html{
   color-scheme: dark;
 }
-nav{
-  width: 100vw;
-  background-color: 
-}
+
 #backgroundImg{
   background-repeat: no-repeat;
   background-position: top center;
@@ -31,7 +28,16 @@ b{
 body{
   font-family: "Roboto", sans-serif;
 }
-
+.btn-primary{
+  background-color: transparent;
+  border: none;
+}
+.btn-primary:hover{
+  background-color: transparent;
+}
+.btn-primary:active{
+  background-color: transparent;
+}
 .btn-light {
   border: none;
   color: white;

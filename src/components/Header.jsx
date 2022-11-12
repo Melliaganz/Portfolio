@@ -66,6 +66,7 @@ const Header = () => {
                   Contact
                 </span>
               </a>
+              <div className="animation start-home"></div>
             </div>
           </div>
         </div>
