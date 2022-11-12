@@ -6,7 +6,7 @@ function MenuDrop() {
             <Dropdown.Toggle>
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item href='#Home'>Accueil</Dropdown.Item>
+              <Dropdown.Item href='#home'>Accueil</Dropdown.Item>
               <Dropdown.Item href='#formations'> Formations</Dropdown.Item>
               <Dropdown.Item href='#portfolio'>PortFolio</Dropdown.Item>
               <Dropdown.Item href='#contact'>Contact</Dropdown.Item>
