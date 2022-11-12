@@ -3,6 +3,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedIn from '@mui/icons-material/LinkedIn';
 import GitHub from '@mui/icons-material/GitHub';
 import Email from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 function Socials() {
   return (
@@ -38,6 +39,14 @@ function Socials() {
         rel="noopener noreferrer"
         aria-label="Email">
             <Email />
+        </a>
+        <a href="https://www.instagram.com/melliaganz/"
+        alt="instagram"
+        loading="lazy"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label='Instagram'>
+            <InstagramIcon />
         </a>
     </div>
   )
