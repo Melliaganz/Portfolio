@@ -12,28 +12,28 @@ function Socials() {
         loading="lazy"
         target="_blank"
         rel="noopener noreferrer">
-            <TwitterIcon />
+            <TwitterIcon /> &nbsp;
         </a>
         <a href="http://www.linkedin.com/in/LucasLengrand"
         alt="linkedin"
         loading="lazy"
         target="_blank"
         rel="noopener noreferrer">
-            <LinkedIn />
+            <LinkedIn />&nbsp;
         </a>
         <a href="https://github.com/Melliaganz"
         alt="github"
         loading="lazy"
         target="_blank"
         rel="noopener noreferrer">
-            <GitHub />
+            <GitHub />&nbsp;
         </a>
         <a href="mailto:lucaslengranddev@gmail.com" 
         alt="mail"
         loading="lazy"
         target="_blank"
         rel="noopener noreferrer">
-            <Email />
+            <Email />&nbsp;
         </a>
     </div>
   )

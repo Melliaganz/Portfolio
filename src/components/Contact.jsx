@@ -114,6 +114,7 @@ export default function Contact() {
         </div>
         <input type="hidden" name="_redirect" value="https://portfolio-melliaganz.vercel.app/" />
           <ReCAPTCHA
+          aria-label='reCAPTCHA'
           aria-hidden="true"
           className='d-flex align-items-center flex-column mb-3 mt-5'
           sitekey={recaptchaKey}/>
