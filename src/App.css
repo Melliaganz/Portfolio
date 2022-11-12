@@ -1,11 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
-
+html{
+  color-scheme: dark;
+}
+nav{
+  width: 100vw;
+  background-color: 
+}
+#backgroundImg{
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 b{
   color: #2596be;
 }
 #formations{
   width:50px
 }
+
+.card{
+  border-radius: 15px;;
+  background-color: transparent;
+}
+
 #nomAbout{
   color: #2596be;
 }
@@ -15,13 +31,18 @@ b{
 body{
   font-family: "Roboto", sans-serif;
 }
-.bouttonCV{
-  border-color: #2596be;
-}
+
 .btn-light {
+  border: none;
   color: white;
-  border-color: #2596be;
-  background-color: #2596be;
+  background: #2596be;
+  border-radius: 25px 25px 25px 25px;
+}
+.btn-light:hover{
+  background-color: transparent;
+  background-image: linear-gradient(145deg, #f0f0f0, #f3f3f3);
+  color: #2596be;
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff
 }
 .App {
   text-align: center;
@@ -68,10 +89,6 @@ a {
 svg {
   fill: currentColor;
 }
-.btn-light:hover{
-  background-color: rgb(233, 233, 233);
-  color: #2596be;
-}
 #photoHeader{
   border-radius: 80px;
 }
@@ -79,6 +96,7 @@ svg {
   width: 170px;
   height: 170px;
   border-radius: 100px 100px 100px 100px;
+  border: 15px solid #2596be
 }
 #blocTextAbout{
   border-radius: 11px;
@@ -115,11 +133,6 @@ svg {
 }
 .scroll-up:hover{
   opacity: 1;
-}
-.btn-warning{
-  border-color: #2596be;
-  background-color: #2596be;
-  color: white;
 }
 .btn-warning:hover{
   border-color: #2596be;
