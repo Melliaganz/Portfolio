@@ -6,7 +6,7 @@ import Lucas from "../img/Portrait.webp"
 const Header = () => {
   return (
     <header>
-      <nav className='navbar navbar-expand-lg border-top border-bottom bg-light fixed-top p-0' id="header">
+      <nav className='navbar navbar-expand-lg bg-dark fixed-top p-0' id="header">
         <div className='container-fluid'>
           <a className='navbar-brand' alt="Accueil" href='#home'>&nbsp;
             <Image

@@ -43,7 +43,7 @@ export default function About() {
             <img src="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png" height={18.75} width={16.25} alt="Sequelize logo" /> <a href="https://sequelize.org/" > Sequelize</a> |
             <img src="https://sass-lang.com/assets/img/styleguide/seal-color-reversed-c50d9b78.png" height={25} width={25} alt="sass logo" /> <a href="https://sass-lang.com/"> Sass</a> </p>
             <ButtonHomeDownload
-            className='btn btn-light preface__logoBot'
+            className='btn btn-light shadow preface__logoBot'
             id="bouttonCV"
             text='CV'
             href={resume}

@@ -117,7 +117,7 @@ export default function Contact() {
           aria-hidden="true"
           className='d-flex align-items-center flex-column mb-3 mt-5'
           sitekey={recaptchaKey}/>
-          <button disabled={submitting} type="submit" className="btn btn-warning col-4 mt-2">
+          <button disabled={submitting} type="submit" className="btn btn-light col-4 mt-2">
           {submitting ? "Envoi !" : "Envoyer !"}
           </button>          
         </form>

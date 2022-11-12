@@ -5,7 +5,7 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 const CompetenceCard= ({title, details, imageSRC, stackIcons, linkDemo, linkGithub}) => {
     return (
         <div className='col-md-6 col-sm-7 cardInline'>
-            <div className='card card-cover  h-100 overflow-hidden rounded-4 shadow ' style={{backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255,0.5) 0%, rgba(255, 255, 255,1) 20%), url(${imageSRC})`}}>
+            <div className='card card-cover  h-100 overflow-hidden rounded-4 shadow ' id="backgroundImg" style={{backgroundImage: `url(${imageSRC})`}}>
                <div className='d-flex flex-column h-100 p-5 pb-3 text-shadow'>
                 <h2 className='pt-5 mt-3 h3 mb-5 card__title--color text-uppercase'>{title ? title: null}</h2>
                 <div className='overflow-scroll mb-3' style={{maxHeight:"250px"}}>{details}</div>
