@@ -13,7 +13,10 @@ b{
 #formations{
   width:50px
 }
-
+.title{
+  color: #2596be;
+  text-decoration: underline ;
+}
 .card{
   border-radius: 15px;;
   background-color: transparent;
@@ -157,14 +160,21 @@ svg {
   }
 }
 
-@media only screen and (max-with: 1080px) {
+@media only screen and (max-width: 1080px) {
   .menuDrop{
     display: flex;
   }
 }
-#blocTextAbout, #photoAbout, #header{
+#blocTextAbout, #photoAbout, #header, #formationsBlock, .socials{
   animation-duration: 3s;
   animation-name: opacity;
+}
+
+#lienContact{
+  border-radius: 11px;
+}
+#cardFormulaire{
+  border-radius: 11px;
 }
 
 footer{

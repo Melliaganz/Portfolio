@@ -10,12 +10,12 @@ import OC from '../img/OC.webp'
 
 export default function Formation() {
   return (
-    <div className="g-0 anchor">
+    <div className="g-0 anchor" id="formationsBlock">
         <a href="/#formations" id="formations" aria-label='formation'>&nbsp;</a>
         <section className="formations__background--color border-start row g-0 ">
             <div className="p-5 m-0">
                 <h3 className="text-center formations__title--color my-5 text-uppercase">
-                    <span className="underline__title">
+                    <span className="title">
                         Formations
                     </span>
                 </h3>
@@ -56,7 +56,7 @@ export default function Formation() {
                     </div>
 
                     
-                    <div className="accordion shadow ">
+                    <div className="accordion shadow " id="accordionBlock">
                         <Accordion>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"

@@ -22,7 +22,7 @@ export default function Contact() {
       <section className="contact__image">
         <div className="contact__content">
           <h3 className="contact__title--color text-center text-uppercase p-5">
-            <span className="underline__title"> Contact</span>
+            <span className="title"> Contact</span>
           </h3>
           <div className='d-flex flex-wrap-reverse justify-content-evenly'>
           <div className=" row g-0 mb-5 shadow border " id='lienContact'>
