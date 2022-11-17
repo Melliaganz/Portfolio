@@ -6,7 +6,7 @@ export default function Portfolio() {
     <div className="g-0 anchor">
       <a href="/#portfolio" id="portfolio" aria-label='portfolio'>&nbsp;</a>
       
-        <section className="formations__background--color border-start portfolio__image row g-0 ">
+        <section className="formations__background--color portfolio__image row g-0 ">
           <div className="p-0 m-0">
             <h3 className="h1 text-center formations__title--color my-5 text-uppercase">
               <span className="title">portfolio</span>
