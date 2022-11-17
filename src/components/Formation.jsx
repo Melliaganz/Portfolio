@@ -12,7 +12,7 @@ export default function Formation() {
   return (
     <div className="g-0 anchor" id="formationsBlock">
         <a href="/#formations" id="formations" aria-label='formation'>&nbsp;</a>
-        <section className="formations__background--color border-start row g-0 ">
+        <section className="formations__background--color row g-0 ">
             <div className="p-5 m-0">
                 <h3 className="text-center formations__title--color my-5 text-uppercase">
                     <span className="title">
