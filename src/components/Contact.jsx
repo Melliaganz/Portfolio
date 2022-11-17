@@ -40,7 +40,7 @@ export default function Contact() {
                   <EmailIcon />
                 <a 
                 className="nav-link underline__headerLinks nav__text--color   contact--color contact__content__text p-0 " 
-                href="mailto:lucaslengranddev@gmail.com" target="_blank" rel="noopener noreferrer">
+                href="mailto:lucaslengranddev@gmail.com" target="_blank" rel="noopener noreferrer" title="Adresse Email">
                   lucaslengranddev@gmail.com
                 </a>
               </div>
@@ -48,7 +48,7 @@ export default function Contact() {
               <div className="row p-3 align-items-center">
                 <div className="contact__icon text-center contact--color">
                   <PhoneIcon />
-                <a className="nav-link underline__headerLinks nav__text--color  contact--color p-0 contact__content__text " href="tel:+33667007416">
+                <a className="nav-link underline__headerLinks nav__text--color  contact--color p-0 contact__content__text " href="tel:+33667007416" title="Numéro de Téléphone">
                   +336 67 00 74 16
                 </a> 
               </div>
@@ -64,13 +64,13 @@ export default function Contact() {
               <div className="row p-3 align-items-center">
               <div className="contact__icon text-center contact--color">
                 <GitHubIcon />
-              <a className="nav-link underline__headerLinks nav__text--color contact--color contact__content__text p-0 " href="https://github.com/Melliaganz" target="_blank" rel="noreferrer"> Melliaganz </a>
+              <a className="nav-link underline__headerLinks nav__text--color contact--color contact__content__text p-0 " href="https://github.com/Melliaganz" target="_blank" rel="noreferrer" title="Profil Github"> Melliaganz </a>
               </div>
               </div>
               <div className="row p-3 align-items-center">
                 <div className="contact__icon text-center contact--color">
                   <LinkedInIcon />
-                <a className="nav-link underline__headerLinks nav__text--color contact--color  contact__content__text p-0" href="http://www.linkedin.com/in/LucasLengrand" >Lucas Lengrand</a>
+                <a className="nav-link underline__headerLinks nav__text--color contact--color  contact__content__text p-0" href="http://www.linkedin.com/in/LucasLengrand" title="Profil Linkedin" >Lucas Lengrand</a>
               </div>
               </div>
             </div>

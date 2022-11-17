@@ -4,6 +4,7 @@ import LinkedIn from '@mui/icons-material/LinkedIn';
 import GitHub from '@mui/icons-material/GitHub';
 import Email from '@mui/icons-material/Email';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 function Socials() {
   return (
@@ -13,7 +14,8 @@ function Socials() {
         loading="lazy"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Twitter">
+        aria-label="Twitter"
+        title="Twitter">
             <TwitterIcon /> 
         </a>
         <a href="http://www.linkedin.com/in/LucasLengrand"
@@ -21,7 +23,8 @@ function Socials() {
         loading="lazy"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label='linkedin'>
+        aria-label='linkedin'
+        title="Linkedin">
             <LinkedIn />
         </a>
         <a href="https://github.com/Melliaganz"
@@ -29,7 +32,8 @@ function Socials() {
         loading="lazy"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="GitHub">
+        aria-label="GitHub"
+        title="Github">
             <GitHub />
         </a>
         <a href="mailto:lucaslengranddev@gmail.com" 
@@ -37,7 +41,8 @@ function Socials() {
         loading="lazy"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Email">
+        aria-label="Email"
+        title="Email">
             <Email />
         </a>
         <a href="https://www.instagram.com/melliaganz/"
@@ -45,8 +50,18 @@ function Socials() {
         loading="lazy"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label='Instagram'>
+        aria-label='Instagram'
+        title="Instagram">
             <InstagramIcon />
+        </a>
+        <a href="https://www.facebook.com/LucasLeatherhoff/"
+        alt="facebook"
+        loading="lazy"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label='Facebook'
+        title="Facebook">
+            <FacebookIcon />
         </a>
     </div>
   )

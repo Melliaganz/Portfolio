@@ -8,7 +8,7 @@ const Header = () => {
     <header>
       <nav className='navbar navbar-expand-lg bg-dark fixed-top p-0' id="header">
         <div className='container-fluid'>
-          <a className='navbar-brand' alt="Accueil" href='#home'>&nbsp;
+          <a className='navbar-brand' alt="Accueil" href='#home' title="Accueil">&nbsp;
             <Image
               id="photoHeader"
               src={Lucas}
@@ -29,7 +29,8 @@ const Header = () => {
                   data-bs-toggle='collapse'
                   data-bs-target='#navbarNavAltMarkup'
                   aria-expanded='true'
-                  role='link'>
+                  role='link'
+                  title="Accueil">
                   Accueil
                 </span>
               </a>
@@ -40,7 +41,8 @@ const Header = () => {
                   data-bs-toggle='collapse'
                   data-bs-target='#navbarNavAltMarkup'
                   aria-expanded='false'
-                  role='link'>
+                  role='link'
+                  title=" Formations">
                   Formations
                 </span>
               </a>
@@ -51,7 +53,8 @@ const Header = () => {
                   data-bs-toggle='collapse'
                   data-bs-target='#navbarNavAltMarkup'
                   aria-expanded='false'
-                  role='link'>
+                  role='link'
+                  title="Portfolio">
                   Portfolio
                 </span>
               </a>
@@ -62,7 +65,8 @@ const Header = () => {
                   data-bs-toggle='collapse'
                   data-bs-target='#navbarNavAltMarkup'
                   aria-expanded='false'
-                  role='link'>
+                  role='link'
+                  title="Contact">
                   Contact
                 </span>
               </a>

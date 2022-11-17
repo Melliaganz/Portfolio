@@ -17,8 +17,8 @@ const CompetenceCard= ({title, details, imageSRC, stackIcons, linkDemo, linkGith
                         }
                 </div>
                 <footer className='card-footer justify-content-evenly d-flex bg-transparent border-top-0 px-0 pt-3'>
-                    <a className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot" href={linkDemo} rel="noopener noreferrer" target='_blank' aria-label="lien de démonstration" text='Demo'><PlayArrowIcon /> Demo </a>    
-                    <a className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot" href={linkGithub} rel="noopener noreferrer" target='_blank' aria-label='Lien vers le repo Github' text='Github'><GitHubIcon /> Github </a>
+                    <a className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot" href={linkDemo} rel="noopener noreferrer" target='_blank' aria-label="lien de démonstration" text='Demo' title='Démonstration du site'><PlayArrowIcon /> Demo </a>    
+                    <a className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot" href={linkGithub} rel="noopener noreferrer" target='_blank' aria-label='Lien vers le repo Github' text='Github' title="repo Github"><GitHubIcon /> Github </a>
                 </footer>
                 </div> 
             </div>

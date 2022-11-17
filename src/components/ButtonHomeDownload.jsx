@@ -3,6 +3,7 @@ import React from "react"
 const ButtonHomeDownload = ({ text = null, href = null, target = null, ariaLabel = null, download = null, imageSRC = null, imageALT = null }) => {
   return (
     <a
+      title="Télécharger le CV de Lucas Lengrand sous format PDF"
       className='btn btn-light shadow preface__logoBot'
       href={href}
       target={target}

@@ -21,7 +21,7 @@ function ScrollupButton() {
   window.addEventListener('scroll', checkScrollTop)
 
   return (
-    <i className="scroll-up" id="scroll-up"
+    <i className="scroll-up" id="scroll-up" title="Retour vers le haut"
     ><ArrowUpwardIcon
       className="up-arrow"
       onClick={scrollTop}
