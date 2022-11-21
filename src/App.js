@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, ScopedCssBaseline } from '@mui/material';
-import Lucas from "./img/Portrait.webp"
 import useMediaQuery from '@mui/material/useMediaQuery';
 import About from './components/About';
 import Header from './components/Header'
@@ -28,7 +27,7 @@ function App() {
     <main className="main">
       <ThemeProvider theme={theme}>
       <CssBaseline enableColorScheme />
-      <ScopedCssBaseline  >
+      <ScopedCssBaseline enableColorScheme >
       {/*<div className='loader'>
         <img className="spinner" src={Lucas} alt="Lucas Lengrand" />
   </div>*/}
