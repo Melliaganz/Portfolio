@@ -2,7 +2,13 @@
 html{
   color-scheme: dark;
 }
-
+header{
+  position: absolute;
+  z-index: 10;
+}
+#about{
+  margin-top:100px;
+}
 a {
   text-decoration: none;
   color: #2596be;
@@ -13,26 +19,10 @@ a:hover {
   transform: translate(1%, 1%);
 }
 .navbar a {
-  position: relative;
   color: #2596be;
   text-decoration: none;
 }
-.navbar a::before{
-  background: #bea925;
-  border-radius: 25px 25px 25px 25px;
-  content: "";
-  inset: 0;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s ease-in-out;
-  z-index: -1;
-}
-.navbar a:hover::before{
-  transform: scaleX(1);
-  transform-origin: left;
-  color: black;
-}
+
 #backgroundImg{
   background-repeat: no-repeat;
   background-position: top center;
@@ -154,7 +144,7 @@ svg {
   width: 170px;
   height: 170px;
   border-radius: 100px 100px 100px 100px;
-  border: 15px solid #2596be;;
+  border: 15px solid #2596be;
 }
 
 #blocTextAbout{
@@ -165,13 +155,14 @@ svg {
 }
 @media screen and (min-width: 800px) {
   #blocTextAbout{
-    margin-top: -210px;
+    margin-top: -300px;
     margin-bottom: 50px;
     margin-left: 150px;
   }
-  #blocAbout{
-    margin-top: 15px;
+  .justify-content-end {
+    justify-content: center;
   }
+
 
   #Contact{
     flex-wrap: wrap-reverse;
@@ -213,6 +204,9 @@ svg {
 @media only screen and (max-width: 1080px) {
   .menuDrop{
     display: flex;
+  }
+  #about{
+    margin-top: 20px;
   }
 }
 #blocTextAbout, #photoAbout, #header, #formationsBlock, .socials{
