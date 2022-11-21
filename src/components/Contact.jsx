@@ -4,6 +4,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import DraftsIcon from '@mui/icons-material/Drafts';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import SendIcon from '@mui/icons-material/Send';
 import ReCAPTCHA from 'react-google-recaptcha';
@@ -119,7 +120,7 @@ export default function Contact() {
           className='d-flex align-items-center flex-column mb-3 mt-5'
           sitekey={recaptchaKey}/>
           <button disabled={submitting} type="submit" className="btn btn-light col-4 mt-2">
-          {submitting ? "Envoi !" : "Envoyer !"}
+          {submitting ? "Envoi !" : "Envoyer !"} <span className='EmailIcon' ><EmailIcon /></span> <span className='DraftsIcon'><DraftsIcon /></span>
           </button>          
         </form>
         </div>

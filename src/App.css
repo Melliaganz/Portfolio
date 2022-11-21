@@ -66,7 +66,7 @@ body{
   justify-content: center;
 }
 .socials {
-  z-index:9999;
+  z-index:500;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -171,7 +171,7 @@ svg {
   }
 }
 #blocTextAbout, #photoAbout, #header, #formationsBlock, .socials{
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-name: opacity;
 }
 
@@ -186,6 +186,18 @@ footer{
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
+}
+.btn .EmailIcon{
+  display: inline;
+}
+.btn .DraftsIcon{
+  display: none;
+}
+.btn:hover .EmailIcon {
+  display: none;
+}
+.btn:hover .DraftsIcon{
+  display: inline;
 }
 
 @keyframes opacity {
@@ -203,4 +215,45 @@ footer{
   100% {
     opacity: 0.5;
   }
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load {
+  0%{
+    opacity:1;
+  }
+  80% {
+    opacity: 100%;
+}
+  90%{
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+.loader {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  animation: load 1.2s forwards
+}
+.loader img{
+  border-radius: 50%;
+  border-color: 2px solid #2596be;
+}
+.spinner{
+  animation: spinner 800ms linear infinite;
 }
