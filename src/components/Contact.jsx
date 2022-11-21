@@ -22,7 +22,7 @@ export default function Contact() {
       <a href="/#contact" id="contact" aria-label='contact'>&nbsp;</a>
       <section className="contact__image">
         <div className="contact__content">
-          <h3 className="contact__title--color text-center text-uppercase p-5">
+          <h3 className="h1 contact__title--color text-center text-uppercase p-5">
             <span className="title"> Contact</span>
           </h3>
           <div className='d-flex flex-wrap-reverse justify-content-evenly'>
@@ -90,15 +90,15 @@ export default function Contact() {
         >
           <div className='row'>
             <div className='col'>
-          <label htmlFor="name" className='form-label'>Nom et Prénom : </label>
+          <label htmlFor="name" className='form-label '>Nom et Prénom : </label>
           <div className='col'>
-          <input type="text" id="name" name="name" placeholder="Example: Marc Dupont"  className='form-control' required={true} />
+          <input type="text" id="name" name="name" placeholder="Example: Marc Dupont"  className='shadow form-control' required={true} />
           </div>
           </div>
           <div className='col'>
           <label htmlFor="email" className='form-label' >Email :</label>
           <div className='col'>
-          <input type="email" id="email" name="email" placeholder="Exemple: MarcDupont@gmail.com" className='form-control' required={true} />
+          <input type="email" id="email" name="email" placeholder="Exemple: MarcDupont@gmail.com" className='shadow form-control' required={true} />
           </div>
           </div>
           </div>
@@ -110,7 +110,7 @@ export default function Contact() {
           placeholder="Votre message ici !"
           required={true}
           rows="3"
-          className='form-control'
+          className='form-control shadow'
           ></textarea>
         </div>
         <input type="hidden" name="_redirect" value="https://www.lengrandlucas.com/#contact" />
@@ -119,7 +119,7 @@ export default function Contact() {
           aria-hidden="true"
           className='d-flex align-items-center flex-column mb-3 mt-5'
           sitekey={recaptchaKey}/>
-          <button disabled={submitting} type="submit" className="btn btn-light col-4 mt-2">
+          <button disabled={submitting} type="submit" className="btn btn-light col-4 mt-2 shadow">
           {submitting ? "Envoi !" : "Envoyer !"} <span className='EmailIcon' ><EmailIcon /></span> <span className='DraftsIcon'><DraftsIcon /></span>
           </button>          
         </form>

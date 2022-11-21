@@ -6,6 +6,7 @@ header{
   position: absolute;
   z-index: 10;
 }
+
 #about{
   margin-top:100px;
 }
@@ -23,6 +24,15 @@ a:hover {
   text-decoration: none;
 }
 
+.navbar a:hover {
+  -webkit-animation: 0.2s highlight 0.2s 1 normal forwards;
+  animation: 0.2s highlight 0.2s 1 normal forwards;
+background-color: none;
+background: linear-gradient(90deg, #7efff5 50%, rgba(255, 255, 255, 0) 50%);
+background-size: 200% 100%;
+background-position: 100% 0;
+border-radius: 25px;
+}
 #backgroundImg{
   background-repeat: no-repeat;
   background-position: top center;
@@ -33,9 +43,26 @@ b{
 #formations{
   width:50px
 }
-.title{
+@-webkit-keyframes highlight{
+  to{
+    background-position: 0 0;
+  }
+}
+@keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+.title, b{
   color: #2596be;
-  text-decoration: underline ;
+  font-weight: 800;
+  -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
+          animation: 1.5s highlight 1.5s 1 normal forwards;
+  background-color: none;
+  background: linear-gradient(5deg, #ffd500 25%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;  
+  border-radius: 25px;
 }
 .card{
   border-radius: 15px;;
@@ -43,6 +70,8 @@ b{
 }
 
 #nomAbout{
+  text-transform: uppercase;
+  font-weight: 800;
   color: #2596be;
 }
 
