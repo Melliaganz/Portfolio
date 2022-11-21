@@ -28,7 +28,7 @@ function App() {
     <main className="main">
       <ThemeProvider theme={theme}>
       <CssBaseline enableColorScheme />
-      <ScopedCssBaseline enableColorScheme >
+      <ScopedCssBaseline  >
       {/*<div className='loader'>
         <img className="spinner" src={Lucas} alt="Lucas Lengrand" />
   </div>*/}

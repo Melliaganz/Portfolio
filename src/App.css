@@ -2,7 +2,36 @@
 html{
   color-scheme: dark;
 }
-
+a {
+  text-decoration: none;
+  color: #2596be;
+  transform: translate(0, 0);
+  transition: transform 0.2s;
+}
+a:hover {
+  transform: translate(1%, 1%);
+}
+.navbar a {
+  position: relative;
+  color: #2596be;
+  text-decoration: none;
+}
+.navbar a::before{
+  background: #bea925;
+  border-radius: 25px 25px 25px 25px;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+}
+.navbar a:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+  color: black;
+}
 #backgroundImg{
   background-repeat: no-repeat;
   background-position: top center;
@@ -25,9 +54,7 @@ b{
 #nomAbout{
   color: #2596be;
 }
-.navbar a {
-  color: #2596be;
-}
+
 body{
   font-family: "Roboto", sans-serif;
 }
@@ -63,10 +90,18 @@ body{
   font-family:'Courier New', Courier, monospace;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+#codeAbout a{
+  transform: translate(-2%, -2%);
+  transition: transform 0.2s;
+}
+#codeAbout a:hover{
+  transform: translate(0, 0);
 }
 .socials {
-  z-index:500;
+  z-index:1;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -74,7 +109,19 @@ body{
   bottom: 50%;
   color:#2596be;
 }
-
+.socials:before {
+  content:'';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.socials a{
+  transform: translate(-5%, -5%);
+  transition: transform 0.2s;
+}
+.socials a:hover{
+  transform: translate(0, 0);
+}
 .contact--color{
   color: #2596be;
 }
@@ -90,26 +137,25 @@ body{
 #photoHeader{
   height: 60px;
   width:60px;
+  border-radius: 80px;
 }
-a {
-  text-decoration: none;
-  color: inherit;
-}
+
 .imageSRC {
   object-fit: contain;
 }
 svg {
   fill: currentColor;
 }
-#photoHeader{
-  border-radius: 80px;
+#photoHeader:hover{
+  animation: zoom-in-zoom-out 1s ease infinite;
 }
 #photoAbout{
   width: 170px;
   height: 170px;
   border-radius: 100px 100px 100px 100px;
-  border: 15px solid #2596be
+  border: 15px solid #2596be;;
 }
+
 #blocTextAbout{
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
@@ -125,10 +171,7 @@ svg {
   #blocAbout{
     margin-top: 15px;
   }
-  #photoAbout{
-    margin-top: 100px;
-    margin-right:150px ;
-  }
+
   #Contact{
     flex-wrap: wrap-reverse;
   }
@@ -172,7 +215,7 @@ svg {
 }
 #blocTextAbout, #photoAbout, #header, #formationsBlock, .socials{
   animation-duration: 4s;
-  animation-name: opacity;
+  animation-name: opacity ;
 }
 
 #lienContact{
@@ -240,6 +283,17 @@ footer{
     z-index: -1;
   }
 }
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
 .loader {
   position: fixed;
   display: flex;
@@ -256,4 +310,17 @@ footer{
 }
 .spinner{
   animation: spinner 800ms linear infinite;
+}
+#message{
+  border-radius: 25px ;
+}
+
+textarea{
+  resize: none;
+}
+#email{
+  border-radius: 25px;
+}
+#name{
+  border-radius: 25px;
 }

@@ -102,7 +102,7 @@ export default function Contact() {
           </div>
           </div>
           </div>
-        <div className='col p-2 mt-4'>
+        <div className='col p-2 mt-4' id="messageForm">
           <label htmlFor="message" className='form-label ms-3'>Message :</label>
           <textarea
           id="message"
