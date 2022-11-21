@@ -113,7 +113,7 @@ export default function Contact() {
           className='form-control'
           ></textarea>
         </div>
-        <input type="hidden" name="_redirect" value="https://portfolio-melliaganz.vercel.app/" />
+        <input type="hidden" name="_redirect" value="https://www.lengrandlucas.com/#contact" />
           <ReCAPTCHA
           aria-label='reCAPTCHA'
           aria-hidden="true"
