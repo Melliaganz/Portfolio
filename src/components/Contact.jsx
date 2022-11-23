@@ -33,7 +33,7 @@ export default function Contact() {
                 <div className="contact__icon col-12 text-center contact--color">
                   <PersonPinIcon />
                 </div>
-                <span className="p-0 col-9 contact--color ">Bruyères-le-Châtel</span>
+                <a className="p-0 col-9 contact--color " href="https://goo.gl/maps/DkrJT4yAcvB5KyK17" target="_blank" rel="noopener noreferrer" title="Ma Ville">Bruyères-le-Châtel</a>
               </div>
               </div>
               <div className="row p-3 align-items-center">
@@ -41,7 +41,7 @@ export default function Contact() {
                   <EmailIcon />
                 <a 
                 className="nav-link underline__headerLinks nav__text--color   contact--color contact__content__text p-0 " 
-                href="mailto:lucaslengranddev@gmail.com" target="_blank" rel="noopener noreferrer" title="Adresse Email">
+                href="mailto:lucaslengranddev@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
                   lucaslengranddev@gmail.com
                 </a>
               </div>
@@ -49,7 +49,7 @@ export default function Contact() {
               <div className="row p-3 align-items-center">
                 <div className="contact__icon text-center contact--color">
                   <TwitterIcon />
-                <a className="nav-link underline__headerLinks nav__text--color  contact--color p-0 contact__content__text " href="https://twitter.com/LucasLengrand2"  title="Twitter">
+                <a className="nav-link underline__headerLinks nav__text--color  contact--color p-0 contact__content__text " href="https://twitter.com/LucasLengrand2" target="_blank" rel="noopener noreferrer" title="Twitter">
                   lucaslengrand2
                 </a> 
               </div>
@@ -58,7 +58,7 @@ export default function Contact() {
                 <div className="contact__icon text-center contact--color">
                   <EventAvailableIcon />
                 <span className="nav-link underline__headerLinks nav__text--color contact--color p-0 contact__content__text ">
-                  <time dateTime="1996-08-24">24/08/1996</time>
+                  <time dateTime="1996-08-24" title="Date de naissance">24/08/1996</time>
                 </span>
               </div>
               </div>
