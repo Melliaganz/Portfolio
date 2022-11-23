@@ -1,7 +1,7 @@
 import React, {FormEvent, useState} from 'react'
 import PersonPinIcon from '@mui/icons-material/PersonPin';
 import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import DraftsIcon from '@mui/icons-material/Drafts';
@@ -33,7 +33,7 @@ export default function Contact() {
                 <div className="contact__icon col-12 text-center contact--color">
                   <PersonPinIcon />
                 </div>
-                <span className="p-0 col-9 contact--color "> 24 rue de Verville, 91680 Bruyères-le-Châtel</span>
+                <span className="p-0 col-9 contact--color ">Bruyères-le-Châtel</span>
               </div>
               </div>
               <div className="row p-3 align-items-center">
@@ -48,9 +48,9 @@ export default function Contact() {
               </div>
               <div className="row p-3 align-items-center">
                 <div className="contact__icon text-center contact--color">
-                  <PhoneIcon />
-                <a className="nav-link underline__headerLinks nav__text--color  contact--color p-0 contact__content__text " href="tel:+33667007416" title="Numéro de Téléphone">
-                  +336 67 00 74 16
+                  <TwitterIcon />
+                <a className="nav-link underline__headerLinks nav__text--color  contact--color p-0 contact__content__text " href="https://twitter.com/LucasLengrand2"  title="Twitter">
+                  lucaslengrand2
                 </a> 
               </div>
               </div>
