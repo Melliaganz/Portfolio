@@ -33,7 +33,7 @@ export default function Contact() {
                 <div className="contact__icon col-12 text-center contact--color">
                   <PersonPinIcon />
                 </div>
-                <a className="p-0 col-9 contact--color " href="https://goo.gl/maps/DkrJT4yAcvB5KyK17" target="_blank" rel="noopener noreferrer" title="Ma Ville">Bruyères-le-Châtel</a>
+                <a className="p-0 col-9 contact--color " href="https://goo.gl/maps/DkrJT4yAcvB5KyK17" alt="Google Maps" target="_blank" rel="noopener noreferrer" title="Google Maps">Bruyères-le-Châtel</a>
               </div>
               </div>
               <div className="row p-3 align-items-center">
@@ -41,7 +41,7 @@ export default function Contact() {
                   <EmailIcon />
                 <a 
                 className="nav-link underline__headerLinks nav__text--color   contact--color contact__content__text p-0 " 
-                href="mailto:lucaslengranddev@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
+                href="mailto:lucaslengranddev@gmail.com" alt="Email" target="_blank" rel="noopener noreferrer" title="Email">
                   lucaslengranddev@gmail.com
                 </a>
               </div>
@@ -65,13 +65,13 @@ export default function Contact() {
               <div className="row p-3 align-items-center">
               <div className="contact__icon text-center contact--color">
                 <GitHubIcon />
-              <a className="nav-link underline__headerLinks nav__text--color contact--color contact__content__text p-0 " href="https://github.com/Melliaganz" target="_blank" rel="noreferrer" title="Profil Github"> Melliaganz </a>
+              <a className="nav-link underline__headerLinks nav__text--color contact--color contact__content__text p-0 " href="https://github.com/Melliaganz" target="_blank" rel="noreferrer" title="Github"> Melliaganz </a>
               </div>
               </div>
               <div className="row p-3 align-items-center">
                 <div className="contact__icon text-center contact--color">
                   <LinkedInIcon />
-                <a className="nav-link underline__headerLinks nav__text--color contact--color  contact__content__text p-0" href="http://www.linkedin.com/in/LucasLengrand" title="Profil Linkedin" >Lucas Lengrand</a>
+                <a className="nav-link underline__headerLinks nav__text--color contact--color  contact__content__text p-0" href="http://www.linkedin.com/in/LucasLengrand" title="Linkedin" >Lucas Lengrand</a>
               </div>
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function Contact() {
             <div className='col'>
           <label htmlFor="name" className='form-label '>Nom et Prénom : </label>
           <div className='col'>
-          <input type="text" id="name" name="name" placeholder="Example: Marc Dupont"  className='shadow form-control' required={true} />
+          <input type="text" id="name" name="name" placeholder="Exemple: Marc Dupont"  className='shadow form-control' required={true} />
           </div>
           </div>
           <div className='col'>

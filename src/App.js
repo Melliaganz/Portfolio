@@ -11,6 +11,7 @@ import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import ScrollupButton from './components/ScrollupButton';
 import Socials from './components/Socials';
+import Lucas from "./img/Portrait.webp";
 
 function App() {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
@@ -28,9 +29,9 @@ function App() {
       <ThemeProvider theme={theme}>
       <CssBaseline enableColorScheme />
       <ScopedCssBaseline enableColorScheme >
-      {/*<div className='loader'>
+      <div className='loader'>
         <img className="spinner" src={Lucas} alt="Lucas Lengrand" />
-  </div>*/}
+  </div>
       <Header />
       <ScrollupButton />
       <Socials />

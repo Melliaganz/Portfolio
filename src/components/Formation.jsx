@@ -83,7 +83,7 @@ export default function Formation() {
                                             height={100}
                                             />
                                             <h3 className="h4 formation__title">
-                                                <a href="http://www.cfpsaguenay.qc.ca/" title="Site du CFP">
+                                                <a href="http://www.cfpsaguenay.qc.ca/" title="Site du CFP" target="_blank" rel="noopener noreferrer" >
                                                 Centre de formation professionnelle du Grand-Fjord
                                                 </a>
                                             </h3>
@@ -155,7 +155,7 @@ export default function Formation() {
                                                 height={82}
                                                 />
                                                 <h3 className="h4 formation__title">
-                                                   <a href="https://www.univ-paris8.fr/" title="Site de Paris 8">
+                                                   <a href="https://www.univ-paris8.fr/" title="Site de Paris 8" target="_blank" rel="noopener noreferrer" >
                                                        Université de Paris 8
                                                    </a>
                                                 </h3>
@@ -208,7 +208,7 @@ export default function Formation() {
                                                         />
                                                     </div>
                                                     <h3 className="h4 formation__title">
-                                                        <a href="https://www.sae.edu/fra/" title="Site de la SAE"> SAE Institute</a>
+                                                        <a href="https://www.sae.edu/fra/" title="Site de la SAE" target="_blank" rel="noopener noreferrer" > SAE Institute</a>
                                                     </h3>
                                                     <h4 className="h6 formation__title">
                                                         Licence, Technicien son
@@ -253,7 +253,7 @@ export default function Formation() {
                                             />
                                         </div>
                                         <h3 className="h4 formation__title">
-                                            <a href="https://btmmsevres.wixsite.com/btmmsevres" title="Site du B.T.M.M">Brevet de Technicien des métiers de la musique</a>
+                                            <a href="https://btmmsevres.wixsite.com/btmmsevres" title="Site du B.T.M.M" target="_blank" rel="noopener noreferrer" >Brevet de Technicien des métiers de la musique</a>
                                         </h3>
                                         <h4 className="h6 formation__title"
                                         >Brevet de technicien
