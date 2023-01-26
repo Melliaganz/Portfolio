@@ -355,3 +355,7 @@ textarea{
 #name{
   border-radius: 25px;
 }
+#lienContact{
+  width: auto;
+  overflow: hidden;
+}
