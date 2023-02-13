@@ -63,6 +63,15 @@ function Socials() {
         title="Facebook">
             <FacebookIcon />
         </a>
+        <a href="https://discord.com/users/Melliaganz#7310"
+        alt="discord"
+        loading="lazy"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label='Discord'
+        title="Discord">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/1818px-Discord_Logo_sans_texte.svg.png" alt="discord logo" width="25px" height="25px"></img>
+        </a>
     </div>
   )
 }
