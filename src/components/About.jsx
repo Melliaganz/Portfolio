@@ -1,7 +1,6 @@
 import React from 'react'
-import resume from '../img/CV de Lucas Lengrand.pdf'
+import resume from '../img/CV_09_03_2023_Lengrand-Lucas.pdf'
 import { Image } from 'react-bootstrap'
-
 import Portrait from '../img/Portrait.webp'
 import ButtonHomeDownload from './ButtonHomeDownload';
 
