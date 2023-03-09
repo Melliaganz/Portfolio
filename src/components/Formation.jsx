@@ -129,58 +129,6 @@ export default function Formation() {
                                 </Typography>
                             </AccordionDetails>
                         </Accordion>
-                        <Accordion>
-                            <AccordionSummary expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel2a-content"
-                            id="panel2a-header">
-                                <Typography component= {'span'} variant={'body2'}>
-                                    <Image 
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Paris_VIII.svg/294px-Paris_VIII.svg.png" 
-                                    alt="logo-ParisVIII" 
-                                    width={73.5} 
-                                    height={41}
-                                    />
-                                    Université Paris 8
-                                </Typography>
-                            </AccordionSummary>
-                            <AccordionDetails>
-                                <Typography component= {'span'} variant={'body2'}>
-                                    <div className="row g-0">
-                                        <section className="col-lg-3 text-center mx-auto me-lg-0 my_auto">
-                                            <div className="gatsby-image-wrapper gatsby-image-wrapper-constrained img-fluid mb-2">
-                                                <Image 
-                                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Paris_VIII.svg/294px-Paris_VIII.svg.png"
-                                                alt="logo-ParisVIII"
-                                                width={147}
-                                                height={82}
-                                                />
-                                                <h3 className="h4 formation__title">
-                                                   <a href="https://www.univ-paris8.fr/" title="Site de Paris 8" target="_blank" rel="noopener noreferrer" >
-                                                       Université de Paris 8
-                                                   </a>
-                                                </h3>
-                                                <h4 className="h6 formation__title">
-                                                    Master, Musicologie
-                                                </h4>
-                                                <p className="formation__title">
-                                                    Juillet 2019, Vincennes-Saint-Denis
-                                                </p>
-                                            </div>
-                                        </section>
-                                        <div className=" col-8 formation__title my-auto me-lg-0 mx-auto">
-                                            <ul>
-                                                <li>Mobiliser une culture artistique et les principales méthodes pour étudier les phénomènes musicaux</li>
-                                                <li>Identifier l'évolutoin des formes et des genres, l'histoire des institutions, des lieux, des formations et du répertoire</li>
-                                                <li>Porter une réfléxion théorique et critique portant sur les phénomènes musicaux</li>
-                                                <li>Analyser dans les grandes lignes une œuvre musicale ou un extrait sur la base de l'écoute </li>
-                                                <li>Caractériser et valoriser son identité, ses compétences et son projet professionnel en fonction d'un contexte</li>
-                                                <li>Identifier et situer les champs</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </Typography>
-                            </AccordionDetails>
-                        </Accordion>
                         <Accordion >
                             <AccordionSummary 
                             expandIcon={<ExpandMoreIcon/>}
