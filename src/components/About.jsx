@@ -3,6 +3,7 @@ import resume from '../img/CV_09_03_2023_Lengrand-Lucas.pdf'
 import { Image } from 'react-bootstrap'
 import Portrait from '../img/Portrait.webp'
 import ButtonHomeDownload from './ButtonHomeDownload';
+import Texteffect from './Texteffect';
 
 export default function About() {
   return (
@@ -27,7 +28,7 @@ export default function About() {
                   Lengrand
                 </h1>
               </div>
-            <p className="col-12 col-md-12 preface--color text-justify mb-5 preface_logoBot font-monospace text-center text-md-center">Développeur web</p>
+            <p className="col-12 col-md-12 preface--color text-justify mb-5 preface_logoBot font-monospace text-center text-md-center"><Texteffect /></p>
             <p className="col-10 offset-1 offset-md-0 col-md-12 my-4 preface--color text-justify preface__logoBot" id="descriptionAbout">
                 Depuis toujours passionné par les systèmes informatiques et notamment le <b>Développement Informatique</b>, je vous accompagnerai dans vos différents projets <b>numériques</b> ou la création de vos <b>applications web</b>.
             </p>
