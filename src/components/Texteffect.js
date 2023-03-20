@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 function Texteffect() {
   return (
-    <Typewriter
+    <Typewriter className="font-monospace"
     options={{
         strings: [
             "Développeur Full-stack",
