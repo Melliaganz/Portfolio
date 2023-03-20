@@ -8,9 +8,9 @@ function Texteffect() {
         strings: [
             "Développeur Full-stack",
             "Développeur Web",
-            "ReactJs Développeur",
-            "Front-End Développeur",
-            "Back-end Développeur",
+            "Développeur ReactJs",
+            "Développeur Front-End",
+            "Développeur Back-end",
         ],
         autoStart: true,
         loop: true,
