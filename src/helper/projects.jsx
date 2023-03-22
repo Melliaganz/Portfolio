@@ -3,6 +3,7 @@ import imageKanap from "../img/kanap.png"
 import imageGroupomania from "../img/Groupomania.png"
 import imagePiquante from "../img/piquante.png"
 import imageOhMyFood from "../img/ohmyfood.png"
+import imageNetflix from "../img/Netflix.png"
 import logoCss3 from "../img/css3.png"
 import logoSass from "../img/Sass_Logo_Color.svg"
 import logoJavascript from "../img/Unofficial_JavaScript_logo_2.svg"
@@ -13,10 +14,17 @@ import logoMongoose from "../img/mongoose.webp"
 import logoReact from "../img/React Logo.svg"
 import logoMySQL from "../img/MySQL.svg"
 import logoSequelize from "../img/sequelize-logo-9A5075DB9F-seeklogo.com.png"
+import logoFirebase from "../img/Firebase.png"
 
 const iconHTML5 = {
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png",
     alt: "HTML5",
+    width: "48",
+    height: "48",
+  }
+  const iconFirebase={
+    icon:logoFirebase,
+    alt:"Firebase",
     width: "48",
     height: "48",
   }
@@ -88,11 +96,33 @@ const iconHTML5 = {
   }
 
   const projects = {
+    Netflix: {
+      title: "Création d'un clone Netflix",
+      details: (
+        <div className="col formation__title my-auto me-lg-2 mx-auto">
+        <h3 className="text-uppercase">Projet perso</h3>
+        <p>
+        Le projet de clone de Netflix en React et Firebase est une application Web qui permet aux utilisateurs de découvrir et de regarder des films et des émissions de télévision en ligne. En utilisant les technologies React et Firebase, cette application offre une interface utilisateur réactive et une base de données en temps réel pour stocker les données de l'utilisateur.
+
+L'application offre une expérience utilisateur intuitive pour la navigation des contenus, la recherche de films et d'émissions de télévision, et la lecture en continu. Elle permet également aux utilisateurs de créer un compte, de s'abonner à des services de streaming et de gérer leur profil et leurs préférences.
+
+L'application utilise Firebase pour stocker et synchroniser les données utilisateur en temps réel, ce qui garantit une expérience utilisateur fluide et cohérente. Elle utilise également des techniques de mise en cache pour améliorer la performance et la vitesse de l'application.
+
+Dans l'ensemble, ce projet de clone de Netflix en React et Firebase est une solution innovante pour les passionnés de films et d'émissions de télévision, offrant une interface utilisateur conviviale et une expérience de streaming rapide et fiable.
+        </p>
+      </div>
+      ),
+      stackIcons: [iconFirebase, iconReact],
+      linkGithub: "https://github.com/Melliaganz/netflix-clone",
+      linkDemo: "https://netflix-clone-iota-vert.vercel.app/",
+      imagesSrc: imageNetflix,
+
+    },
     groupomania: {
       title: `Créez un réseau social d’entreprise`,
       details: (
         <div className='col formation__title my-auto me-lg-2 mx-auto'>
-          <h3 className='text-uppercase'>scenario</h3>
+          <h3 className='text-uppercase'>Projet de formation</h3>
           <p>
           Vous êtes développeur depuis plus d'un an chez CONNECT-E, une petite agence web regroupant une douzaine d'employés.
           Votre directrice, Stéphanie, vient de signer un nouveau contrat avec Groupomania, 
@@ -118,7 +148,7 @@ const iconHTML5 = {
         title: "Construire une API sécurisée",
         details: (
             <div className='col formation__title my-auto me-lg-2 mx-auto'>
-                <h3 className='text-uppercase'>scénario</h3>
+                <h3 className='text-uppercase'>Projet de formation</h3>
                 <p>
                 Vous avez passé la dernière année en tant que développeur back-end indépendant et vous avez travaillé sur plusieurs projets de tailles et de difficultés variées.
                 La semaine dernière, vous avez reçu un message sur votre plateforme de freelance vous demandant de l'aide pour un nouveau projet. Les sauces piquantes sont de plus en plus populaires, en grande partie grâce à la série YouTube « Hot Ones » . 
@@ -143,7 +173,7 @@ const iconHTML5 = {
       title: "Construisez un site e-commerce en JavaScript",
       details: (
         <div className="col formation__title my-auto me-lg-2 mx-auto">
-          <h3 className="text-uppercase">scénario</h3>
+          <h3 className="text-uppercase">Projet de formation</h3>
           <p>
           Vous êtes en poste dans une agence de développement web depuis quelques semaines maintenant. 
           Après avoir réalisé avec succès l’intégration de quelques sites web (HTML/CSS), on vous confie une nouvelle mission.
@@ -169,7 +199,7 @@ const iconHTML5 = {
       title: "Dynamisez une page web avec des animations CSS",
       details: (
         <div className="col formation__title my-auto me-lg-2 mx-auto">
-          <h3 className="text-uppercase">scénario</h3>
+          <h3 className="text-uppercase">Projet de formation</h3>
           <p>
           Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !
           Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. 

@@ -6,6 +6,14 @@ const CompetenceCardWrapper = () => {
   return (
     <section className='container px-4' id='CompetenceCardWrapper'>
         <div className='row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5'>
+        <CompetenceCard
+        title={projects.Netflix.title}
+        details={projects.Netflix.details}
+        stackIcons={projects.Netflix.stackIcons}
+        linkGithub={projects.Netflix.linkGithub}
+        linkDemo={projects.Netflix.linkDemo}
+        imageSRC={projects.Netflix.imagesSrc}
+        ></CompetenceCard>
         <CompetenceCard 
        title={projects.groupomania.title}
        details={projects.groupomania.details} 
