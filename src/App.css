@@ -37,9 +37,6 @@ border-radius: 25px;
   background-repeat: no-repeat;
   background-position: top center;
 }
-b{
-  color: #771818;
-}
 #formations{
   width:50px
 }
@@ -54,7 +51,6 @@ b{
   }
 }
 .title, b{
-  color: #fff;
   font-weight: 800;
   -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
           animation: 1.5s highlight 1.5s 1 normal forwards;
