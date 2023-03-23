@@ -102,13 +102,10 @@ const iconHTML5 = {
         <div className="col formation__title my-auto me-lg-2 mx-auto">
         <h3 className="text-uppercase">Projet perso</h3>
         <p>
-        Le projet de clone de Netflix en React et Firebase est une application Web qui permet aux utilisateurs de découvrir et de regarder des films et des émissions de télévision en ligne. En utilisant les technologies React et Firebase, cette application offre une interface utilisateur réactive et une base de données en temps réel pour stocker les données de l'utilisateur.
-
-L'application offre une expérience utilisateur intuitive pour la navigation des contenus, la recherche de films et d'émissions de télévision, et la lecture en continu. Elle permet également aux utilisateurs de créer un compte, de s'abonner à des services de streaming et de gérer leur profil et leurs préférences.
-
-L'application utilise Firebase pour stocker et synchroniser les données utilisateur en temps réel, ce qui garantit une expérience utilisateur fluide et cohérente. Elle utilise également des techniques de mise en cache pour améliorer la performance et la vitesse de l'application.
-
-Dans l'ensemble, ce projet de clone de Netflix en React et Firebase est une solution innovante pour les passionnés de films et d'émissions de télévision, offrant une interface utilisateur conviviale et une expérience de streaming rapide et fiable.
+        Le projet de clone de Netflix en React et Firebase est une application Web qui permet aux utilisateurs de découvrir et de regarder des films et des émissions de télévision en ligne. En utilisant les technologies React et Firebase, 
+        cette application offre une interface utilisateur réactive et une base de données en temps réel pour stocker les données de l'utilisateur.
+        L'application offre une expérience utilisateur intuitive pour la navigation des contenus, la recherche de films et d'émissions de télévision, et la lecture en continu. 
+        Elle permet également aux utilisateurs de créer un compte, de s'abonner à des services de streaming et de gérer leur profil et leurs préférences.
         </p>
       </div>
       ),
