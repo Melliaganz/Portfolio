@@ -7,6 +7,14 @@ const CompetenceCardWrapper = () => {
     <section className='container px-4' id='CompetenceCardWrapper'>
         <div className='row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5'>
         <CompetenceCard
+        title={projects.Optique.title}
+        details={projects.Optique.details}
+        stackIcons={projects.Optique.stackIcons}
+        linkGithub={projects.Optique.linkGithub}
+        linkDemo={projects.Optique.linkDemo}
+        imageSRC={projects.Optique.imagesSrc}
+        ></CompetenceCard>
+        <CompetenceCard
         title={projects.Netflix.title}
         details={projects.Netflix.details}
         stackIcons={projects.Netflix.stackIcons}
