@@ -103,13 +103,10 @@ const iconHTML5 = {
         <div className="col formation__title my-auto me-lg-2 mx-auto">
         <h3 className="text-uppercase">Projet Free-lance</h3>
         <p>
-        Je suis fier de présenter mon dernier projet : la création d'un site de présentation pour la boutique d'optique "Optique Chatenay". Ce site a été entièrement développé en React, une bibliothèque JavaScript de renom pour la création d'interfaces utilisateur interactives et réactives. J'ai travaillé en étroite collaboration avec HecateStudio pour le design du site, en veillant à ce que celui-ci reflète parfaitement l'image de la boutique d'optique.
-
-J'ai utilisé Firebase pour le stockage et l'utilisation d'image, ce qui permet au propriétaire de la boutique de mettre à jour facilement la galerie de photos.
-
-Ce projet a été un réel défi pour moi, car j'ai dû travailler en étroite collaboration avec le client et <a href="https://www.malt.fr/profile/valentinebarbier1?q=valentine+barbier&searchid=644fd39b22036a32323a6d6d" alt="malt.fr/profile/valentinebarbier">HecateStudio </a> pour comprendre leurs besoins et m'assurer que le site reflétait parfaitement l'image de la boutique. J'ai également dû être très attentif aux détails pour créer un site esthétique, ergonomique et facile à utiliser pour les visiteurs.
-
-Je suis très satisfait du résultat final et je suis convaincu que ce site apportera une grande valeur ajoutée à la boutique en permettant aux visiteurs de découvrir facilement ses produits et services. Je suis prêt à relever de nouveaux défis et à mettre mes compétences à disposition pour réaliser des projets web innovants et performants.
+        Création d'un site vitrine pour la boutique Optique Chatenay. Ce site a été entièrement développé en React, une bibliothèque JavaScript de renom pour la création d'interfaces utilisateur interactives et réactives. J'ai travaillé en étroite collaboration avec HecateStudio pour le design du site, en veillant à ce que celui-ci reflète parfaitement l'image de la boutique d'optique.
+        J'ai utilisé Firebase pour le stockage et l'utilisation d'image, ce qui permet au propriétaire de la boutique de mettre à jour facilement la galerie de photos.
+        Ce projet a été un réel défi pour moi, car j'ai dû travailler en étroite collaboration avec le client et <a href="https://www.malt.fr/profile/valentinebarbier1?q=valentine+barbier&searchid=644fd39b22036a32323a6d6d" alt="malt.fr/profile/valentinebarbier">HecateStudio </a> pour comprendre leurs besoins et m'assurer que le site reflétait parfaitement l'image de la boutique. J'ai également dû être très attentif aux détails pour créer un site esthétique, ergonomique et facile à utiliser pour les visiteurs.
+        Je suis très satisfait du résultat final et je suis convaincu que ce site apportera une grande valeur ajoutée à la boutique en permettant aux visiteurs de découvrir facilement ses produits et services.
         </p>
       </div>
       ),
