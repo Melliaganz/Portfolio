@@ -112,7 +112,7 @@ const iconHTML5 = {
       ),
       stackIcons: [iconFirebase, iconReact],
       linkGithub: "https://github.com/Melliaganz/optiquechatenayfinal",
-      linkDemo: "https://optiquechatenay.vercel.app/",
+      linkDemo: "https://www.optiquechatenay.fr/",
       imagesSrc: imageOptique,
 
     },
