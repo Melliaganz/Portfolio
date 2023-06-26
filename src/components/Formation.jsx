@@ -182,7 +182,7 @@ export default function Formation() {
                             aria-controls="panel4a-content"
                             id="panel4a-header">
                                 <Typography component= {'span'} variant={'body2'}>
-                                    <Image src="https://static.wixstatic.com/media/7903c0_543cb7973543494a837043b5eb302721~mv2.png/v1/fill/w_296,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7903c0_543cb7973543494a837043b5eb302721~mv2.png" 
+                                    <Image src="https://file.diplomeo-static.com/file/00/00/01/47/14720.svg" 
                                     alt="logo-BTMM" 
                                     width={50} 
                                     height={50}
@@ -194,7 +194,7 @@ export default function Formation() {
                                     <div className="row g-0 ">
                                     <section className="col-lg-3 text-center mx-auto me-lg-0 my_auto">
                                         <div className="gatsby-image-wrapper gatsby-image-wrapper-constrained img-fluid mb-2">
-                                            <Image src="https://static.wixstatic.com/media/7903c0_543cb7973543494a837043b5eb302721~mv2.png/v1/fill/w_296,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7903c0_543cb7973543494a837043b5eb302721~mv2.png" 
+                                            <Image src="https://file.diplomeo-static.com/file/00/00/01/47/14720.svg" 
                                             alt="PhotoBTMM" 
                                             width={70}
                                             height={70}
