@@ -50,16 +50,7 @@ border-radius: 25px;
     background-position: 0 0;
   }
 }
-.title, b{
-  font-weight: 800;
-  -webkit-animation: 1.5s highlight 1.5s 1 normal forwards;
-          animation: 1.5s highlight 1.5s 1 normal forwards;
-  background-color: none;
-  background: linear-gradient(5deg, #006EFF 25%, rgba(255, 255, 255, 0) 50%);
-  background-size: 200% 100%;
-  background-position: 100% 0;  
-  border-radius: 25px;
-}
+
 .card{
   border-radius: 15px;;
   background-color: transparent;
