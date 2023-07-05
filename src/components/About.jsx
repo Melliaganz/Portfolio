@@ -41,7 +41,7 @@ export default function About() {
             <a href="https://reactjs.org/" ><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" height={25} width={25} alt="ReactLogo" />React.js</a>| 
             <a href="https://nodejs.org/en/"><img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" height={18.75} width={16.625} alt= "nodeJS logo"/>Node.js</a> | 
             <a href="https://sequelize.org/" ><img src="https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png" height={18.75} width={16.25} alt="Sequelize logo" />Sequelize</a> |
-            <a href="https://sass-lang.com/"><img src="https://sass-lang.com/assets/img/styleguide/seal-color-reversed-c50d9b78.png" height={25} width={25} alt="sass logo" /> Sass</a> </p>
+            <a href="https://sass-lang.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png" height={25} width={25} alt="sass" /> Sass</a> </p>
             <ButtonHomeDownload
             className='btn btn-light shadow preface__logoBot'
             id="bouttonCV"
