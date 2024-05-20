@@ -70,7 +70,7 @@ function Socials() {
         rel="noopener noreferrer"
         aria-label='Discord'
         title="Discord">
-            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/1818px-Discord_Logo_sans_texte.svg.png" alt="discord logo" width="25px" height="25px"></img>
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/1818px-Discord_Logo_sans_texte.svg.png" alt="discord logo" height="25px"></img>
         </a>
     </div>
   )
