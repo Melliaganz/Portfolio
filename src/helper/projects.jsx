@@ -147,7 +147,7 @@ const iconHTML5 = {
   }
   const projects = {
     Impots: {
-      title: "Impots.gouv.fr",
+      title: (<a href="https://www.impots.gouv.fr/accueil">Impots.gouv.fr</a>),
       year: "2023-2026",
       details: (
         <div className="col formation__title my-auto me-lg-2 mx-auto">
@@ -180,7 +180,7 @@ const iconHTML5 = {
 
     },
     Optique: {
-      title: "Optique Chatenay",
+      title: (<a href="https://www.optiquechatenay.fr/" alt="Optique Chatenay"> Optique Chatenay</a>),
       details: (
         <div className="col formation__title my-auto me-lg-2 mx-auto">
         <h3 className="text-uppercase">Développeur full-stack</h3>
