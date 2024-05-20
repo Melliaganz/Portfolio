@@ -5,6 +5,7 @@ import imageGroupomania from "../img/Groupomania.png"
 import imagePiquante from "../img/piquante.png"
 import imageOhMyFood from "../img/ohmyfood.png"
 import imageNetflix from "../img/Netflix.png"
+import imageImpots from "../img/impots.webp"
 import logoCss3 from "../img/css3.png"
 import logoSass from "../img/Sass_Logo_Color.svg"
 import logoJavascript from "../img/Unofficial_JavaScript_logo_2.svg"
@@ -16,93 +17,174 @@ import logoReact from "../img/React Logo.svg"
 import logoMySQL from "../img/MySQL.svg"
 import logoSequelize from "../img/sequelize-logo-9A5075DB9F-seeklogo.com.png"
 import logoFirebase from "../img/Firebase.png"
+import logoPlaystore from "../img/logoPlaystore.png"
+import logoAppstore from "../img/appStore.png"
+import logoKotlin from "../img/Kotlin_Icon.png"
+import logoReactNative from "../img/react-native-1.svg"
+import logoAndroidStduio from "../img/Android_Studio_Logo_(2023).svg.png"
+import logoXcode from "../img/1200x630bb.png"
 
 const iconHTML5 = {
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png",
     alt: "HTML5",
-    width: "48",
     height: "48",
+    title:'HTML 5'
   }
   const iconFirebase={
     icon:logoFirebase,
     alt:"Firebase",
-    width: "48",
     height: "48",
+    title:'Firebase'
   }
   const iconCSS3 = {
     icon: logoCss3,
     alt: "CSS3",
-    width: "35",
     height: "48",
+    title:'CSS 3'
   }
   const iconSass = {
     icon: logoSass,
     alt: "Sass",
-    width: "48",
     height: "48",
+    title:'SASS'
   }
   const iconJavascript = {
     icon: logoJavascript,
     alt: "Javascript",
-    width: "48",
     height: "48",
+    title:'JavaScript'
   }
   const iconBootstrap = {
     icon: logoBoostrap,
     alt: "Bootstrap",
-    width: "48",
     height: "48",
+    title:'Bootstrap'
   }
   const iconNodeJs = {
     icon: logoNodejs,
     alt: "Node.js",
-    width: "60",
     height: "48",
+    title:'Node.js'
   }
   const iconExpress = {
     icon: logoExpress,
     alt: "Express",
-    width: "155",
-    height: "47",
+    height: "48",
+    title:'Express'
   }
   const iconMongoDb = {
     icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/320px-MongoDB_Logo.svg.png",
     alt: "MongoDB",
-    width: "160",
-    height: "43",
+    height: "48",
+    title:'MongoDB'
   }
   const iconMongoose = {
     icon: logoMongoose,
     alt: "Mongoose",
-    width: "82.625",
-    height: "40",
+    height: "48",
+    title:'MonGoose'
   }
   const iconReact = {
     icon: logoReact,
     alt: "React.js",
-    width: "48",
     height: "48",
+    title:'React.js'
+  }
+  const iconReactNative = {
+    icon: logoReactNative,
+    alt: "React Native",
+    width: '48',
+    height: "48",
+    title:'React Native'
   }
   const iconMySql = {
     icon: logoMySQL,
     alt: "MySQL",
-    width: "48",
     height: "48",
+    title:'MySQL'
   }
   const iconSequelize = {
     icon: logoSequelize,
     alt: "Sequelize",
-    width: "65",
-    height: "75",
+    height: "48",
+    title:'Sequelize'
   }
-
+  const iconGradle = {
+    icon: "https://dwglogo.com/wp-content/uploads/2017/12/Gradle_logo_01.png",
+    alt:"Gradle",
+    height: "48",
+    title:'Gradle'
+  }
+  const iconPlaystore = {
+    icon: logoPlaystore,
+    alt:"Playstore",
+    height: "48",
+    title:'Playstore'
+  }
+  const iconAppstore = {
+    icon: logoAppstore,
+    alt: "Appstore",
+    height: "48",
+    title:"Appstore"
+  }
+  const iconKotlin = {
+    icon: logoKotlin,
+    alt: "Kotlin",
+    height:"48",
+    title:"Kotlin"
+  }
+  const iconAndroidStudio = {
+    icon: logoAndroidStduio,
+    alt: "Android Studio",
+    height: '48',
+    title: "Android Studio"
+  }
+  const iconXcode = {
+    icon: logoXcode,
+    alt: "Xcode",
+    height: '48',
+    title: "Xcode"
+  }
   const projects = {
+    Impots: {
+      title: "Impots.gouv.fr",
+      year: "2023-2026",
+      details: (
+        <div className="col formation__title my-auto me-lg-2 mx-auto">
+        <h3 className="text-uppercase">Développeur / Analyste</h3>
+        <p>Le portefeuille applicatif de la division « Bouquet de services » est constitué de plusieurs services numériques stratégiques offerts aux usagers :</p>
+            <ul>
+                <li>Portail « impots.gouv.fr »</li>
+                <li>Espace personnel privatif des particuliers (ENSU Présentation)</li>
+                <li>Service en ligne de prise de rendez-vous (APRDV)</li>
+                <li>Application « impots.gouv » pour smartphone</li>
+                <li>Offre de paiement accessible aux usagers (Tipi, Payfip, Satelit, Pasifae)</li>
+            </ul>
+            <p>Les travaux effectués quand j'ai occupé ce poste sont :</p>
+            <ul>
+                <li>Étude des spécifications de la MOA</li>
+                <li>Conception générale et détaillée</li>
+                <li>Développements des différents CUs</li>
+                <li>Tests unitaires</li>
+                <li>Mise en commun des codes sous Subversion</li>
+                <li>Confection de l’APK et livraison à la MOA pour recette</li>
+                <li>Correction des bugs</li>
+                <li>Dépôt de l’APK sur les stores Apple et Android</li>
+                <li>Résolution des incidents de production</li>
+            </ul>
+      </div>
+      ),
+      stackIcons: [iconAppstore, iconPlaystore, iconFirebase, iconReactNative, iconGradle, iconKotlin, iconAndroidStudio, iconXcode],
+      linkProjet: "https://play.google.com/store/apps/details?id=fr.gouv.finances.smartphone.android&hl=fr&gl=US&pli=1",
+      imageSRC: imageImpots,
+
+    },
     Optique: {
       title: "Optique Chatenay",
       details: (
         <div className="col formation__title my-auto me-lg-2 mx-auto">
-        <h3 className="text-uppercase">Projet Free-lance</h3>
-        <p>
+        <h3 className="text-uppercase">Développeur full-stack</h3>
+        <p style={{textIndent: '10%'}}>
         Création d'un site vitrine pour la boutique Optique Chatenay. Ce site a été entièrement développé en React, une bibliothèque JavaScript de renom pour la création d'interfaces utilisateur interactives et réactives. J'ai travaillé en étroite collaboration avec HecateStudio pour le design du site, en veillant à ce que celui-ci reflète parfaitement l'image de la boutique d'optique.
         J'ai utilisé Firebase pour le stockage et l'utilisation d'image, ce qui permet au propriétaire de la boutique de mettre à jour facilement la galerie de photos.
         Ce projet a été un réel défi pour moi, car j'ai dû travailler en étroite collaboration avec le client et <a href="https://www.malt.fr/profile/valentinebarbier1?q=valentine+barbier&searchid=644fd39b22036a32323a6d6d" alt="malt.fr/profile/valentinebarbier">HecateStudio </a> pour comprendre leurs besoins et m'assurer que le site reflétait parfaitement l'image de la boutique. J'ai également dû être très attentif aux détails pour créer un site esthétique, ergonomique et facile à utiliser pour les visiteurs.
@@ -113,7 +195,7 @@ const iconHTML5 = {
       stackIcons: [iconFirebase, iconReact],
       linkGithub: "https://github.com/Melliaganz/optiquechatenayfinal",
       linkDemo: "https://www.optiquechatenay.fr/",
-      imagesSrc: imageOptique,
+      imageSRC: imageOptique,
 
     },
     Netflix: {
@@ -121,7 +203,7 @@ const iconHTML5 = {
       details: (
         <div className="col formation__title my-auto me-lg-2 mx-auto">
         <h3 className="text-uppercase">Projet perso</h3>
-        <p>
+        <p style={{textIndent: '10%'}}>
         Le projet de clone de Netflix en React et Firebase est une application Web qui permet aux utilisateurs de découvrir et de regarder des films et des émissions de télévision en ligne. En utilisant les technologies React et Firebase, 
         cette application offre une interface utilisateur réactive et une base de données en temps réel pour stocker les données de l'utilisateur.
         L'application offre une expérience utilisateur intuitive pour la navigation des contenus, la recherche de films et d'émissions de télévision, et la lecture en continu. 
@@ -132,15 +214,14 @@ const iconHTML5 = {
       stackIcons: [iconFirebase, iconReact],
       linkGithub: "https://github.com/Melliaganz/netflix-clone",
       linkDemo: "https://netflix-clone-iota-vert.vercel.app/",
-      imagesSrc: imageNetflix,
-
+      imageSRC: imageNetflix,
     },
     groupomania: {
       title: `Créez un réseau social d’entreprise`,
       details: (
         <div className='col formation__title my-auto me-lg-2 mx-auto'>
           <h3 className='text-uppercase'>Projet de formation</h3>
-          <p>
+          <p style={{textIndent: '10%'}}>
           Vous êtes développeur depuis plus d'un an chez CONNECT-E, une petite agence web regroupant une douzaine d'employés.
           Votre directrice, Stéphanie, vient de signer un nouveau contrat avec Groupomania, 
           un groupe spécialisé dans la grande distribution, et l'un des plus fidèles clients de l'agence.
@@ -166,7 +247,7 @@ const iconHTML5 = {
         details: (
             <div className='col formation__title my-auto me-lg-2 mx-auto'>
                 <h3 className='text-uppercase'>Projet de formation</h3>
-                <p>
+                <p style={{textIndent: '10%'}}>
                 Vous avez passé la dernière année en tant que développeur back-end indépendant et vous avez travaillé sur plusieurs projets de tailles et de difficultés variées.
                 La semaine dernière, vous avez reçu un message sur votre plateforme de freelance vous demandant de l'aide pour un nouveau projet. Les sauces piquantes sont de plus en plus populaires, en grande partie grâce à la série YouTube « Hot Ones » . 
                 C’est pourquoi ce nouveau client, la marque de condiments à base de piment Piiquante, veut développer une application web de critique des sauces piquantes appelée « Hot Takes » .
@@ -191,7 +272,7 @@ const iconHTML5 = {
       details: (
         <div className="col formation__title my-auto me-lg-2 mx-auto">
           <h3 className="text-uppercase">Projet de formation</h3>
-          <p>
+          <p style={{textIndent: '10%'}}>
           Vous êtes en poste dans une agence de développement web depuis quelques semaines maintenant. 
           Après avoir réalisé avec succès l’intégration de quelques sites web (HTML/CSS), on vous confie une nouvelle mission.
           Votre client est Kanap, une marque de canapés qui vend ses produits depuis sa boutique exclusivement. 
@@ -217,7 +298,7 @@ const iconHTML5 = {
       details: (
         <div className="col formation__title my-auto me-lg-2 mx-auto">
           <h3 className="text-uppercase">Projet de formation</h3>
-          <p>
+          <p style={{textIndent: '10%'}}>
           Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !
           Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. 
           L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques. 

@@ -1,62 +1,63 @@
-import React from 'react'
-import CompetenceCard from'./Competencecard'
-import projects from '../helper/projects'
+import React, { useState } from 'react';
+import CompetenceCard from './Competencecard';
+import projects from '../helper/projects';
+
+const ITEMS_PER_PAGE = 3;
 
 const CompetenceCardWrapper = () => {
-  return (
-    <section className='container px-4' id='CompetenceCardWrapper'>
-        <div className='row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5'>
-        <CompetenceCard
-        title={projects.Optique.title}
-        details={projects.Optique.details}
-        stackIcons={projects.Optique.stackIcons}
-        linkGithub={projects.Optique.linkGithub}
-        linkDemo={projects.Optique.linkDemo}
-        imageSRC={projects.Optique.imagesSrc}
-        ></CompetenceCard>
-        <CompetenceCard
-        title={projects.Netflix.title}
-        details={projects.Netflix.details}
-        stackIcons={projects.Netflix.stackIcons}
-        linkGithub={projects.Netflix.linkGithub}
-        linkDemo={projects.Netflix.linkDemo}
-        imageSRC={projects.Netflix.imagesSrc}
-        ></CompetenceCard>
-        <CompetenceCard 
-       title={projects.groupomania.title}
-       details={projects.groupomania.details} 
-       stackIcons={projects.groupomania.stackIcons} 
-       linkGithub={projects.groupomania.linkGithub}
-       linkDemo={projects.groupomania.linkDemo}
-       imageSRC={projects.groupomania.imageSRC}
-       ></CompetenceCard>
-       <CompetenceCard
-       title={projects.kanap.title}
-       details={projects.kanap.details}
-       stackIcons={projects.kanap.stackIcons}
-       linkGithub={projects.kanap.linkGithub}
-       linkDemo={projects.kanap.linkDemo}
-       imageSRC={projects.kanap.imageSRC}
-       ></CompetenceCard>
-        <CompetenceCard 
-       title={projects.piquante.title}
-       details={projects.piquante.details} 
-       stackIcons={projects.piquante.stackIcons} 
-       linkGithub={projects.piquante.linkGithub}
-       linkDemo={projects.piquante.linkDemo}
-       imageSRC={projects.piquante.imageSRC}
-       ></CompetenceCard>
-       <CompetenceCard 
-       title={projects.omf.title}
-       details={projects.omf.details} 
-       stackIcons={projects.omf.stackIcons} 
-       linkGithub={projects.omf.linkGithub}
-       linkDemo={projects.omf.linkDemo}
-       imageSRC={projects.omf.imageSRC}
-       ></CompetenceCard> 
-        </div> 
-    </section>
-  )
+    const [currentPage, setCurrentPage] = useState(0);
+
+    const totalPages = Math.ceil(Object.keys(projects).length / ITEMS_PER_PAGE);
+
+    const handlePreviousPage = () => {
+        setCurrentPage((prevPage) => Math.max(prevPage - 1, 0));
+    };
+
+    const handleNextPage = () => {
+        setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages - 1));
+    };
+
+    const startIndex = currentPage * ITEMS_PER_PAGE;
+    const selectedProjects = Object.values(projects).slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+    return (
+        <section className='container px-4' id='CompetenceCardWrapper'>
+            <div className='row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5'>
+                {selectedProjects.map((project, index) => {
+                  console.log('stackIcons',project.stackIcons)
+                    return (
+                        <CompetenceCard 
+                            key={startIndex + index}
+                            title={project.title}
+                            year={project.year}
+                            details={project.details}
+                            stackIcons={project.stackIcons}
+                            linkDemo={project.linkDemo}
+                            linkGithub={project.linkGithub}
+                            linkProjet={project.linkProjet}
+                            imageSRC={project.imageSRC}
+                        />
+                    );
+                })}
+            </div>
+            <div className='d-flex justify-content-center' style={{gap: 25}}>
+                <button 
+                    className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot"
+                    onClick={handlePreviousPage} 
+                    disabled={currentPage === 0}
+                >
+                  {'<'}
+                </button>
+                <button 
+                    className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot"
+                    onClick={handleNextPage} 
+                    disabled={currentPage === totalPages - 1}
+                >
+                  {'>'}
+                </button>
+            </div>
+        </section>
+    );
 }
 
-export default CompetenceCardWrapper
+export default CompetenceCardWrapper;

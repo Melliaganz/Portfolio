@@ -11,6 +11,7 @@ function Texteffect() {
             "Développeur ReactJs",
             "Développeur Front-End",
             "Développeur Back-end",
+            "Développeur Mobile"
         ],
         autoStart: true,
         loop: true,

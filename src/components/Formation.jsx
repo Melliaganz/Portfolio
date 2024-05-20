@@ -56,20 +56,21 @@ export default function Formation() {
                     </div>
 
                     
-                    <div className="accordion shadow " id="accordionBlock">
+                    <div className="accordion shadow" id="accordionBlock">
                         <Accordion>
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"
-                            id="panel1a-header">
-                                <Typography component= {'span'} variant={'body2'}>
+                            id="panel1a-header"
+                            style={{height:150}}
+                            >
+                                <Typography component= {'span'} variant={'body2'} padding={5}  >
                                     <Image 
                                     src="https://www.csrsaguenay.qc.ca/wp-content/uploads/2020/02/Logo_CFP-Grand-Fjord-150x150.png"
                                     alt="logo-CFP"
-                                    width={50}
-                                    height={50}
+                                    width={100}
                                      />
-                                    Centre de formation professionnelle du Grand-Fjord
                                 </Typography>
+                                <p style={{display:'flex', alignItems:'center'}}>Centre de formation professionnelle du Grand-Fjord</p>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography component= {'span'} variant={'body2'}>
@@ -131,17 +132,18 @@ export default function Formation() {
                         </Accordion>
                         <Accordion >
                             <AccordionSummary 
+                            style={{height:150}}
                             expandIcon={<ExpandMoreIcon/>}
                             aria-controls="panel3a-content"
                             id="panel3a-header">
-                                <Typography component= {'span'} variant={'body2'}>
+                                <Typography component= {'span'} variant={'body2'} padding={5}>
                                     <Image 
                                     src="https://upload.wikimedia.org/wikipedia/commons/0/07/SAE_Institute_Logo.png" 
                                     alt="logo-SAE"
-                                    width={42.5}
-                                    height={32.5} />
-                                    SAE Institute
+                                    width={100} />
                                     </Typography>
+                                    <p style={{display:'flex', alignItems:'center'}}>SAE Institute</p>
+
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography component= {'span'} variant={'body2'}>
@@ -180,14 +182,16 @@ export default function Formation() {
                             <Accordion TransitionProps={{ unmountOnExit:true}} >
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel4a-content"
-                            id="panel4a-header">
-                                <Typography component= {'span'} variant={'body2'}>
+                            id="panel4a-header"
+                            style={{height:150}}
+                            >
+                                <Typography component= {'span'} variant={'body2'} padding={5}>
                                     <Image src="https://file.diplomeo-static.com/file/00/00/01/47/14720.svg" 
                                     alt="logo-BTMM" 
-                                    width={50} 
-                                    height={50}
+                                    width={100}
                                     /> 
-                                    Brevet de Technicien des métiers de la musique</Typography>
+                                    </Typography>
+                                    <p style={{display:'flex', alignItems:'center'}}>Brevet de Technicien des métiers de la musique</p>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography component= {'span'} variant={'body2'}>

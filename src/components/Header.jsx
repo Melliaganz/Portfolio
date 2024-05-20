@@ -36,18 +36,6 @@ const Header = () => {
               </a>
               <a
                 className='nav-link underline__headerLinks nav__text--color '
-                href='#formations'>
-                <span
-                  data-bs-toggle='collapse'
-                  data-bs-target='#navbarNavAltMarkup'
-                  aria-expanded='false'
-                  role='link'
-                  title=" Formations">
-                  Formations
-                </span>
-              </a>
-              <a
-                className='nav-link underline__headerLinks nav__text--color '
                 href='#portfolio'>
                 <span
                   data-bs-toggle='collapse'
@@ -56,6 +44,18 @@ const Header = () => {
                   role='link'
                   title="Portfolio">
                   Portfolio
+                </span>
+              </a>
+              <a
+                className='nav-link underline__headerLinks nav__text--color '
+                href='#formations'>
+                <span
+                  data-bs-toggle='collapse'
+                  data-bs-target='#navbarNavAltMarkup'
+                  aria-expanded='false'
+                  role='link'
+                  title=" Formations">
+                  Formations
                 </span>
               </a>
               <a

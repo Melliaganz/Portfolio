@@ -36,8 +36,8 @@ function App() {
       <ScrollupButton />
       <Socials />
       <About />
-      <Formation />
       <Portfolio />
+      <Formation />
       <Contact />
       <Footer />
       </ScopedCssBaseline>
