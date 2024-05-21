@@ -24,7 +24,6 @@ const CompetenceCardWrapper = () => {
         <section className='container px-4' id='CompetenceCardWrapper'>
             <div className='row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5'>
                 {selectedProjects.map((project, index) => {
-                  console.log('stackIcons',project.stackIcons)
                     return (
                         <CompetenceCard 
                             key={startIndex + index}

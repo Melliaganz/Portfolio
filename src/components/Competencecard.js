@@ -10,7 +10,7 @@ const CompetenceCard = ({ title, details, imageSRC, stackIcons, linkDemo, linkGi
                 <div className='d-flex flex-column h-100 p-5 pb-3 text-shadow'>
                     {title && <h2 className='pt-5 mt-3 h3 mb-5 card__title--color text-uppercase'>{title}</h2>}
                     {year ? <div className='overflow-scroll mb-3' style={{ maxHeight: "250px" }}>{year}</div> : null}
-                    <div className='overflow-scroll mb-3' style={{ maxHeight: "250px" }}>{details}</div>
+                    <div className='overflow-scroll mb-3' style={{ maxHeight: "250px" }} id="scrollbarOverflow">{details}</div>
                     <div className='d-flex justify-content-center flex-wrap mt-auto'>
                         {stackIcons?.map((icon, index) => (
                             <img key={index} className='me-3 my-1' src={icon.icon} alt={icon.alt || 'stack icon'} width={icon.width} height={icon.height} title={icon.title} />
