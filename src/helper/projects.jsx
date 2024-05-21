@@ -114,7 +114,70 @@ const projects = {
     "https://www.optiquechatenay.fr/",
     imageOptique
   ),
-  // Autres projets définis de manière similaire...
+  Netflix: createProject(
+    <a href="https://netflix-clone-iota-vert.vercel.app/" alt="Clone Netflix">Clone Netflix</a>,
+    "2023",
+    (
+      <div className="col formation__title my-auto me-lg-2 mx-auto">
+        <h3 className="text-uppercase">PROJET PERSO</h3>
+        <p style={{ textIndent: '10%' }}>
+        Le projet de clone de Netflix en React et Firebase est une application Web qui permet aux utilisateurs de découvrir et de regarder des films et des émissions de télévision en ligne. En utilisant les technologies React et Firebase, cette application offre une interface utilisateur réactive et une base de données en temps réel pour stocker les données de l'utilisateur. L'application offre une expérience utilisateur intuitive pour la navigation des contenus, la recherche de films et d'émissions de télévision, et la lecture en continu. Elle permet également aux utilisateurs de créer un compte, de s'abonner à des services de streaming et de gérer leur profil et leurs préférences.
+        </p>
+      </div>
+    ),
+    [icons.Firebase, icons.React],
+    "https://github.com/Melliaganz/netflix-clone",
+    "https://netflix-clone-iota-vert.vercel.app/",
+    imageNetflix
+  ),
+  GroupoMania: createProject(
+    <a href="https://groupomania-eta.vercel.app/login" alt="Groupomania">Groupomania</a>,
+    "2022",
+    (
+      <div className="col formation__title my-auto me-lg-2 mx-auto">
+        <h3 className="text-uppercase">PROJET DE FORMATION</h3>
+        <p style={{ textIndent: '10%' }}>
+        Vous êtes développeur depuis plus d'un an chez CONNECT-E, une petite agence web regroupant une douzaine d'employés. Votre directrice, Stéphanie, vient de signer un nouveau contrat avec Groupomania, un groupe spécialisé dans la grande distribution, et l'un des plus fidèles clients de l'agence. Le projet consiste à construire un réseau social interne pour les employés de Groupomania. Le but de cet outil est de faciliter les interactions entre collègues. Le département RH de Groupomania a imaginé plusieurs fonctionnalités pour favoriser les échanges entre collègues.
+
+</p>
+      </div>
+    ),
+    [icons.NodeJs,icons.Express ,icons.React, icons.MySql, icons.Sequelize, icons.Bootstrap],
+    "https://github.com/Melliaganz/Groupomania",
+    "https://groupomania-eta.vercel.app/login",
+    imageGroupomania
+  ),
+  HotOnes: createProject(
+    <a href="https://piquante-c0opxjtej-melliaganz.vercel.app/login" alt="HotOnes">Hot ones</a>,
+    "2022",
+    (
+      <div className="col formation__title my-auto me-lg-2 mx-auto">
+        <h3 className="text-uppercase">PROJET DE FORMATION</h3>
+        <p style={{ textIndent: '10%' }}>
+        Vous avez passé la dernière année en tant que développeur back-end indépendant et vous avez travaillé sur plusieurs projets de tailles et de difficultés variées. La semaine dernière, vous avez reçu un message sur votre plateforme de freelance vous demandant de l'aide pour un nouveau projet. Les sauces piquantes sont de plus en plus populaires, en grande partie grâce à la série YouTube « Hot Ones » . C’est pourquoi ce nouveau client, la marque de condiments à base de piment Piiquante, veut développer une application web de critique des sauces piquantes appelée « Hot Takes » . Si la responsable produit de Piiquante souhaite à terme transformer l'application d'évaluation en une boutique en ligne, elle souhaite que la première version soit une « galerie de sauces » permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé à l'aide d'Angular et a été précompilé après des tests internes, mais Piiquante a besoin d'un développeur back-end pour construire l'API.
+</p>
+      </div>
+    ),
+    [icons.NodeJs,icons.Express ,icons.React, icons.MongoDb, icons.Mongoose, icons.Bootstrap],
+    "https://github.com/Melliaganz/Piquante",
+    "https://piquante-c0opxjtej-melliaganz.vercel.app/login",
+    imagePiquante
+  ),
+  Kanap: createProject(
+    <a href="https://piquante-c0opxjtej-melliaganz.vercel.app/login" alt="HotOnes">Hot ones</a>,
+    "2022",
+    (
+      <div className="col formation__title my-auto me-lg-2 mx-auto">
+        <h3 className="text-uppercase">PROJET DE FORMATION</h3>
+        <p style={{ textIndent: '10%' }}>
+        Vous avez passé la dernière année en tant que développeur back-end indépendant et vous avez travaillé sur plusieurs projets de tailles et de difficultés variées. La semaine dernière, vous avez reçu un message sur votre plateforme de freelance vous demandant de l'aide pour un nouveau projet. Les sauces piquantes sont de plus en plus populaires, en grande partie grâce à la série YouTube « Hot Ones » . C’est pourquoi ce nouveau client, la marque de condiments à base de piment Piiquante, veut développer une application web de critique des sauces piquantes appelée « Hot Takes » . Si la responsable produit de Piiquante souhaite à terme transformer l'application d'évaluation en une boutique en ligne, elle souhaite que la première version soit une « galerie de sauces » permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé à l'aide d'Angular et a été précompilé après des tests internes, mais Piiquante a besoin d'un développeur back-end pour construire l'API.
+</p>
+      </div>
+    ),
+    [icons.NodeJs,icons.Express ,icons.React, icons.MongoDb, icons.Mongoose, icons.Bootstrap],
+    "https://github.com/Melliaganz/Kanap",
+    imagePiquante
+  ),
 };
 
 export default projects;
