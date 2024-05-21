@@ -21,42 +21,42 @@ const CompetenceCardWrapper = () => {
     const selectedProjects = Object.values(projects).slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
     return (
-        <section className='container px-4' id='CompetenceCardWrapper'>
-            <div className='row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5'>
-                {selectedProjects.map((project, index) => {
-                    return (
-                        <CompetenceCard 
-                            key={startIndex + index}
-                            title={project.title}
-                            year={project.year}
-                            details={project.details}
-                            stackIcons={project.stackIcons}
-                            linkDemo={project.linkDemo}
-                            linkGithub={project.linkGithub}
-                            linkProjet={project.linkProjet}
-                            imageSRC={project.imageSRC}
-                        />
-                    );
-                })}
+        <section className="container px-4" id="CompetenceCardWrapper">
+            <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                {selectedProjects.map(({ title, year, details, stackIcons, linkDemo, linkGithub, linkProjet, imageSRC }, index) => (
+                    <CompetenceCard 
+                        key={startIndex + index}
+                        title={title}
+                        year={year}
+                        details={details}
+                        stackIcons={stackIcons}
+                        linkDemo={linkDemo}
+                        linkGithub={linkGithub}
+                        linkProjet={linkProjet}
+                        imageSRC={imageSRC}
+                    />
+                ))}
             </div>
-            <div className='d-flex justify-content-center' style={{gap: 25}}>
+            <div className="d-flex justify-content-center" style={{ gap: 25 }}>
                 <button 
                     className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot"
                     onClick={handlePreviousPage} 
                     disabled={currentPage === 0}
+                    aria-label="Previous Page"
                 >
-                  {'<'}
+                    {'<'}
                 </button>
                 <button 
                     className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot"
                     onClick={handleNextPage} 
                     disabled={currentPage === totalPages - 1}
+                    aria-label="Next Page"
                 >
-                  {'>'}
+                    {'>'}
                 </button>
             </div>
         </section>
     );
-}
+};
 
 export default CompetenceCardWrapper;

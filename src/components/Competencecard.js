@@ -29,7 +29,7 @@ const CompetenceCard = ({ title, details, imageSRC, stackIcons, linkDemo, linkGi
 }
 
 CompetenceCard.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.any.isRequired,
     year: PropTypes.string,
     details: PropTypes.object.isRequired,
     imageSRC: PropTypes.string.isRequired,
