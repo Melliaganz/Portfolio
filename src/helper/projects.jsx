@@ -5,7 +5,6 @@ import imageOptique from "../img/optique.webp";
 import imageKanap from "../img/kanap.png";
 import imageGroupomania from "../img/Groupomania.png";
 import imagePiquante from "../img/piquante.png";
-import imageOhMyFood from "../img/ohmyfood.png";
 import imageNetflix from "../img/Netflix.png";
 import imageImpots from "../img/impots.webp";
 
@@ -94,8 +93,8 @@ const projects = {
       </div>
     ),
     [icons.Appstore, icons.Playstore, icons.Firebase, icons.ReactNative, icons.Gradle, icons.Kotlin, icons.AndroidStudio, icons.Xcode],
-    null,
     "https://play.google.com/store/apps/details?id=fr.gouv.finances.smartphone.android&hl=fr&gl=US&pli=1",
+    null,
     imageImpots
   ),
   Optique: createProject(
@@ -134,13 +133,23 @@ const projects = {
     <a href="https://groupomania-eta.vercel.app/login" alt="Groupomania">Groupomania</a>,
     "2022",
     (
-      <div className="col formation__title my-auto me-lg-2 mx-auto">
-        <h3 className="text-uppercase">PROJET DE FORMATION</h3>
-        <p style={{ textIndent: '10%' }}>
-        Vous êtes développeur depuis plus d'un an chez CONNECT-E, une petite agence web regroupant une douzaine d'employés. Votre directrice, Stéphanie, vient de signer un nouveau contrat avec Groupomania, un groupe spécialisé dans la grande distribution, et l'un des plus fidèles clients de l'agence. Le projet consiste à construire un réseau social interne pour les employés de Groupomania. Le but de cet outil est de faciliter les interactions entre collègues. Le département RH de Groupomania a imaginé plusieurs fonctionnalités pour favoriser les échanges entre collègues.
-
-</p>
-      </div>
+      <div className='col formation__title my-auto me-lg-2 mx-auto'>
+          <h3 className='text-uppercase'>Projet de formation</h3>
+          <p style={{textIndent: '10%'}}>
+          Vous êtes développeur depuis plus d'un an chez CONNECT-E, une petite agence web regroupant une douzaine d'employés.
+          Votre directrice, Stéphanie, vient de signer un nouveau contrat avec Groupomania, 
+          un groupe spécialisé dans la grande distribution, et l'un des plus fidèles clients de l'agence.
+          Le projet consiste à construire un réseau social interne pour les employés de Groupomania. 
+          Le but de cet outil est de faciliter les interactions entre collègues. Le département RH de Groupomania a 
+          imaginé plusieurs fonctionnalités pour favoriser les échanges entre collègues.
+          </p>
+          <h4 className="text-uppercase">compétences évaluées</h4>
+          <ul>
+            <li>Authentifier un utilisateur et maintenir sa session</li>
+            <li>Implémenter un stockage de données sécurisé en utilisant une base de données</li>
+            <li>Développer l’interface d’un site web grâce à un framework front-end</li>
+          </ul>
+        </div>
     ),
     [icons.NodeJs,icons.Express ,icons.React, icons.MySql, icons.Sequelize, icons.Bootstrap],
     "https://github.com/Melliaganz/Groupomania",
@@ -151,32 +160,54 @@ const projects = {
     <a href="https://piquante-c0opxjtej-melliaganz.vercel.app/login" alt="HotOnes">Hot ones</a>,
     "2022",
     (
-      <div className="col formation__title my-auto me-lg-2 mx-auto">
-        <h3 className="text-uppercase">PROJET DE FORMATION</h3>
-        <p style={{ textIndent: '10%' }}>
-        Vous avez passé la dernière année en tant que développeur back-end indépendant et vous avez travaillé sur plusieurs projets de tailles et de difficultés variées. La semaine dernière, vous avez reçu un message sur votre plateforme de freelance vous demandant de l'aide pour un nouveau projet. Les sauces piquantes sont de plus en plus populaires, en grande partie grâce à la série YouTube « Hot Ones » . C’est pourquoi ce nouveau client, la marque de condiments à base de piment Piiquante, veut développer une application web de critique des sauces piquantes appelée « Hot Takes » . Si la responsable produit de Piiquante souhaite à terme transformer l'application d'évaluation en une boutique en ligne, elle souhaite que la première version soit une « galerie de sauces » permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé à l'aide d'Angular et a été précompilé après des tests internes, mais Piiquante a besoin d'un développeur back-end pour construire l'API.
-</p>
-      </div>
+      <div className='col formation__title my-auto me-lg-2 mx-auto'>
+                <h3 className='text-uppercase'>Projet de formation</h3>
+                <p style={{textIndent: '10%'}}>
+                Vous avez passé la dernière année en tant que développeur back-end indépendant et vous avez travaillé sur plusieurs projets de tailles et de difficultés variées.
+                La semaine dernière, vous avez reçu un message sur votre plateforme de freelance vous demandant de l'aide pour un nouveau projet. Les sauces piquantes sont de plus en plus populaires, en grande partie grâce à la série YouTube « Hot Ones » . 
+                C’est pourquoi ce nouveau client, la marque de condiments à base de piment Piiquante, veut développer une application web de critique des sauces piquantes appelée « Hot Takes » .
+                Si la responsable produit de Piiquante souhaite à terme transformer l'application d'évaluation en une boutique en ligne, elle souhaite que la première version soit une « galerie de sauces » permettant aux utilisateurs de télécharger leurs sauces piquantes préférées 
+                et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé à l'aide d'Angular et a été précompilé après des tests internes, mais Piiquante a besoin d'un développeur back-end pour construire l'API.
+                </p>
+                <h4 className="text-uppercase">compétences évaluées</h4>
+                <ul>
+                    <li>Implémenter un modèle logique de données conformément à la réglementation</li>
+                    <li>Mettre en œuvre des opérations CRUD de manière sécurisée</li>
+                    <li>Stocker des données de manière sécurisée</li>
+                </ul>
+            </div>
     ),
-    [icons.NodeJs,icons.Express ,icons.React, icons.MongoDb, icons.Mongoose, icons.Bootstrap],
+    [icons.NodeJs,icons.Express ,icons.MongoDb, icons.Mongoose],
     "https://github.com/Melliaganz/Piquante",
     "https://piquante-c0opxjtej-melliaganz.vercel.app/login",
     imagePiquante
   ),
   Kanap: createProject(
-    <a href="https://piquante-c0opxjtej-melliaganz.vercel.app/login" alt="HotOnes">Hot ones</a>,
+    <a href="https://github.com/Melliaganz/Kanap" alt="HotOnes">Kanap</a>,
     "2022",
     (
       <div className="col formation__title my-auto me-lg-2 mx-auto">
-        <h3 className="text-uppercase">PROJET DE FORMATION</h3>
-        <p style={{ textIndent: '10%' }}>
-        Vous avez passé la dernière année en tant que développeur back-end indépendant et vous avez travaillé sur plusieurs projets de tailles et de difficultés variées. La semaine dernière, vous avez reçu un message sur votre plateforme de freelance vous demandant de l'aide pour un nouveau projet. Les sauces piquantes sont de plus en plus populaires, en grande partie grâce à la série YouTube « Hot Ones » . C’est pourquoi ce nouveau client, la marque de condiments à base de piment Piiquante, veut développer une application web de critique des sauces piquantes appelée « Hot Takes » . Si la responsable produit de Piiquante souhaite à terme transformer l'application d'évaluation en une boutique en ligne, elle souhaite que la première version soit une « galerie de sauces » permettant aux utilisateurs de télécharger leurs sauces piquantes préférées et de liker ou disliker les sauces que d'autres partagent. Le front-end de l'application a été développé à l'aide d'Angular et a été précompilé après des tests internes, mais Piiquante a besoin d'un développeur back-end pour construire l'API.
-</p>
-      </div>
+          <h3 className="text-uppercase">Projet de formation</h3>
+          <p style={{textIndent: '10%'}}>
+          Vous êtes en poste dans une agence de développement web depuis quelques semaines maintenant. 
+          Après avoir réalisé avec succès l’intégration de quelques sites web (HTML/CSS), on vous confie une nouvelle mission.
+          Votre client est Kanap, une marque de canapés qui vend ses produits depuis sa boutique exclusivement. 
+          Aujourd’hui, celle-ci souhaiterait avoir une plateforme de e-commerce en plus de sa boutique physique 
+          pour vendre ses produits sur Internet.
+          </p>
+          <h4 className="text-uppercase">compétences évaluées</h4>
+          <ul>
+            <li>Valider des données issues de sources externes</li>
+            <li>Gérer des événements JavaScript</li>
+            <li>Créer un plan de test pour une application</li>
+            <li>Interagir avec un web service avec JavaScript</li>
+          </ul>
+          </div>
     ),
-    [icons.NodeJs,icons.Express ,icons.React, icons.MongoDb, icons.Mongoose, icons.Bootstrap],
+    [icons.Javascript,icons.HTML5, icons.CSS3],
     "https://github.com/Melliaganz/Kanap",
-    imagePiquante
+    null,
+    imageKanap
   ),
 };
 
