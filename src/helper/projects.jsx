@@ -52,13 +52,14 @@ const icons = {
 };
 
 // Fonction pour créer un projet
-const createProject = (title, year, details, stackIcons, linkGithub, linkDemo, imageSRC) => ({
+const createProject = (title, year, details, stackIcons, linkGithub, linkDemo,linkProjet, imageSRC) => ({
   title,
   year,
   details,
   stackIcons,
   linkGithub,
   linkDemo,
+  linkProjet,
   imageSRC
 });
 
@@ -93,8 +94,9 @@ const projects = {
       </div>
     ),
     [icons.Appstore, icons.Playstore, icons.Firebase, icons.ReactNative, icons.Gradle, icons.Kotlin, icons.AndroidStudio, icons.Xcode],
-    "https://play.google.com/store/apps/details?id=fr.gouv.finances.smartphone.android&hl=fr&gl=US&pli=1",
     null,
+    null,
+    "https://play.google.com/store/apps/details?id=fr.gouv.finances.smartphone.android&hl=fr&gl=US&pli=1",
     imageImpots
   ),
   Optique: createProject(
@@ -110,6 +112,7 @@ const projects = {
     ),
     [icons.Firebase, icons.React],
     "https://github.com/Melliaganz/optiquechatenayfinal",
+    null,
     "https://www.optiquechatenay.fr/",
     imageOptique
   ),
@@ -127,6 +130,7 @@ const projects = {
     [icons.Firebase, icons.React],
     "https://github.com/Melliaganz/netflix-clone",
     "https://netflix-clone-iota-vert.vercel.app/",
+    null,
     imageNetflix
   ),
   GroupoMania: createProject(
@@ -154,6 +158,7 @@ const projects = {
     [icons.NodeJs,icons.Express ,icons.React, icons.MySql, icons.Sequelize, icons.Bootstrap],
     "https://github.com/Melliaganz/Groupomania",
     "https://groupomania-eta.vercel.app/login",
+    null,
     imageGroupomania
   ),
   HotOnes: createProject(
@@ -180,6 +185,7 @@ const projects = {
     [icons.NodeJs,icons.Express ,icons.MongoDb, icons.Mongoose],
     "https://github.com/Melliaganz/Piquante",
     "https://piquante-c0opxjtej-melliaganz.vercel.app/login",
+    null,
     imagePiquante
   ),
   Kanap: createProject(
@@ -206,6 +212,7 @@ const projects = {
     ),
     [icons.Javascript,icons.HTML5, icons.CSS3],
     "https://github.com/Melliaganz/Kanap",
+    null,
     null,
     imageKanap
   ),

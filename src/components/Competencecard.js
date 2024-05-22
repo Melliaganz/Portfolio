@@ -17,10 +17,10 @@ const CompetenceCard = ({ title, details, imageSRC, stackIcons, linkDemo, linkGi
                         ))}
                     </div>
                     <footer className='card-footer justify-content-evenly d-flex bg-transparent border-top-0 px-0 pt-3'>
-                        <a className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot" href={linkDemo ? linkDemo : linkProjet} rel="noopener noreferrer" target='_blank' aria-label={linkDemo ? "lien de démonstration" : "lien vers le projet"} title={linkDemo ? 'Démonstration du site' : 'Lien vers le projet'}>
+                       {linkProjet || linkDemo ? <a className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot" href={linkDemo ? linkDemo : linkProjet} rel="noopener noreferrer" target='_blank' aria-label={linkDemo ? "lien de démonstration" : "lien vers le projet"} title={linkDemo ? 'Démonstration du site' : 'Lien vers le projet'}>
                             <PlayArrowIcon /> {linkDemo ? 'Demo' : 'Lien vers le projet'}
-                        </a>
-                        {linkGithub && <a className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot" href={linkGithub} rel="noopener noreferrer" target='_blank' aria-label='Lien vers le repo Github' title="repo Github"><GitHubIcon /> Github</a>}
+                        </a> : null}
+                        {linkGithub ? <a className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot" href={linkGithub} rel="noopener noreferrer" target='_blank' aria-label='Lien vers le repo Github' title="repo Github"><GitHubIcon /> Github</a> : null}
                     </footer>
                 </div>
             </div>
