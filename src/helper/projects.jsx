@@ -212,7 +212,7 @@ const projects = {
     ),
     [icons.Javascript,icons.HTML5, icons.CSS3],
     "https://github.com/Melliaganz/Kanap",
-    null,
+    "https://kanap-lyart.vercel.app/",
     null,
     imageKanap
   ),
