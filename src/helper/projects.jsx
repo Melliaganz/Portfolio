@@ -184,7 +184,7 @@ const projects = {
     ),
     [icons.NodeJs,icons.Express ,icons.MongoDb, icons.Mongoose],
     "https://github.com/Melliaganz/Piquante",
-    "https://piquante-c0opxjtej-melliaganz.vercel.app/login",
+    "https://piquante.vercel.app/login",
     null,
     imagePiquante
   ),
