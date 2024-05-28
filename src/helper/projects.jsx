@@ -48,7 +48,10 @@ const icons = {
   Appstore: { icon: logoAppstore, alt: "Appstore", height: "48", title: 'Appstore' },
   Kotlin: { icon: logoKotlin, alt: "Kotlin", height: "48", title: 'Kotlin' },
   AndroidStudio: { icon: logoAndroidStudio, alt: "Android Studio", height: '48', title: "Android Studio" },
-  Xcode: { icon: logoXcode, alt: "Xcode", height: '48', title: "Xcode" }
+  Xcode: { icon: logoXcode, alt: "Xcode", height: '48', title: "Xcode" },
+  Vercel: {icon: "https://cdn.worldvectorlogo.com/logos/vercel.svg", alt:"Vercel", height:'48', title:'Vercel'},
+  Heroku: { icon: "https://cdn.icon-icons.com/icons2/2415/PNG/512/heroku_original_wordmark_logo_icon_146482.png", alt: 'Heroku', height: '48', title: 'Heroku'},
+  Psql: { icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png", alt: 'PostgresSql', height: '48', title: 'PostGresSql'}
 };
 
 // Fonction pour créer un projet
@@ -155,7 +158,7 @@ const projects = {
           </ul>
         </div>
     ),
-    [icons.NodeJs,icons.Express ,icons.React, icons.MySql, icons.Sequelize, icons.Bootstrap],
+    [icons.NodeJs,icons.Express ,icons.React, icons.MySql, icons.Sequelize, icons.Bootstrap, icons.Vercel, icons.Heroku, icons.Psql],
     "https://github.com/Melliaganz/Groupomania",
     "https://groupomania-eta.vercel.app/login",
     null,
@@ -182,14 +185,14 @@ const projects = {
                 </ul>
             </div>
     ),
-    [icons.NodeJs,icons.Express ,icons.MongoDb, icons.Mongoose],
+    [icons.NodeJs,icons.Express ,icons.MongoDb, icons.Mongoose, icons.Vercel, icons.Heroku],
     "https://github.com/Melliaganz/Piquante",
     "https://piquante.vercel.app/login",
     null,
     imagePiquante
   ),
   Kanap: createProject(
-    <a href="https://github.com/Melliaganz/Kanap" alt="HotOnes">Kanap</a>,
+    <a href="https://github.com/Melliaganz/Kanap" alt="Kanap">Kanap</a>,
     "2022",
     (
       <div className="col formation__title my-auto me-lg-2 mx-auto">
@@ -210,7 +213,7 @@ const projects = {
           </ul>
           </div>
     ),
-    [icons.Javascript,icons.HTML5, icons.CSS3],
+    [icons.Javascript,icons.HTML5, icons.CSS3, icons.Vercel],
     "https://github.com/Melliaganz/Kanap",
     "https://kanap-lyart.vercel.app/",
     null,

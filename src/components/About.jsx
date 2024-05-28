@@ -28,6 +28,7 @@ const technologies = [
   { src: 'https://upload.wikimedia.org/wikipedia/fr/0/09/Logo_App_Store_d%27Apple.png', alt: 'Appstore', href: 'https://www.apple.com/fr/app-store/' },
   { src: 'https://sdtimes.com/wp-content/uploads/2016/05/0517.sdt-gradle.png', alt: 'Gradle', href: 'https://gradle.org/' },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png', alt: 'Kotlin', href: 'https://kotlinlang.org/' },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png', alt: 'PostGresSQL', href: 'https://www.postgresql.org/',title: 'PostgresSQL'}
 ];
 
 const About = () => (
