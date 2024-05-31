@@ -113,7 +113,7 @@ const projects = {
         </p>
       </div>
     ),
-    [icons.Firebase, icons.React],
+    [icons.Firebase, icons.React, icons.Vercel],
     "https://github.com/Melliaganz/optiquechatenayfinal",
     null,
     "https://www.optiquechatenay.fr/",
@@ -130,7 +130,7 @@ const projects = {
         </p>
       </div>
     ),
-    [icons.Firebase, icons.React],
+    [icons.Firebase, icons.React, icons.Vercel],
     "https://github.com/Melliaganz/netflix-clone",
     "https://netflix-clone-iota-vert.vercel.app/",
     null,
