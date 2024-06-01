@@ -114,7 +114,7 @@ const projects = {
       </div>
     ),
     [icons.Firebase, icons.React, icons.Vercel],
-    "https://github.com/Melliaganz/optiquechatenayfinal",
+    null,
     null,
     "https://www.optiquechatenay.fr/",
     imageOptique
