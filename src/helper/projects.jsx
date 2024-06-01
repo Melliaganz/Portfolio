@@ -74,14 +74,7 @@ const projects = {
     (
       <div className="col formation__title my-auto me-lg-2 mx-auto">
         <h3 className="text-uppercase">Développeur / Analyste</h3>
-        <p>Le portefeuille applicatif de la division « Bouquet de services » est constitué de plusieurs services numériques stratégiques offerts aux usagers :</p>
-        <ul>
-          <li>Portail « impots.gouv.fr »</li>
-          <li>Espace personnel privatif des particuliers (ENSU Présentation)</li>
-          <li>Service en ligne de prise de rendez-vous (APRDV)</li>
-          <li>Application « impots.gouv » pour smartphone</li>
-          <li>Offre de paiement accessible aux usagers (Tipi, Payfip, Satelit, Pasifae)</li>
-        </ul>
+        <p>Développement de l'application mobile des impots</p>
         <p>Les travaux effectués quand j'ai occupé ce poste sont :</p>
         <ul>
           <li>Étude des spécifications de la MOA</li>
