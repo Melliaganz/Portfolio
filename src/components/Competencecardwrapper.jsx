@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import CompetenceCard from './Competencecard';
 import projects from '../helper/projects';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const ITEMS_PER_PAGE = 3;
 
@@ -44,7 +46,7 @@ const CompetenceCardWrapper = () => {
                     disabled={currentPage === 0}
                     aria-label="Previous Page"
                 >
-                    {'<'}
+                    {<ArrowBackIcon />}
                 </button>
                 <button 
                     className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot"
@@ -52,7 +54,7 @@ const CompetenceCardWrapper = () => {
                     disabled={currentPage === totalPages - 1}
                     aria-label="Next Page"
                 >
-                    {'>'}
+                    {<ArrowForwardIcon/>}
                 </button>
             </div>
         </section>
