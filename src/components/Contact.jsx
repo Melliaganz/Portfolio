@@ -29,14 +29,6 @@ export default function Contact() {
           <div className=" row g-0 mb-5 shadow border " id='lienContact'>
             <div className="m-0 g-0 p-0">
               <div className="row p-3 align-items-center">
-              <div className="text-center contact--color">
-                <div className="contact__icon col-12 text-center contact--color">
-                  <PersonPinIcon />
-                </div>
-                <a className="p-0 col-9 contact--color " href="https://goo.gl/maps/DkrJT4yAcvB5KyK17" alt="Google Maps" target="_blank" rel="noopener noreferrer" title="Google Maps">Bruyères-le-Châtel</a>
-              </div>
-              </div>
-              <div className="row p-3 align-items-center">
                 <div className="text-center contact--color">
                   <EmailIcon />
                 <a 
