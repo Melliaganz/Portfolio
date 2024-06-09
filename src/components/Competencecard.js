@@ -17,7 +17,7 @@ const CompetenceCard = ({ title, details, imageSRC, stackIcons, linkDemo, linkGi
                         ))}
                     </div>
                     <footer className='card-footer justify-content-evenly d-flex bg-transparent border-top-0 px-0 pt-3'>
-                       {linkProjet || linkDemo ? <a className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot" href={linkDemo ? linkDemo : linkProjet} rel="noopener noreferrer" target='_blank' aria-label={linkDemo ? "lien de démonstration" : "lien vers le projet"} title={linkDemo ? 'Démonstration du site' : 'Lien vers le projet'}>
+                       {linkProjet || linkDemo ? <a className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot" style={{display:"flex", alignItems:'center', justifyContent:'center', textAlign:'center'}} href={linkDemo ? linkDemo : linkProjet} rel="noopener noreferrer" target='_blank' aria-label={linkDemo ? "lien de démonstration" : "lien vers le projet"} title={linkDemo ? 'Démonstration du site' : 'Lien vers le projet'}>
                             <PlayArrowIcon /> {linkDemo ? 'Demo' : 'Lien vers le projet'}
                         </a> : null}
                         {linkGithub ? <a className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot" href={linkGithub} rel="noopener noreferrer" target='_blank' aria-label='Lien vers le repo Github' title="repo Github"><GitHubIcon /> Github</a> : null}
