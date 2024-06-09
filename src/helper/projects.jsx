@@ -14,7 +14,6 @@ import logoSass from "../img/Sass_Logo_Color.svg";
 import logoJavascript from "../img/Unofficial_JavaScript_logo_2.svg";
 import logoBootstrap from "../img/Bootstrap_logo.svg";
 import logoNodejs from "../img/Node.js_logo.svg";
-import logoExpress from "../img/Expressjs.png";
 import logoMongoose from "../img/mongoose.webp";
 import logoReact from "../img/React Logo.svg";
 import logoMySQL from "../img/MySQL.svg";
@@ -36,7 +35,7 @@ const icons = {
   Javascript: { icon: logoJavascript, alt: "Javascript", height: "48", title: 'JavaScript' },
   Bootstrap: { icon: logoBootstrap, alt: "Bootstrap", height: "48", title: 'Bootstrap' },
   NodeJs: { icon: logoNodejs, alt: "Node.js", height: "48", title: 'Node.js' },
-  Express: { icon: logoExpress, alt: "Express", height: "48", title: 'Express' },
+  Express: { icon: "https://images.credly.com/images/1c2c86e1-16ce-4e4d-a425-d1ac96bb026d/express.png", alt: "Express", height: "48", title: 'Express' },
   MongoDb: { icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/320px-MongoDB_Logo.svg.png", alt: "MongoDB", height: "48", title: 'MongoDB' },
   Mongoose: { icon: logoMongoose, alt: "Mongoose", height: "48", title: 'Mongoose' },
   React: { icon: logoReact, alt: "React.js", height: "48", title: 'React.js' },

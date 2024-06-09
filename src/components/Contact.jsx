@@ -1,5 +1,4 @@
 import React, {FormEvent, useState} from 'react'
-import PersonPinIcon from '@mui/icons-material/PersonPin';
 import EmailIcon from '@mui/icons-material/Email';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
