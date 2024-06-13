@@ -205,7 +205,7 @@ const projects = {
           </ul>
           </div>
     ),
-    [icons.Javascript,icons.HTML5, icons.CSS3, icons.Vercel],
+    [icons.Javascript,icons.HTML5, icons.CSS3, icons.Vercel, icons.Heroku],
     "https://github.com/Melliaganz/Kanap",
     "https://kanap-lyart.vercel.app/",
     null,
