@@ -7,23 +7,17 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.1",
     "@mui/material": "^5.15.1",
-    "@mui/styled-engine-sc": "^6.0.0-alpha.9",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^16.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "axios": "^1.7.3",
-    "boostrap": "^2.0.0",
-    "postcss": "^8.4.31",
+    "eslint-config-react-app": "^7.0.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-google-recaptcha": "^3.1.0",
     "react-scripts": "^5.0.1",
-    "semver": "^7.5.4",
-    "styled-components": "^6.1.2",
     "typewriter-effect": "^2.19.0",
-    "web-vitals": "^4.0.1",
-    "ws": "^8.18.0"
+    "web-vitals": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,8 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "babel-plugin-react-html-attrs": "^3.0.5"
   }
 }
