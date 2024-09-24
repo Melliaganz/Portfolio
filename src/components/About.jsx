@@ -23,7 +23,7 @@ const technologies = [
   { src: 'https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png', alt: 'nodeJS', href: 'https://nodejs.org/en/' },
   { src: 'https://seeklogo.com/images/S/sequelize-logo-9A5075DB9F-seeklogo.com.png', alt: 'Sequelize', href: 'https://sequelize.org/' },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png', alt: 'Sass', href: 'https://sass-lang.com/' },
-  { src: 'https://upload.wikimedia.org/wikipedia/en/5/56/Xcode_14_icon.png', alt: 'Xcode', href: 'https://apps.apple.com/fr/app/xcode/id497799835' },
+  { src: 'https://upload.wikimedia.org/wikipedia/commons/1/1b/Xcode.svg', alt: 'Xcode', href: 'https://apps.apple.com/fr/app/xcode/id497799835' },
   { src: 'https://seeklogo.com/images/G/google-play-store-logo-A9F117BED5-seeklogo.com.png', alt: 'Playstore', href: 'https://play.google.com/store/apps?hl=fr&gl=US' },
   { src: 'https://upload.wikimedia.org/wikipedia/fr/0/09/Logo_App_Store_d%27Apple.png', alt: 'Appstore', href: 'https://www.apple.com/fr/app-store/' },
   { src: 'https://sdtimes.com/wp-content/uploads/2016/05/0517.sdt-gradle.png', alt: 'Gradle', href: 'https://gradle.org/' },
