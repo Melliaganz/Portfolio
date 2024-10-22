@@ -53,7 +53,7 @@ const formations = [
     ],
   },
   {
-    logo: "https://file.diplomeo-static.com/file/00/00/01/47/14720.svg",
+    logo: "https://educamus.ac-versailles.fr/IMG/logo/arton873.png?1511429496",
     title: "Brevet de Technicien des métiers de la musique",
     subtitle: "Brevet de technicien",
     date: "Juillet 2015, Sèvres",

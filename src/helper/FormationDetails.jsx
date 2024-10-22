@@ -1,7 +1,6 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
 
-// Composant réutilisable pour afficher les détails d'une formation
 export const FormationDetails = ({ logo, title, subtitle, date, details, website }) => (
     <div className="row g-0">
         <section className="col-lg-3 text-center mx-auto me-lg-0 my-auto">
