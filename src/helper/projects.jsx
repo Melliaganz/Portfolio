@@ -25,6 +25,7 @@ import logoKotlin from "../img/Kotlin_Icon.png";
 import logoReactNative from "../img/react-native-1.svg";
 import logoAndroidStudio from "../img/Android_Studio_Logo_(2023).svg.png";
 import logoXcode from "../img/1200x630bb.png";
+import logoDiscord from '../img/discordLogoP.webp';
 
 // Définition des icônes
 const icons = {
@@ -50,7 +51,12 @@ const icons = {
   Xcode: { icon: logoXcode, alt: "Xcode", height: '48', title: "Xcode" },
   Vercel: {icon: "https://cdn.worldvectorlogo.com/logos/vercel.svg", alt:"Vercel", height:'48', title:'Vercel'},
   Heroku: { icon: "https://cdn.icon-icons.com/icons2/2415/PNG/512/heroku_original_wordmark_logo_icon_146482.png", alt: 'Heroku', height: '48', title: 'Heroku'},
-  Psql: { icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png", alt: 'PostgresSql', height: '48', title: 'PostGresSql'}
+  Psql: { icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png", alt: 'PostgresSql', height: '48', title: 'PostGresSql'},
+  Java: { icon: "https://cdn-icons-png.flaticon.com/512/226/226777.png", alt: "Java", height: "48", title: "Java" },
+  JDA: { icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/JDA_Software_Logo.svg/2560px-JDA_Software_Logo.svg.png", alt: "JDA", height: "48", title: "JDA" },
+  LavaPlayer: { icon: "https://avatars.githubusercontent.com/u/26258842?s=200&v=4", alt: "LavaPlayer", height: "48", title: "LavaPlayer" },
+  SpotifyAPI: { icon: "https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg", alt: "Spotify API", height: "48", title: "Spotify API" },
+  YouTubeAPI: { icon: "https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png", alt: "YouTube API", height: "48", title: "YouTube API" },
 };
 
 // Fonction pour créer un projet
@@ -94,6 +100,30 @@ const projects = {
     "https://play.google.com/store/apps/details?id=fr.gouv.finances.smartphone.android&hl=fr&gl=US&pli=1",
     imageImpots
   ),
+  BotDiscord: createProject(
+    "MellianBot 1.1 - Bot Discord",
+    "2024",
+    (
+      <div className="col formation__title my-auto me-lg-2 mx-auto">
+        <h3 className="text-uppercase">Assistant musical pour Discord</h3>
+        <p>
+          Mon bot Discord est conçu pour gérer de manière optimale la lecture de musique sur plusieurs serveurs. Il fournit
+          des commandes simples pour lire, mettre en pause, reprendre ou sauter des pistes. Le bot ajuste également son
+          statut en fonction de la chanson en cours pour chaque serveur, offrant une expérience personnalisée.
+        </p>
+        <ul>
+          <li>Lecture de musique multi-serveur avec personnalisation des statuts d'écoute</li>
+          <li>Gestion des commandes : lecture, pause, reprise, saut de piste, etc.</li>
+          <li>Intégration de Spotify et YouTube pour une lecture musicale étendue</li>
+        </ul>
+      </div>
+    ),
+    [icons.Java, icons.JDA, icons.LavaPlayer, icons.SpotifyAPI, icons.YouTubeAPI],
+    "https://github.com/Melliaganz/MellianBot", // Remplacez par le lien GitHub de votre bot
+    null,
+    "https://discord.com/oauth2/authorize?client_id=1264609819533250600&permissions=3145728&scope=bot", // Remplacez par le lien d'invitation du bot
+    logoDiscord
+    ),
   Optique: createProject(
     <a href="https://www.optiquechatenay.fr/" alt="Optique Chatenay">Optique Chatenay</a>,
     "2023",
