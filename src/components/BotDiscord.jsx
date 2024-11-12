@@ -72,6 +72,15 @@ const BotDiscord = () => (
               />
             </a>
           </Col>
+          <Col xs="auto">
+            <a href="https://railway.app/" target="_blank" rel="noopener noreferrer">
+              <Image
+                src="https://railway.app/brand/logo-light.svg"
+                alt="Railway.app"
+                height="30"
+              />
+            </a>
+          </Col>
         </Row>
 
         <Button
