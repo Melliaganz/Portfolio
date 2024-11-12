@@ -4,6 +4,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, ScopedCssBaseline } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Lucas from "./img/Portrait.webp";
+import BotDiscord from './components/BotDiscord';
 
 const About = lazy(() => import('./components/About'));
 const Header = lazy(() => import('./components/Header'));
@@ -61,6 +62,7 @@ function App() {
               <Socials />
               <About />
               <Portfolio />
+              <BotDiscord/>
               <Formation />
               <Contact />
               <Footer />
