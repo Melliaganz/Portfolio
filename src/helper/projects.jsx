@@ -101,13 +101,13 @@ const projects = {
     imageImpots
   ),
   BotDiscord: createProject(
-    "MellianBot 1.1 - Bot Discord",
+    <a href="https://discord.com/oauth2/authorize?client_id=1264609819533250600&permissions=3145728&scope=bot" alt="invitation Bot" title="lien d'invitation du bot">MellianBot 1.1 - Bot Discord</a>,
     "2024",
     (
       <div className="col formation__title my-auto me-lg-2 mx-auto">
-        <h3 className="text-uppercase">Assistant musical pour Discord</h3>
+        <h3 className="text-uppercase">Projet perso</h3>
         <p>
-          Mon bot Discord est conçu pour gérer de manière optimale la lecture de musique sur plusieurs serveurs. Il fournit
+          MellianBot est conçu pour gérer de manière optimale la lecture de musique sur plusieurs serveurs. Il fournit
           des commandes simples pour lire, mettre en pause, reprendre ou sauter des pistes. Le bot ajuste également son
           statut en fonction de la chanson en cours pour chaque serveur, offrant une expérience personnalisée.
         </p>
@@ -119,9 +119,9 @@ const projects = {
       </div>
     ),
     [icons.Java, icons.JDA, icons.LavaPlayer, icons.SpotifyAPI, icons.YouTubeAPI],
-    "https://github.com/Melliaganz/MellianBot", // Remplacez par le lien GitHub de votre bot
+    "https://github.com/Melliaganz/MellianBot",
     null,
-    "https://discord.com/oauth2/authorize?client_id=1264609819533250600&permissions=3145728&scope=bot", // Remplacez par le lien d'invitation du bot
+    "https://discord.com/oauth2/authorize?client_id=1264609819533250600&permissions=3145728&scope=bot", 
     logoDiscord
     ),
   Optique: createProject(
