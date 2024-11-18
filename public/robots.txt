@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
+# Référence : https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+Sitemap: https://www.lengrandlucas.com/sitemap.xml
