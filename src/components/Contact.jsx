@@ -11,7 +11,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function Contact() {
   const formSparkUrl = `https://submit-form.com/zDkyCJXc`
-  const recaptchaKey = '6Ld5u-cgAAAAALwGg6R0qaGOEPsIOhej7iW5NPHI';
+  const recaptchaKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY || '';
   const [submitting, setSubmitting] = useState(false);
   const submitForm = async (event: FormEvent) => {
     setSubmitting(true);
