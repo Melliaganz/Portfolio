@@ -1,1 +1,330 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap);#codeAbout a:hover,.socials a:hover,a{transform:translate(0,0)}#codeAbout a,.socials a,a{transition:transform .2s}#lienContact,.navbar a,a{text-decoration:none}.App,footer{text-align:center}.loader,.scroll-up,.socials{position:fixed}html{color-scheme:dark}#nomAbout,.navbar a,a{color:#2596be}#header{width: 100vw;}header{position:absolute;z-index:10;}::-webkit-scrollbar{background-color:transparent}::-webkit-scrollbar-corner{background:0 0}.btn-primary,.btn-primary:active,.card{background-color:transparent}#about{margin-top:100px}a:hover{transform:translate(1%,1%)}.navbar a:hover{-webkit-animation:.2s .2s forwards highlight;animation:.2s .2s forwards highlight;background-color:none;background:linear-gradient(90deg,#7efff5 50%,rgba(255,255,255,0) 50%);background-size:200% 100%;background-position:100% 0;border-radius:25px}#backgroundImg{background-repeat:no-repeat;background-position:top center; background-position-y: 2%;}#formations{width:50px}@-webkit-keyframes highlight{to{background-position:0 0}}@keyframes highlight{to{background-position:0 0}}.card{border-radius:15px}#nomAbout{text-transform:uppercase;font-weight:800}body{font-family:Roboto,sans-serif; width: 100vw;}.btn-primary{border:none}.btn-light:hover,.btn-primary:hover,.btn-warning:hover{background-color:transparent;background-image:linear-gradient(145deg,#f0f0f0,#f3f3f3);color:#2596be;box-shadow:inset 1px 1px 2px #babecc,inset -1px -1px 2px #fff}.btn-light{border:none;color:#fff;background:#2596be;border-radius:25px}.contact--color,.socials{color:#2596be}#codeAbout{font-family:'Courier New',Courier,monospace;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-around; margin: auto;}#codeAbout a{transform:translate(-2%,-2%)}.socials{z-index:1;display:flex;flex-direction:column;right:1%;bottom:50%}.socials:before{content:'';position:absolute;height:100%;width:100%}.socials a{transform:translate(-5%,-5%)}.App-link{color:#61dafb}#photoHeader{height:60px;width:60px;border-radius:80px}.imageSRC{object-fit:contain}svg{fill:currentColor}#photoHeader:hover{animation:1s infinite zoom-in-zoom-out}#photoAbout{width:170px;height:170px;border-radius:100px;border:15px solid #2596be}#blocTextAbout,#cardFormulaire,#lienContact{border-radius:11px; align-items: center;}#blocTextAbout{box-shadow:0 3px 10px var(--primary-shadow);margin-bottom:15px;padding:20px}@media screen and (min-width:800px){#blocTextAbout{margin-top:-300px;margin-bottom:50px;margin-left:150px}.justify-content-end{justify-content:center}#Contact{flex-wrap:wrap-reverse}}.scroll-up{z-index:1000;right:2%;bottom:3%;cursor:pointer;animation:.3s fadeIn;transition:opacity .4s;opacity:.5}.scroll-up:hover{opacity:1;animation:.5s linear infinite alternate jump}.btn-warning:valid{background-color:#2596be}.up-arrow{width:3rem;height:3rem}@media only screen and (min-width:1080px){.menuDrop{display:none}}@media only screen and (max-width:1080px){.menuDrop{display:flex}#about{margin-top:20px}}#blocTextAbout,#formationsBlock,#header,#photoAbout,.socials{animation-duration:4s;animation-name:opacity}#lienContact{color:inherit;width:auto;overflow:hidden}footer{padding:1.25rem;margin:2rem 0 0}.btn .EmailIcon,.btn:hover .DraftsIcon{display:inline}.btn .DraftsIcon,.btn:hover .EmailIcon{display:none}@keyframes opacity{from{opacity:0%}to{opacity:100%}}@keyframes fadeIn{0%{opacity:0%}100%{opacity:.5}}@keyframes spinner{from{transform:rotate(0)}to{transform:rotate(360deg)}}@keyframes load{0%{opacity:1}80%{opacity:100%}90%{opacity:50%}100%{opacity:0;z-index:-1}}@keyframes zoom-in-zoom-out{0%,100%{transform:scale(1,1)}50%{transform:scale(1,1.1)}}@keyframes jump{0%{transform:translate3d(0,0,0) scale3d(1,1,1)}40%{transform:translate3d(0,-30%,0) scale3d(.7,1.5,1)}100%{transform:translate3d(0,-10%,0) scale3d(1.5,.7,1)}}.loader{display:flex;justify-content:center;align-items:center;height:100%;width:100%;z-index:10000;animation:1.2s forwards load}.loader img{border-radius:50%;}.spinner{animation:.8s linear infinite spinner}#email,#message,#name{border-radius:25px}textarea{resize:none}
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap);
+#codeAbout a:hover,
+.socials a:hover,
+a {
+  transform: translate(0, 0);
+}
+#codeAbout a,
+.socials a,
+a {
+  transition: transform 0.2s;
+}
+#lienContact,
+.navbar a,
+a {
+  text-decoration: none;
+}
+.App,
+footer {
+  text-align: center;
+}
+.loader,
+.scroll-up,
+.socials {
+  position: fixed;
+}
+html {
+  color-scheme: dark;
+}
+#nomAbout,
+.navbar a,
+a {
+  color: #2596be;
+}
+#header {
+  width: 100vw;
+}
+header {
+  position: absolute;
+  z-index: 10;
+}
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+::-webkit-scrollbar-corner {
+  background: 0 0;
+}
+.btn-primary,
+.btn-primary:active,
+.card {
+  background-color: transparent;
+}
+#about {
+  margin-top: 100px;
+}
+a:hover {
+  transform: translate(1%, 1%);
+}
+.navbar a:hover {
+  -webkit-animation: 0.2s 0.2s forwards highlight;
+  animation: 0.2s 0.2s forwards highlight;
+  background-color: none;
+  background: linear-gradient(90deg, #7efff5 50%, rgba(255, 255, 255, 0) 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  border-radius: 25px;
+}
+#backgroundImg {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-position-y: 2%;
+}
+#formations {
+  width: 50px;
+}
+@-webkit-keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes highlight {
+  to {
+    background-position: 0 0;
+  }
+}
+.card {
+  border-radius: 15px;
+}
+#nomAbout {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+body {
+  font-family: Roboto, sans-serif;
+  width: 100vw;
+}
+.btn-primary {
+  border: none;
+}
+.btn-light:hover,
+.btn-primary:hover,
+.btn-warning:hover {
+  background-color: transparent;
+  background-image: linear-gradient(145deg, #f0f0f0, #f3f3f3);
+  color: #2596be;
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+.btn-light {
+  border: none;
+  color: #fff;
+  background: #2596be;
+  border-radius: 25px;
+}
+.contact--color,
+.socials {
+  color: #2596be;
+}
+#codeAbout {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+}
+#codeAbout a {
+  transform: translate(-2%, -2%);
+}
+.socials {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  right: 1%;
+  bottom: 50%;
+}
+.socials:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.socials a {
+  transform: translate(-5%, -5%);
+}
+.App-link {
+  color: #61dafb;
+}
+#photoHeader {
+  height: 60px;
+  width: 60px;
+  border-radius: 80px;
+}
+.imageSRC {
+  object-fit: contain;
+}
+svg {
+  fill: currentColor;
+}
+#photoHeader:hover {
+  animation: 1s infinite zoom-in-zoom-out;
+}
+#photoAbout {
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
+  border: 15px solid #2596be;
+}
+#blocTextAbout,
+#cardFormulaire,
+#lienContact {
+  border-radius: 11px;
+  align-items: center;
+}
+#blocTextAbout {
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  margin-bottom: 15px;
+  padding: 20px;
+}
+@media screen and (min-width: 800px) {
+  #blocTextAbout {
+    margin-top: -300px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+  }
+  .justify-content-end {
+    justify-content: center;
+  }
+  #Contact {
+    flex-wrap: wrap-reverse;
+  }
+}
+.scroll-up {
+  z-index: 1000;
+  right: 2%;
+  bottom: 3%;
+  cursor: pointer;
+  animation: 0.3s fadeIn;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+.scroll-up:hover {
+  opacity: 1;
+  animation: 0.5s linear infinite alternate jump;
+}
+.btn-warning:valid {
+  background-color: #2596be;
+}
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+@media only screen and (min-width: 1080px) {
+  .menuDrop {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .menuDrop {
+    display: flex;
+  }
+  #about {
+    margin-top: 20px;
+  }
+}
+#blocTextAbout,
+#formationsBlock,
+#header,
+#photoAbout,
+.socials {
+  animation-duration: 4s;
+  animation-name: opacity;
+}
+#lienContact {
+  color: inherit;
+  width: auto;
+  overflow: hidden;
+}
+footer {
+  padding: 1.25rem;
+  margin: 2rem 0 0;
+}
+.btn .EmailIcon,
+.btn:hover .DraftsIcon {
+  display: inline;
+}
+.btn .DraftsIcon,
+.btn:hover .EmailIcon {
+  display: none;
+}
+@keyframes opacity {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 100%;
+  }
+  90% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes zoom-in-zoom-out {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 1.1);
+  }
+}
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+  40% {
+    transform: translate3d(0, -30%, 0) scale3d(0.7, 1.5, 1);
+  }
+  100% {
+    transform: translate3d(0, -10%, 0) scale3d(1.5, 0.7, 1);
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  animation: 1.2s forwards load;
+}
+.loader img {
+  border-radius: 50%;
+}
+.spinner {
+  animation: 0.8s linear infinite spinner;
+}
+#email,
+#message,
+#name {
+  border-radius: 25px;
+}
+textarea {
+  resize: none;
+}

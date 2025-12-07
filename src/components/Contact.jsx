@@ -11,7 +11,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function Contact() {
   const formSparkUrl = `https://submit-form.com/zDkyCJXc`
-  const recaptchaKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY || '';
+  const recaptchaKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY || '6Ld5u-cgAAAAALwGg6R0qaGOEPsIOhej7iW5NPHI';
   const [submitting, setSubmitting] = useState(false);
   const submitForm = async (event: FormEvent) => {
     setSubmitting(true);
@@ -109,7 +109,8 @@ export default function Contact() {
           aria-label='reCAPTCHA'
           aria-hidden="true"
           className='d-flex align-items-center flex-column mb-3 mt-5'
-          sitekey={recaptchaKey}/>
+          sitekey={recaptchaKey}
+          />
           <button disabled={submitting} type="submit" className="btn btn-light col-4 mt-2 shadow">
           {submitting ? "Envoi !" : "Envoyer !"} <span className='EmailIcon' ><EmailIcon /></span> <span className='DraftsIcon'><DraftsIcon /></span>
           </button>          
