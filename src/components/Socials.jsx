@@ -5,6 +5,7 @@ import GitHub from '@mui/icons-material/GitHub';
 import Email from '@mui/icons-material/Email';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import discordIcon from "../img/5968756.png"
 
 const SocialLink = memo(({ href, label, icon }) => (
   <a
@@ -53,7 +54,7 @@ const Socials = () => {
     {
       href: "https://discord.com/users/Melliaganz#7310",
       label: "Discord",
-      icon: <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/1818px-Discord_Logo_sans_texte.svg.png" alt="Discord" height="25px" className="discord-icon" />
+      icon: <img src={discordIcon} alt="Discord" height="25px" className="discord-icon" />
     }
   ];
 

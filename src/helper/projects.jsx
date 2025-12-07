@@ -1,5 +1,3 @@
-import React from "react";
-
 // Import des images
 import imageOptique from "../img/optique.webp";
 import imageKanap from "../img/kanap.png";
@@ -7,6 +5,7 @@ import imageGroupomania from "../img/Groupomania.png";
 import imagePiquante from "../img/piquante.png";
 import imageNetflix from "../img/Netflix.png";
 import imageImpots from "../img/impots.webp";
+import imageSpotify from "../img/Spotify_logo_without_text.svg.png"
 
 // Import des logos
 import logoCss3 from "../img/css3.png";
@@ -26,10 +25,15 @@ import logoReactNative from "../img/react-native-1.svg";
 import logoAndroidStudio from "../img/Android_Studio_Logo_(2023).svg.png";
 import logoXcode from "../img/1200x630bb.png";
 import logoDiscord from '../img/discordLogoP.webp';
+import logoYoutube from "../img/youtube.webp"
+import logoJda from "../img/jda.png"
+import logoHtml5 from "../img/html5.png"
+import logoMongoDb from "../img/mongodb.png"
+import logoPostgresql from "../img/postgresql.png"
 
 // Définition des icônes
 const icons = {
-  HTML5: { icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png", alt: "HTML5", height: "48", title: 'HTML 5' },
+  HTML5: { icon: logoHtml5, alt: "HTML5", height: "48", title: 'HTML 5' },
   Firebase: { icon: logoFirebase, alt: "Firebase", height: "48", title: 'Firebase' },
   CSS3: { icon: logoCss3, alt: "CSS3", height: "48", title: 'CSS 3' },
   Sass: { icon: logoSass, alt: "Sass", height: "48", title: 'SASS' },
@@ -37,7 +41,7 @@ const icons = {
   Bootstrap: { icon: logoBootstrap, alt: "Bootstrap", height: "48", title: 'Bootstrap' },
   NodeJs: { icon: logoNodejs, alt: "Node.js", height: "48", title: 'Node.js' },
   Express: { icon: "https://images.credly.com/images/1c2c86e1-16ce-4e4d-a425-d1ac96bb026d/express.png", alt: "Express", height: "48", title: 'Express' },
-  MongoDb: { icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/320px-MongoDB_Logo.svg.png", alt: "MongoDB", height: "48", title: 'MongoDB' },
+  MongoDb: { icon: logoMongoDb, alt: "MongoDB", height: "48", title: 'MongoDB' },
   Mongoose: { icon: logoMongoose, alt: "Mongoose", height: "48", title: 'Mongoose' },
   React: { icon: logoReact, alt: "React.js", height: "48", title: 'React.js' },
   ReactNative: { icon: logoReactNative, alt: "React Native", width: '48', height: "48", title: 'React Native' },
@@ -51,12 +55,12 @@ const icons = {
   Xcode: { icon: logoXcode, alt: "Xcode", height: '48', title: "Xcode" },
   Vercel: {icon: "https://cdn.worldvectorlogo.com/logos/vercel.svg", alt:"Vercel", height:'48', title:'Vercel'},
   Heroku: { icon: "https://cdn.icon-icons.com/icons2/2415/PNG/512/heroku_original_wordmark_logo_icon_146482.png", alt: 'Heroku', height: '48', title: 'Heroku'},
-  Psql: { icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png", alt: 'PostgresSql', height: '48', title: 'PostGresSql'},
+  Psql: { icon: logoPostgresql, alt: 'PostgresSql', height: '48', title: 'PostGresSql'},
   Java: { icon: "https://cdn-icons-png.flaticon.com/512/226/226777.png", alt: "Java", height: "48", title: "Java" },
-  JDA: { icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/JDA_Software_Logo.svg/2560px-JDA_Software_Logo.svg.png", alt: "JDA", height: "48", title: "JDA" },
+  JDA: { icon: logoJda, alt: "JDA", height: "48", title: "JDA" },
   LavaPlayer: { icon: "https://avatars.githubusercontent.com/u/26258842?s=200&v=4", alt: "LavaPlayer", height: "48", title: "LavaPlayer" },
-  SpotifyAPI: { icon: "https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg", alt: "Spotify API", height: "48", title: "Spotify API" },
-  YouTubeAPI: { icon: "https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png", alt: "YouTube API", height: "48", title: "YouTube API" },
+  SpotifyAPI: { icon: imageSpotify, alt: "Spotify API", height: "48", title: "Spotify API" },
+  YouTubeAPI: { icon: logoYoutube, alt: "YouTube API", height: "48", title: "YouTube API" },
 };
 
 // Fonction pour créer un projet

@@ -4,6 +4,10 @@ import resume from '../img/Lengrand Lucas.pdf';
 import Portrait from '../img/Portrait.webp';
 import ButtonHomeDownload from './ButtonHomeDownload';
 import Texteffect from './Texteffect';
+import reactIcon from "../img/react.png"
+import nodeJsLogo from "../img/Node.js_logo.svg"
+import playstoreLogo from "../img/google-play-store-new.jpg"
+import javascriptLogo from "../img/Unofficial_JavaScript_logo_2.svg"
 
 // Composant réutilisable pour afficher une icône de technologie
 const TechIcon = ({ src, alt, title, href }) => (
@@ -14,17 +18,17 @@ const TechIcon = ({ src, alt, title, href }) => (
 
 // Données statiques pour les technologies
 const technologies = [
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg', alt: 'ReactJs', href: 'https://reactjs.org/' },
+  { src: reactIcon, alt: 'ReactJs', href: 'https://reactjs.org/' },
   { src: 'https://devtop.io/wp-content/uploads/2022/10/react-native-1.png', alt: 'React Native', href: 'https://reactnative.dev/' },
   { src: 'https://humancoders-formations.s3.amazonaws.com/uploads/course/logo/230/thumb_bigger_formation-typescript.png', alt: 'TypeScript', href: 'https://www.typescriptlang.org/' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg', alt: 'Javascript', href: 'https://developer.mozilla.org/fr/docs/Web/JavaScript' },
+  { src: javascriptLogo , alt: 'Javascript', href: 'https://developer.mozilla.org/fr/docs/Web/JavaScript' },
   { src: 'https://www.svgrepo.com/show/331488/mongodb.svg', alt: 'MongoDB', href: 'https://www.mongodb.com/' },
   { src: 'https://cdn2.boryl.fr/2020/12/fd8a25a0-mysql.svg', alt: 'MySQL', href: 'https://www.mysql.com/' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg', alt: 'nodeJS', href: 'https://nodejs.org/en/' },
-  { src: 'https://sequelize.org/api/v6/image/brand_logo.pngg', alt: 'Sequelize', href: 'https://sequelize.org/' },
+  { src: nodeJsLogo , alt: 'nodeJS', href: 'https://nodejs.org/en/' },
+  { src: 'https://sequelize.org/api/v6/image/brand_logo.png', alt: 'Sequelize', href: 'https://sequelize.org/' },
   { src: 'https://cdn-icons-png.flaticon.com/512/226/226777.png', alt: 'Sass', href: 'https://www.java.com/' },
   { src: 'https://upload.wikimedia.org/wikipedia/ru/0/0c/Xcode_icon.png', alt: 'Xcode', href: 'https://apps.apple.com/fr/app/xcode/id497799835' },
-  { src: 'https://static.vecteezy.com/system/resources/previews/017/396/800/non_2x/google-play-store-mobile-apps-logo-free-png.png', alt: 'Playstore', href: 'https://play.google.com/store/apps?hl=fr&gl=US' },
+  { src: playstoreLogo, alt: 'Playstore', href: 'https://play.google.com/store/apps?hl=fr&gl=US' },
   { src: 'https://upload.wikimedia.org/wikipedia/fr/0/09/Logo_App_Store_d%27Apple.png', alt: 'Appstore', href: 'https://www.apple.com/fr/app-store/' },
   { src: 'https://sdtimes.com/wp-content/uploads/2016/05/0517.sdt-gradle.png', alt: 'Gradle', href: 'https://gradle.org/' },
   { src: 'https://upload.wikimedia.org/wikipedia/commons/7/74/Kotlin_Icon.png', alt: 'Kotlin', href: 'https://kotlinlang.org/' },

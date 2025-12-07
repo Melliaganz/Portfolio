@@ -2,6 +2,9 @@ import React from 'react';
 import { Container, Row, Col, Button, Image } from 'react-bootstrap';
 import discordLogo from '../img/discordLogo.png';
 import discordBanner from "../img/discordBanner.webp";
+import spotifyLogo from "../img/Spotify_logo_without_text.svg.png"
+import imageSpotify from "../img/youtube.webp"
+import logoJda from "../img/jda.png";
 
 const BotDiscord = () => (
   <Container
@@ -47,8 +50,7 @@ const BotDiscord = () => (
           <Col xs="auto">
             <a href="https://github.com/DV8FromTheWorld/JDA" target="_blank" rel="noopener noreferrer">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/JDA_Software_Logo.svg/2560px-JDA_Software_Logo.svg.png"
-                alt="JDA"
+                src={logoJda}
                 height="30"
               />
             </a>
@@ -60,13 +62,13 @@ const BotDiscord = () => (
           </Col>
           <Col xs="auto">
             <a href="https://developer.spotify.com/documentation/web-api/" target="_blank" rel="noopener noreferrer">
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify API" height="30" />
+              <Image src={spotifyLogo} alt="Spotify API" height="30" />
             </a>
           </Col>
           <Col xs="auto">
             <a href="https://developers.google.com/youtube" target="_blank" rel="noopener noreferrer">
               <Image
-                src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
+                src={imageSpotify}
                 alt="YouTube API"
                 height="30"
               />
