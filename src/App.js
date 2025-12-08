@@ -57,11 +57,11 @@ function App() {
         <ThemeProvider theme={theme}>
           <CssBaseline enableColorScheme />
           <ScopedCssBaseline enableColorScheme>
-            {isLoading ? (
+            {/* {isLoading ? (
               <div className="loader">
                 <img className="spinner" src={LucasStaticPath} alt="Lucas Lengrand" fetchPriority="high"  />
               </div>
-            ) : (
+            ) : ( */}
               <Suspense>
                 <Header />
                 <ScrollupButton />
@@ -73,7 +73,7 @@ function App() {
                 <Contact />
                 <Footer />
               </Suspense>
-            )}
+            {/* )} */}
           </ScopedCssBaseline>
         </ThemeProvider>
       </main>
