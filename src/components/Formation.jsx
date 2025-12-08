@@ -2,6 +2,7 @@ import React from "react";
 import OC from "../img/OC.webp";
 import { AccordionItem } from "../helper/AccordionItem";
 import { FormationDetails } from "../helper/FormationDetails";
+import saeLog from "../img/SAE_Institute_Logo.png"
 
 const formations = [
   {
@@ -40,7 +41,7 @@ const formations = [
     ],
   },
   {
-    logo: "https://upload.wikimedia.org/wikipedia/commons/0/07/SAE_Institute_Logo.png",
+    logo: saeLog,
     title: "SAE Institute",
     subtitle: "Licence, Technicien son",
     date: "Juillet 2017, Aubervilliers",
