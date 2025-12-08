@@ -14,47 +14,43 @@ export default function Contact() {
   const [submitting, setSubmitting] = useState(false);
 
   const { executeRecaptcha } = useGoogleReCaptcha();
-const submitForm = async (event: FormEvent) => {
-    event.preventDefault(); // Assurez-vous d'empêcher le comportement par défaut de la soumission.
+  const submitForm = async (event: FormEvent) => {
+    event.preventDefault();
 
     if (!executeRecaptcha) {
-        console.log("reCAPTCHA n'est pas encore chargé !");
-        return;
+      console.log("reCAPTCHA n'est pas encore chargé !");
+      return;
     }
 
     setSubmitting(true);
-    
-    // 1. Exécuter reCAPTCHA v3 pour obtenir le token
-    const token = await executeRecaptcha('contactFormSubmit'); // 'contactFormSubmit' est l'action
 
-    // 2. Récupérer les données du formulaire
+    const token = await executeRecaptcha("contactFormSubmit");
+
     const form = event.currentTarget as HTMLFormElement;
     const formData = new FormData(form);
-    
-    // Ajouter le token reCAPTCHA aux données du formulaire pour Formspree
-    formData.append('g-recaptcha-response', token); 
-    
-    try {
-        // 3. Envoyer les données à Formspree
-        const response = await fetch(formSparkUrl, {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json',
-            }
-        });
 
-        if (response.ok) {
-            alert("Message envoyé !");
-            form.reset();
-        } else {
-            alert("Erreur lors de l'envoi du message.");
-        }
+    formData.append("g-recaptcha-response", token);
+
+    try {
+      const response = await fetch(formSparkUrl, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        alert("Message envoyé !");
+        form.reset();
+      } else {
+        alert("Erreur lors de l'envoi du message.");
+      }
     } catch (error) {
-        console.error("Erreur lors de la soumission:", error);
-        alert("Erreur réseau ou interne lors de l'envoi.");
+      console.error("Erreur lors de la soumission:", error);
+      alert("Erreur réseau ou interne lors de l'envoi.");
     } finally {
-        setSubmitting(false);
+      setSubmitting(false);
     }
   };
   return (
@@ -196,7 +192,7 @@ const submitForm = async (event: FormEvent) => {
                       name="message"
                       placeholder="Votre message ici !"
                       required={true}
-                      rows="3"
+                      rows={3}
                       className="form-control shadow"
                     ></textarea>
                   </div>
@@ -205,13 +201,27 @@ const submitForm = async (event: FormEvent) => {
                     name="_redirect"
                     value="https://www.lengrandlucas.com/#contact"
                   />
-               <p className="mt-2 text-center text-muted small">
-                    Protégé par reCAPTCHA. <a href="https://www.google.com/intl/fr/policies/privacy/">Confidentialité</a> et <a href="https://www.google.com/intl/fr/policies/terms/">Conditions</a>.
+                  <p className="mt-2 text-center normal">
+                    Protégé par reCAPTCHA.{" "}
+                    <a
+                      href="https://www.google.com/intl/fr/policies/privacy/"
+                      alt="lien confidentialité"
+                    >
+                      Confidentialité
+                    </a>{" "}
+                    et{" "}
+                    <a
+                      href="https://www.google.com/intl/fr/policies/terms/"
+                      alt="lien police"
+                    >
+                      Conditions
+                    </a>
+                    .
                   </p>
                   <button
                     disabled={submitting}
                     type="submit"
-                    className="btn btn-light col-4 mt-2 shadow"
+                    className="btn btn-light text-dark col-4 mt-2 shadow"
                   >
                     {submitting ? "Envoi !" : "Envoyer !"}{" "}
                     <span className="EmailIcon">

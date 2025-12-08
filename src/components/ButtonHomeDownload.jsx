@@ -5,6 +5,7 @@ const ButtonHomeDownload = ({ text = null, href = null, target = null, ariaLabel
     <a
       title="Télécharger le CV de Lucas Lengrand sous format PDF"
       className='btn btn-light shadow preface__logoBot'
+      style={{color:'#000000'}}
       href={href}
       target={target}
       download={download}

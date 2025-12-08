@@ -160,7 +160,7 @@ const About = () => (
         </div>
 
         <ButtonHomeDownload
-          className="btn btn-light shadow preface__logoBot"
+          className="btn shadow preface__logoBot"
           id="bouttonCV"
           text="CV"
           href={resume}

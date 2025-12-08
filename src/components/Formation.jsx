@@ -112,7 +112,7 @@ export default function Formation() {
                             "Bravo pour votre excellent travail tout au long du parcours. Votre ténacité a porté ses fruits et vous avez obtenu ce diplôme haut la main ! Nous vous souhaitons une très bonne continuation dans votre nouvelle carrière."
                         </blockquote>
                     </figure>
-                    <figcaption className="blockquote-footer">
+                    <figcaption className="blockquote-footer text-light">
                         <cite title="Source Title">Commentaires du jury </cite>
                     </figcaption>
                     </div>

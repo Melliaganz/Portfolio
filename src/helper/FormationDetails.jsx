@@ -5,7 +5,7 @@ export const FormationDetails = ({ logo, title, subtitle, date, details, website
     <div className="row g-0">
         <section className="col-lg-3 text-center mx-auto me-lg-0 my-auto">
             <div className="gatsby-image-wrapper gatsby-image-wrapper-constrained img-fluid mb-2">
-                <Image src={logo} alt={`logo-${title}`} width={100} height={100} />
+                <Image src={logo} alt={`logo-${title}`} />
             </div>
             <h3 className="h4 formation__title">
                 <a href={website} title={`Site de ${title}`} target="_blank" rel="noopener noreferrer">

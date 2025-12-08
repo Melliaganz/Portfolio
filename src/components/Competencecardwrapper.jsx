@@ -41,7 +41,7 @@ const CompetenceCardWrapper = () => {
             </div>
             <div className="d-flex justify-content-center" style={{ gap: 25 }}>
                 <button 
-                    className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot"
+                    className="btn btn-light btn-base text-dark rounded-4 shadow col-auto preface__logoBot"
                     onClick={handlePreviousPage} 
                     disabled={currentPage === 0}
                     aria-label="Previous Page"
@@ -49,7 +49,7 @@ const CompetenceCardWrapper = () => {
                     {<ArrowBackIcon />}
                 </button>
                 <button 
-                    className="btn btn-light btn-base rounded-4 shadow col-auto preface__logoBot"
+                    className="btn btn-light btn-base text-dark rounded-4 shadow col-auto preface__logoBot"
                     onClick={handleNextPage} 
                     disabled={currentPage === totalPages - 1}
                     aria-label="Next Page"

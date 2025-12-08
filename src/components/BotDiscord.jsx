@@ -52,6 +52,7 @@ const BotDiscord = () => (
               <Image
                 src={logoJda}
                 height="30"
+                alt="jdaSoftware"
               />
             </a>
           </Col>
