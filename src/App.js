@@ -4,7 +4,6 @@ import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { CssBaseline, ScopedCssBaseline } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import Lucas from "./img/Portrait.webp";
 import BotDiscord from "./components/BotDiscord";
 
 const About = lazy(() => import("./components/About"));
@@ -43,6 +42,7 @@ const useLoadingState = () => {
   return { isLoading };
 };
 const recaptchaSiteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY || "";
+const LucasStaticPath = process.env.PUBLIC_URL + '/Portrait.webp';
 
 function App() {
   const theme = useTheme();
@@ -59,7 +59,7 @@ function App() {
           <ScopedCssBaseline enableColorScheme>
             {isLoading ? (
               <div className="loader">
-                <img className="spinner" src={Lucas} alt="Lucas Lengrand" />
+                <img className="spinner" src={LucasStaticPath} alt="Lucas Lengrand" fetchPriority="high"  />
               </div>
             ) : (
               <Suspense>
