@@ -1,4 +1,3 @@
-import React from "react";
 import { Image } from "react-bootstrap";
 import resume from "../img/Lengrand Lucas.pdf";
 import Portrait from "../img/Portrait.webp";
@@ -11,17 +10,17 @@ import javascriptLogo from "../img/Unofficial_JavaScript_logo_2.svg";
 import appStoreLogo from "../img/appStore.webp";
 import xcodeLogo from "../img/Xcode_icon.webp";
 import postGresLogo from "../img/postgresql.webp";
-import kotlinLogo from "../img/Kotlin_Icon.webp"
-import reactNativeLogo from "../img/react-native.webp"
-import typsecriptLogo from "../img/ts-logo-512.webp"
-import sequelizeLogo from "../img/sequelize-logo-9A5075DB9F-seeklogo.com.webp"
-import javaLogo from "../img/Java_Logo.svg"
-import gradleLogo from "../img/gradle_logo_icon_145224.webp"
-import mongoDbLogo from "../img/mongodb.webp"
-import mysqlLogo from "../img/MySQL.svg"
+import kotlinLogo from "../img/Kotlin_Icon.webp";
+import reactNativeLogo from "../img/react-native.webp";
+import typsecriptLogo from "../img/ts-logo-512.webp";
+import sequelizeLogo from "../img/sequelize-logo-9A5075DB9F-seeklogo.com.webp";
+import javaLogo from "../img/Java_Logo.svg";
+import gradleLogo from "../img/gradle_logo_icon_145224.webp";
+import mongoDbLogo from "../img/mongodb.webp";
+import mysqlLogo from "../img/MySQL.svg";
 
 // Composant réutilisable pour afficher une icône de technologie
-const TechIcon = ({ src, alt, title, href  }) => (
+const TechIcon = ({ src, alt, title, href }) => (
   <a href={href} target="_blank" rel="noopener noreferrer" title={title}>
     <img src={src} alt={alt} height={25} width="auto" />
   </a>

@@ -1,4 +1,3 @@
-import React from "react";
 import { Image } from "react-bootstrap";
 import MenuDrop from "./MenuDrop";
 import Lucas from "../img/Portrait.webp";

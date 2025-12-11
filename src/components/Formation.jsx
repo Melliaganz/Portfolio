@@ -1,4 +1,3 @@
-import React from "react";
 import OC from "../img/OC.webp";
 import { AccordionItem } from "../helper/AccordionItem";
 import { FormationDetails } from "../helper/FormationDetails";

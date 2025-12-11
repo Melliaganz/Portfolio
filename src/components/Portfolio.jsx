@@ -1,4 +1,3 @@
-import React from 'react'
 import CompetencecardWrapper from "./Competencecardwrapper"
 
 export default function Portfolio() {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Row, Col, Button, Image } from 'react-bootstrap';
 import discordLogo from '../img/discordLogo.webp';
 import discordBanner from "../img/discordBanner.webp";
