@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState, useMemo, useEffect } from "react";
+import { lazy, Suspense, useState, useMemo, useEffect, useRef } from "react";
 import "./App.css";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -18,6 +18,39 @@ const Socials = lazy(() => import("./components/Socials"));
 const RECAPTCHA_SITE_KEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY || "";
 const LUCAS_STATIC_PATH = process.env.PUBLIC_URL + "/Portrait.webp";
 
+function SectionObserver({ component: LazyComponent, minHeight = 500 }) {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef();
+
+  useEffect(() => {
+    if (!ref.current) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(ref.current); // Arrêter d'observer une fois chargé
+        }
+      }, // Chargement "agressif" : 500px avant que l'élément n'arrive
+      { rootMargin: "0px 0px 500px 0px" }
+    );
+
+    observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref}>
+      {" "}
+      {isVisible ? (
+        <LazyComponent /> // Le chunk JS est téléchargé et le composant rendu ici.
+      ) : (
+        // Ceci maintient l'espace et empêche un saut visuel
+        <div style={{ minHeight: `${minHeight}px` }} aria-hidden="true" />
+      )}{" "}
+    </div>
+  );
+}
 const useTheme = () => {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   return useMemo(
@@ -93,29 +126,48 @@ function App() {
   }
 
   return (
-    <GoogleReCaptchaProvider
-      reCaptchaKey={RECAPTCHA_SITE_KEY}
-      useRecaptchaNet={true}
-    >
-      <main className="main">
-        <ThemeProvider theme={theme}>
-          <CssBaseline enableColorScheme />
-          <ScopedCssBaseline enableColorScheme>
-            <Suspense fallback={<LazyLoadingFallback />}>
-              <Header />
-              <ScrollupButton />
-              <Socials />
-              <About />
-              <Portfolio />
-              <BotDiscord />
-              <Formation />
-              <Contact />
-              <Footer />
-            </Suspense>
-          </ScopedCssBaseline>
-        </ThemeProvider>
-      </main>
-    </GoogleReCaptchaProvider>
+    <main className="main">
+      <ThemeProvider theme={theme}>
+        <CssBaseline enableColorScheme />
+        <ScopedCssBaseline enableColorScheme>
+          {/* Header, ScrollupButton, Socials, About, Portfolio sont essentiels
+                        et restent dans le bundle principal pour un rendu immédiat.
+                        Si Portfolio est très lourd, il pourrait être mis en lazy.
+                    */}
+          <Suspense fallback={<LazyLoadingFallback />}>
+            <Header />
+            <ScrollupButton />
+            <Socials />
+            <About />
+            <Portfolio />
+          </Suspense>
+
+          {/* Les sections suivantes utilisent SectionObserver.
+                        Leur JS ne sera chargé que lorsque l'utilisateur s'en approche.
+                    */}
+          <Suspense fallback={<LazyLoadingFallback />}>
+            <SectionObserver component={BotDiscord} />
+            <SectionObserver component={Formation} />
+
+            {/* Déplacement du Provider reCAPTCHA pour qu'il n'affecte que Contact
+                            et soit lazy-chargé avec le composant lui-même.
+                        */}
+            <SectionObserver
+              component={() => (
+                <GoogleReCaptchaProvider
+                  reCaptchaKey={RECAPTCHA_SITE_KEY}
+                  useRecaptchaNet={true}
+                >
+                  <Contact />
+                </GoogleReCaptchaProvider>
+              )}
+            />
+
+            <SectionObserver component={Footer} minHeight={100} />
+          </Suspense>
+        </ScopedCssBaseline>
+      </ThemeProvider>
+    </main>
   );
 }
 
