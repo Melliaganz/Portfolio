@@ -115,8 +115,8 @@ const About = () => (
               id="photoAbout"
               alt="photo de Lucas"
               src={Portrait}
-              height={170}
-              width={170}
+              height={"100%"}
+              width={"100%"}
             />
           </div>
         </div>
