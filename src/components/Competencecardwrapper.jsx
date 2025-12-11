@@ -51,7 +51,7 @@ const CompetenceCardWrapper = () => {
                     {<ArrowBackIcon />}
                 </button>
                 
-                <span className="mx-3 my-auto text-dark fw-bold">
+                <span className="mx-3 my-auto text-Light fw-bold">
                     {currentPage + 1} / {totalPages}
                 </span>
 

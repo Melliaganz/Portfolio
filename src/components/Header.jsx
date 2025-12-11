@@ -1,72 +1,91 @@
-import React from "react"
-import { Image } from "react-bootstrap"
+import React from "react";
+import { Image } from "react-bootstrap";
 import MenuDrop from "./MenuDrop";
-import Lucas from "../img/Portrait.webp"
+import Lucas from "../img/Portrait.webp";
 
 const Header = () => {
   return (
     <header>
-      <nav className='navbar navbar-expand-lg fixed-top p-0' id="header" style={{backgroundColor:'#000000'}}>
-        <div className='container-fluid'>
-          <a className='navbar-brand' alt="Accueil" href='#home' title="Accueil">&nbsp;
+      <nav
+        className="navbar navbar-expand-lg fixed-top p-0"
+        id="header"
+        style={{ backgroundColor: "#000000" }}
+      >
+        <div className="container-fluid">
+          <a
+            className="navbar-brand"
+            alt="Accueil"
+            href="#home"
+            title="Accueil"
+          >
+            &nbsp;
             <Image
               id="photoHeader"
               src={Lucas}
               height={60}
-              weight={60}
-              placeholder="blurred"
-              alt='Lengrand Lucas Logo'/>
+              width={60}
+              alt="Lengrand Lucas Logo"
+            />
           </a>
           <MenuDrop />
           <div
-            className='collapse navbar-collapse justify-content-center'
-            id='navbarNavAltMarkup'>
-            <div className='navbar-nav col justify-content-around text-center'>
-            <a
-                className='nav-link underline__headerLinks nav__text--color '
-                href='#home'>
+            className="collapse navbar-collapse justify-content-center"
+            id="navbarNavAltMarkup"
+          >
+            <div className="navbar-nav col justify-content-around text-center">
+              <a
+                className="nav-link underline__headerLinks nav__text--color "
+                href="#home"
+              >
                 <span
-                  data-bs-toggle='collapse'
-                  data-bs-target='#navbarNavAltMarkup'
-                  aria-expanded='true'
-                  role='link'
-                  title="Accueil">
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup"
+                  aria-expanded="true"
+                  role="link"
+                  title="Accueil"
+                >
                   Accueil
                 </span>
               </a>
               <a
-                className='nav-link underline__headerLinks nav__text--color '
-                href='#portfolio'>
+                className="nav-link underline__headerLinks nav__text--color "
+                href="#portfolio"
+              >
                 <span
-                  data-bs-toggle='collapse'
-                  data-bs-target='#navbarNavAltMarkup'
-                  aria-expanded='false'
-                  role='link'
-                  title="Portfolio">
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup"
+                  aria-expanded="false"
+                  role="link"
+                  title="Portfolio"
+                >
                   Portfolio
                 </span>
               </a>
               <a
-                className='nav-link underline__headerLinks nav__text--color '
-                href='#formations'>
+                className="nav-link underline__headerLinks nav__text--color "
+                href="#formations"
+              >
                 <span
-                  data-bs-toggle='collapse'
-                  data-bs-target='#navbarNavAltMarkup'
-                  aria-expanded='false'
-                  role='link'
-                  title=" Formations">
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup"
+                  aria-expanded="false"
+                  role="link"
+                  title=" Formations"
+                >
                   Formations
                 </span>
               </a>
               <a
-                className='nav-link underline__headerLinks nav__text--color '
-                href='#contact'>
+                className="nav-link underline__headerLinks nav__text--color "
+                href="#contact"
+              >
                 <span
-                  data-bs-toggle='collapse'
-                  data-bs-target='#navbarNavAltMarkup'
-                  aria-expanded='false'
-                  role='link'
-                  title="Contact">
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup"
+                  aria-expanded="false"
+                  role="link"
+                  title="Contact"
+                >
                   Contact
                 </span>
               </a>
@@ -75,7 +94,7 @@ const Header = () => {
         </div>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -89,26 +89,38 @@ a:hover {
   text-transform: uppercase;
   font-weight: 800;
 }
+#scrollbarOverflow {
+  max-height: 250px;
+}
+#lienProject {
+  display: "flex";
+  align-items: "center";
+  justify-content: "center";
+  text-align: "center";
+}
 body {
   font-family: Roboto, sans-serif;
   width: 100vw;
 }
+#card-details-scroll {
+  max-height: 250px;
+}
 .btn-primary {
   border: none;
-  background-color: 'red';
+  background-color: "red";
 }
 .btn-light:hover,
 .btn-primary:hover,
 .btn-warning:hover {
   background-color: transparent;
   background-image: linear-gradient(145deg, #f0f0f0, #f3f3f3);
-  color: #33ABD7;
+  color: #33abd7;
   box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
 }
 .btn-light {
   border: none;
   color: #fff;
-  background: #33ABD7;
+  background: #33abd7;
   border-radius: 25px;
 }
 .contact--color,
@@ -125,6 +137,10 @@ body {
 }
 #codeAbout a {
   transform: translate(-2%, -2%);
+}
+.btn-cv-download {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 85, 128);
 }
 .socials {
   z-index: 1;
@@ -222,6 +238,7 @@ svg {
     margin-top: 20px;
   }
 }
+
 #blocTextAbout,
 #formationsBlock,
 #header,

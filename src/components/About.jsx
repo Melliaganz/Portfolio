@@ -4,17 +4,24 @@ import resume from "../img/Lengrand Lucas.pdf";
 import Portrait from "../img/Portrait.webp";
 import ButtonHomeDownload from "./ButtonHomeDownload";
 import Texteffect from "./Texteffect";
-import reactIcon from "../img/react.png";
+import reactIcon from "../img/react.webp";
 import nodeJsLogo from "../img/Node.js_logo.svg";
-import playstoreLogo from "../img/google-play-store-new.jpg";
+import playstoreLogo from "../img/logoPlaystore.webp";
 import javascriptLogo from "../img/Unofficial_JavaScript_logo_2.svg";
-import appStoreLogo from "../img/appStore.png";
-import xcodeLogo from "../img/Xcode_icon.png";
-import postGresLogo from "../img/postgresql.png";
-import kotlinLogo from "../img/Kotlin_Icon.png"
+import appStoreLogo from "../img/appStore.webp";
+import xcodeLogo from "../img/Xcode_icon.webp";
+import postGresLogo from "../img/postgresql.webp";
+import kotlinLogo from "../img/Kotlin_Icon.webp"
+import reactNativeLogo from "../img/react-native.webp"
+import typsecriptLogo from "../img/ts-logo-512.webp"
+import sequelizeLogo from "../img/sequelize-logo-9A5075DB9F-seeklogo.com.webp"
+import javaLogo from "../img/Java_Logo.svg"
+import gradleLogo from "../img/gradle_logo_icon_145224.webp"
+import mongoDbLogo from "../img/mongodb.webp"
+import mysqlLogo from "../img/MySQL.svg"
 
 // Composant réutilisable pour afficher une icône de technologie
-const TechIcon = ({ src, alt, title, href }) => (
+const TechIcon = ({ src, alt, title, href  }) => (
   <a href={href} target="_blank" rel="noopener noreferrer" title={title}>
     <img src={src} alt={alt} height={25} />
   </a>
@@ -24,12 +31,12 @@ const TechIcon = ({ src, alt, title, href }) => (
 const technologies = [
   { src: reactIcon, alt: "ReactJs", href: "https://reactjs.org/" },
   {
-    src: "https://devtop.io/wp-content/uploads/2022/10/react-native-1.png",
+    src: reactNativeLogo,
     alt: "React Native",
     href: "https://reactnative.dev/",
   },
   {
-    src: "https://humancoders-formations.s3.amazonaws.com/uploads/course/logo/230/thumb_bigger_formation-typescript.png",
+    src: typsecriptLogo,
     alt: "TypeScript",
     href: "https://www.typescriptlang.org/",
   },
@@ -39,23 +46,23 @@ const technologies = [
     href: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
   },
   {
-    src: "https://www.svgrepo.com/show/331488/mongodb.svg",
+    src: mongoDbLogo,
     alt: "MongoDB",
     href: "https://www.mongodb.com/",
   },
   {
-    src: "https://cdn2.boryl.fr/2020/12/fd8a25a0-mysql.svg",
+    src: mysqlLogo,
     alt: "MySQL",
     href: "https://www.mysql.com/",
   },
   { src: nodeJsLogo, alt: "nodeJS", href: "https://nodejs.org/en/" },
   {
-    src: "https://sequelize.org/api/v6/image/brand_logo.png",
+    src: sequelizeLogo,
     alt: "Sequelize",
     href: "https://sequelize.org/",
   },
   {
-    src: "https://cdn-icons-png.flaticon.com/512/226/226777.png",
+    src: javaLogo,
     alt: "Sass",
     href: "https://www.java.com/",
   },
@@ -75,7 +82,7 @@ const technologies = [
     href: "https://www.apple.com/fr/app-store/",
   },
   {
-    src: "https://sdtimes.com/wp-content/uploads/2016/05/0517.sdt-gradle.png",
+    src: gradleLogo,
     alt: "Gradle",
     href: "https://gradle.org/",
   },

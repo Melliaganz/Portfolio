@@ -1,10 +1,11 @@
 import React from 'react';
 import { Container, Row, Col, Button, Image } from 'react-bootstrap';
-import discordLogo from '../img/discordLogo.png';
+import discordLogo from '../img/discordLogo.webp';
 import discordBanner from "../img/discordBanner.webp";
-import spotifyLogo from "../img/Spotify_logo_without_text.svg.png"
+import spotifyLogo from "../img/Spotify_logo_without_text.svg.webp"
 import imageSpotify from "../img/youtube.webp"
-import logoJda from "../img/jda.png";
+import logoJda from "../img/jda.webp";
+import logoJava from "../img/Java_Logo.svg"
 
 const BotDiscord = () => (
   <Container
@@ -44,7 +45,7 @@ const BotDiscord = () => (
         <Row className="justify-content-center my-3">
           <Col xs="auto">
             <a href="https://www.java.com/" target="_blank" rel="noopener noreferrer">
-              <Image src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java" height="30" />
+              <Image src={logoJava} alt="Java" height="30" />
             </a>
           </Col>
           <Col xs="auto">
