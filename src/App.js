@@ -1,9 +1,7 @@
 import { lazy, Suspense, useState, useMemo, useEffect, useRef } from "react";
 import "./App.css";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { CssBaseline, ScopedCssBaseline } from "@mui/material";
-import useMediaQuery from "@mui/material/useMediaQuery";
+import { CssBaseline, ScopedCssBaseline, useMediaQuery ,createTheme,ThemeProvider} from "@mui/material";
 import BotDiscord from "./components/BotDiscord";
 
 const About = lazy(() => import("./components/About"));
