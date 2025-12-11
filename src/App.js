@@ -1,7 +1,12 @@
 import { lazy, Suspense, useState, useMemo, useEffect, useRef } from "react";
 import "./App.css";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
-import { CssBaseline, ScopedCssBaseline, useMediaQuery ,createTheme,ThemeProvider} from "@mui/material";
+import {
+  CssBaseline,
+  useMediaQuery,
+  createTheme,
+  ThemeProvider,
+} from "@mui/material";
 import BotDiscord from "./components/BotDiscord";
 
 const About = lazy(() => import("./components/About"));
@@ -115,9 +120,7 @@ function App() {
     return (
       <ThemeProvider theme={theme}>
         <CssBaseline enableColorScheme />
-        <ScopedCssBaseline enableColorScheme>
-          <FullPageLoader />
-        </ScopedCssBaseline>
+        <FullPageLoader />
       </ThemeProvider>
     );
   }
@@ -126,33 +129,32 @@ function App() {
     <main className="main">
       <ThemeProvider theme={theme}>
         <CssBaseline enableColorScheme />
-        <ScopedCssBaseline enableColorScheme>
-          <Suspense fallback={<LazyLoadingFallback />}>
-            <Header />
-            <ScrollupButton />
-            <Socials />
-            <About />
-            <Portfolio />
-          </Suspense>
+        <Suspense fallback={<LazyLoadingFallback />}>
+          <Header />
+          <About />
+        </Suspense>
 
-          <Suspense fallback={<LazyLoadingFallback />}>
-            <SectionObserver component={BotDiscord} />
-            <SectionObserver component={Formation} />
+        <Suspense fallback={<LazyLoadingFallback />}>
+          <SectionObserver component={Portfolio} />
+          <SectionObserver component={Formation} />
 
-            <SectionObserver
-              component={() => (
-                <GoogleReCaptchaProvider
-                  reCaptchaKey={RECAPTCHA_SITE_KEY}
-                  useRecaptchaNet={true}
-                >
-                  <Contact />
-                </GoogleReCaptchaProvider>
-              )}
-            />
+          <SectionObserver component={BotDiscord} />
+          <SectionObserver component={Socials} />
 
-            <SectionObserver component={Footer} minHeight={100} />
-          </Suspense>
-        </ScopedCssBaseline>
+          <SectionObserver component={ScrollupButton} minHeight={0} />
+          <SectionObserver
+            component={() => (
+              <GoogleReCaptchaProvider
+                reCaptchaKey={RECAPTCHA_SITE_KEY}
+                useRecaptchaNet={true}
+              >
+                <Contact />
+              </GoogleReCaptchaProvider>
+            )}
+          />
+
+          <SectionObserver component={Footer} minHeight={100} />
+        </Suspense>
       </ThemeProvider>
     </main>
   );
