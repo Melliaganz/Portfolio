@@ -1,4 +1,3 @@
-import { Image } from "react-bootstrap";
 import resume from "../img/Lengrand Lucas.pdf";
 import Portrait from "../img/Portrait.webp";
 import ButtonHomeDownload from "./ButtonHomeDownload";
@@ -108,7 +107,7 @@ const About = () => (
       <div className="row justify-content-end align-items-center preface">
         <div className="col-sm-5 text-center">
           <div className="text-center py-5" id="blocAbout">
-            <Image
+            <img
               type="image/webp"
               className="roundedCircle"
               id="photoAbout"

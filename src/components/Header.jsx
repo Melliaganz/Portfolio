@@ -1,7 +1,6 @@
 import Lucas from "../img/Portrait.webp";
-import React, { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 
-// NOUVEAU: Déclarez MenuDrop comme lazy
 const LazyMenuDrop = lazy(() => import("./MenuDrop"));
 const Header = () => {
   return (
