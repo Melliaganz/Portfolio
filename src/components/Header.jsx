@@ -1,7 +1,8 @@
-import { Image } from "react-bootstrap";
-import MenuDrop from "./MenuDrop";
 import Lucas from "../img/Portrait.webp";
+import React, { lazy, Suspense } from "react";
 
+// NOUVEAU: Déclarez MenuDrop comme lazy
+const LazyMenuDrop = lazy(() => import("./MenuDrop"));
 const Header = () => {
   return (
     <header>
@@ -18,7 +19,7 @@ const Header = () => {
             title="Accueil"
           >
             &nbsp;
-            <Image
+            <img
               id="photoHeader"
               src={Lucas}
               height={60}
@@ -26,7 +27,9 @@ const Header = () => {
               alt="Lengrand Lucas Logo"
             />
           </a>
-          <MenuDrop />
+          <Suspense fallback={null}>
+            <LazyMenuDrop />
+          </Suspense>
           <div
             className="collapse navbar-collapse justify-content-center"
             id="navbarNavAltMarkup"
