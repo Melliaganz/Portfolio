@@ -29,9 +29,9 @@ function SectionObserver({ component: LazyComponent, minHeight = 500 }) {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(ref.current); // Arrêter d'observer une fois chargé
+          observer.unobserve(ref.current);
         }
-      }, // Chargement "agressif" : 500px avant que l'élément n'arrive
+      },
       { rootMargin: "0px 0px 500px 0px" }
     );
 
@@ -43,9 +43,8 @@ function SectionObserver({ component: LazyComponent, minHeight = 500 }) {
     <div ref={ref}>
       {" "}
       {isVisible ? (
-        <LazyComponent /> // Le chunk JS est téléchargé et le composant rendu ici.
+        <LazyComponent />
       ) : (
-        // Ceci maintient l'espace et empêche un saut visuel
         <div style={{ minHeight: `${minHeight}px` }} aria-hidden="true" />
       )}{" "}
     </div>
@@ -130,10 +129,6 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline enableColorScheme />
         <ScopedCssBaseline enableColorScheme>
-          {/* Header, ScrollupButton, Socials, About, Portfolio sont essentiels
-                        et restent dans le bundle principal pour un rendu immédiat.
-                        Si Portfolio est très lourd, il pourrait être mis en lazy.
-                    */}
           <Suspense fallback={<LazyLoadingFallback />}>
             <Header />
             <ScrollupButton />
@@ -142,16 +137,10 @@ function App() {
             <Portfolio />
           </Suspense>
 
-          {/* Les sections suivantes utilisent SectionObserver.
-                        Leur JS ne sera chargé que lorsque l'utilisateur s'en approche.
-                    */}
           <Suspense fallback={<LazyLoadingFallback />}>
             <SectionObserver component={BotDiscord} />
             <SectionObserver component={Formation} />
 
-            {/* Déplacement du Provider reCAPTCHA pour qu'il n'affecte que Contact
-                            et soit lazy-chargé avec le composant lui-même.
-                        */}
             <SectionObserver
               component={() => (
                 <GoogleReCaptchaProvider
