@@ -1,7 +1,6 @@
 
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Image } from "react-bootstrap";
 
 // Composant réutilisable pour afficher un élément d'accordéon
 export const AccordionItem = ({ logo, title, children }) => (
@@ -13,7 +12,7 @@ export const AccordionItem = ({ logo, title, children }) => (
       style={{ height: 150 }}
     >
       <Typography component={"span"} variant={"body2"} padding={5}>
-        <Image src={logo} alt={`logo-${title}`} width={100} />
+        <img src={logo} alt={`logo-${title}`} width={100} />
       </Typography>
       <p style={{ display: "flex", alignItems: "center" }}>{title}</p>
     </AccordionSummary>

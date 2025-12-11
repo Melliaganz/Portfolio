@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button, Image } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import discordLogo from '../img/discordLogo.webp';
 import discordBanner from "../img/discordBanner.webp";
 import spotifyLogo from "../img/Spotify_logo_without_text.svg.webp"
@@ -10,7 +10,7 @@ const BotDiscord = () => (
   <Container
     className="my-5 text-center bot-section"
     style={{
-      backgroundImage: `url(${discordBanner})`,
+      backgroundimg: `url(${discordBanner})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       padding: '50px 0',
@@ -25,7 +25,7 @@ const BotDiscord = () => (
         </h2>
 
         <div style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', display: 'inline-block', padding: '10px', borderRadius: '50%' }}>
-          <Image
+          <img
             src={discordLogo}
             alt="Bot Discord Logo"
             roundedCircle
@@ -44,12 +44,12 @@ const BotDiscord = () => (
         <Row className="justify-content-center my-3">
           <Col xs="auto">
             <a href="https://www.java.com/" target="_blank" rel="noopener noreferrer">
-              <Image src={logoJava} alt="Java" height="30" />
+              <img src={logoJava} alt="Java" height="30" />
             </a>
           </Col>
           <Col xs="auto">
             <a href="https://github.com/DV8FromTheWorld/JDA" target="_blank" rel="noopener noreferrer">
-              <Image
+              <img
                 src={logoJda}
                 height="30"
                 alt="jdaSoftware"
@@ -58,17 +58,17 @@ const BotDiscord = () => (
           </Col>
           <Col xs="auto">
             <a href="https://github.com/sedmelluq/lavaplayer" target="_blank" rel="noopener noreferrer">
-              <Image src="https://avatars.githubusercontent.com/u/26258842?s=200&v=4" alt="LavaPlayer" height="30" />
+              <img src="https://avatars.githubusercontent.com/u/26258842?s=200&v=4" alt="LavaPlayer" height="30" />
             </a>
           </Col>
           <Col xs="auto">
             <a href="https://developer.spotify.com/documentation/web-api/" target="_blank" rel="noopener noreferrer">
-              <Image src={spotifyLogo} alt="Spotify API" height="30" />
+              <img src={spotifyLogo} alt="Spotify API" height="30" />
             </a>
           </Col>
           <Col xs="auto">
             <a href="https://developers.google.com/youtube" target="_blank" rel="noopener noreferrer">
-              <Image
+              <img
                 src={imageSpotify}
                 alt="YouTube API"
                 height="30"

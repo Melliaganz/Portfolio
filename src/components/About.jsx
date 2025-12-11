@@ -111,7 +111,7 @@ const About = () => (
               type="image/webp"
               className="roundedCircle"
               id="photoAbout"
-              alt="photo de Lucas"
+              alt="Lucas"
               src={Portrait}
               height={"100%"}
               width={"100%"}
