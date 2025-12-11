@@ -3,10 +3,12 @@ import OC from "../img/OC.webp";
 import { AccordionItem } from "../helper/AccordionItem";
 import { FormationDetails } from "../helper/FormationDetails";
 import saeLog from "../img/SAE_Institute_Logo.webp"
+import btmmLogo from "../img/btmmlogo.webp"
+import cfpLogo from "../img/renommercfpgranfjord.webp"
 
 const formations = [
   {
-    logo: "https://www.csrsaguenay.qc.ca/wp-content/uploads/2020/02/Logo_CFP-Grand-Fjord-150x150.webp",
+    logo: cfpLogo,
     title: "Centre de formation professionnelle du Grand-Fjord",
     subtitle: "Etudiant, Protection et exploitation des territoires fauniques",
     date: "Septembre 2021, La Baie, Saguenay, QC, Canada",
@@ -54,7 +56,7 @@ const formations = [
     ],
   },
   {
-    logo: "https://educamus.ac-versailles.fr/IMG/logo/arton873.webp?1511429496",
+    logo: btmmLogo,
     title: "Brevet de Technicien des métiers de la musique",
     subtitle: "Brevet de technicien",
     date: "Juillet 2015, Sèvres",

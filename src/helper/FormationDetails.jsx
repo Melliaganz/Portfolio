@@ -1,4 +1,3 @@
-import React from 'react';
 import { Image } from 'react-bootstrap';
 
 export const FormationDetails = ({ logo, title, subtitle, date, details, website }) => (
