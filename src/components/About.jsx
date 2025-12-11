@@ -23,7 +23,7 @@ import mysqlLogo from "../img/MySQL.svg"
 // Composant réutilisable pour afficher une icône de technologie
 const TechIcon = ({ src, alt, title, href  }) => (
   <a href={href} target="_blank" rel="noopener noreferrer" title={title}>
-    <img src={src} alt={alt} height={25} />
+    <img src={src} alt={alt} height={25} width="auto" />
   </a>
 );
 
