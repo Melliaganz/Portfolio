@@ -57,10 +57,83 @@
     </noscript>
 
     <style>
-      /* ******************************************************************
-      ACTION REQUIRED: PASTE YOUR EXTRACTED CRITICAL CSS HERE.
-      ******************************************************************
-      */
+ body {
+          font-family: Roboto, sans-serif;
+          font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+          margin: 0;
+          width: 100vw;
+      }
+      html {
+          color-scheme: dark;
+      }
+      #nomAbout, .contact--color, .navbar a, .socials, a {
+          color: #2596be;
+      }
+      header {
+          position: absolute;
+          z-index: 10;
+      }
+      #blocTextAbout, #formationsBlock, #header, #photoAbout, .socials {
+          animation-duration: 4s;
+          animation-name: opacity;
+      }
+      @keyframes opacity {
+          0% { opacity: 0 }
+          to { opacity: 100% }
+      }
+      #header {
+          width: 100vw;
+          position: fixed;
+          z-index: 1030;
+      }
+      .navbar a {
+          text-decoration: none;
+          transition: transform .2s;
+      }
+      #photoHeader {
+          border-radius: 80px;
+          height: 60px;
+          width: 60px;
+      }
+      @media only screen and (min-width: 1080px) {
+          .menuDrop {
+              display: none;
+          }
+      }
+      @media only screen and (max-width: 1080px) {
+          .menuDrop {
+              display: flex;
+          }
+      }
+      #about {
+          margin-top: 100px;
+      }
+      #nomAbout {
+          font-weight: 800;
+          text-transform: uppercase;
+      }
+      #photoAbout {
+          border: 15px solid #2596be;
+          border-radius: 50%;
+          height: 340px;
+          width: 340px;
+      }
+      #blocTextAbout, #cardFormulaire, #lienContact {
+          align-items: center;
+          border-radius: 11px;
+      }
+      #blocTextAbout {
+          box-shadow: 0 3px 10px var(--primary-shadow);
+          margin-bottom: 15px;
+          padding: 20px;
+      }
+      @media screen and (min-width: 800px) {
+          #blocTextAbout {
+              margin-bottom: 50px;
+              margin-left: 150px;
+              margin-top: -300px;
+          }
+      }
     </style>
 
     <link
